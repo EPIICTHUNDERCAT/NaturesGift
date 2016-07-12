@@ -1,0 +1,16 @@
+[
+{
+  "modid": “naturesgift”,
+  "name": “NaturesGift”,
+  "description": “Random Things Hope to do more“,
+  "version": “${1.10.2-2008-0.1}”,
+  "mcversion": “${mcversion}”,
+  "url": "",
+  "updateUrl": "",
+  "authorList": [“EPIICTHUNDERCAT,SeqSee,Bartz24”],
+  "credits": “SeqSee and Bartz24 for coaching me and having patience with my noob self!”,
+  "logoFile": “”,
+  "screenshots": [],
+  "dependencies": []
+}
+]

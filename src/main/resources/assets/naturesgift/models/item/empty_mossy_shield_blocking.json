@@ -1,0 +1,33 @@
+{
+	"parent": "item/generated",
+	"textures": {
+        "layer0": "hempfarmer:items/empty_mossy_shield"
+	},
+	"display": {
+        "thirdperson_righthand": {
+            "rotation": [ 25, 145, 0 ],
+            "translation": [ 0.15, 2.25, 0.2 ],
+            "scale": [ 1.05, 1.05, 1.05 ]
+        },
+        "thirdperson_lefthand": {
+            "rotation": [ 25, 145, 0 ],
+            "translation": [ 0.15, 2.25, 0.2 ],
+            "scale": [ 1.05, 1.05, 1.05 ]
+        },
+        "firstperson_righthand": {
+            "rotation": [ 0, 175, -5 ],
+            "translation": [ -2, -1.5, -8 ],
+            "scale": [ 1.4, 1.4, 1.4 ]
+        },
+        "firstperson_lefthand": {
+            "rotation": [ 0, 175, -5 ],
+            "translation": [ -2, -1.5, -8 ],
+            "scale": [ 1.4, 1.4, 1.4 ]
+        },
+        "gui": {
+            "rotation": [ 15, -25, -5 ],
+            "translation": [ 0, 0, 0 ],
+            "scale": [ 0.90, 0.90, 0.90 ]
+        }
+    }
+}

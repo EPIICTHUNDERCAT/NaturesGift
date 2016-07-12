@@ -1,0 +1,51 @@
+{   
+	"parent": "item/generated",
+    "textures": {
+        "layer0": "naturesgift:items/empty_mossy_shield"
+		},
+    "display": {
+        "thirdperson_righthand": {
+            "rotation": [ 0, 100, 0 ],
+            "translation": [ 2, -3, 2 ],
+            "scale": [ 0.9, 0.9, 0.9 ]
+        },
+        "thirdperson_lefthand": {
+            "rotation": [ 0, 100, 0 ],
+            "translation": [ 2, -3, 2 ],
+            "scale": [ 0.9, 0.9, 0.9 ]
+        },
+        "firstperson_righthand": {
+            "rotation": [ 0, 180, 5 ],
+            "translation": [ 4, -7, -7 ],
+            "scale": [ 1.5, 1.5, 0.75 ]
+        },
+        "firstperson_lefthand": {
+            "rotation": [ 0, 180, 5 ],
+            "translation": [ 4, -7, -7 ],
+            "scale": [ 1.5, 1.5, 0.75 ]
+        },
+        "gui": {
+            "rotation": [ 15, -25, -5 ],
+            "translation": [ 0, 0, 0 ],
+            "scale": [ 0.90, 0.90, 0.45 ]
+        },
+        "fixed": {
+            "rotation": [ 0, 180, 0 ],
+            "translation": [ -2, 4, -5],
+            "scale":[ 0.5, 0.5, 0.25]
+        },
+        "ground": {
+            "rotation": [ 0, 0, 0 ],
+            "translation": [ 4, 4, 2],
+            "scale":[ 0.8, 0.8, 0.4]
+        }
+    },
+    "overrides": [
+        {
+            "predicate": {
+                "blocking": 1
+            },
+            "model": "naturesgift:item/empty_mossy_shield_blocking"
+        }
+    ]
+}

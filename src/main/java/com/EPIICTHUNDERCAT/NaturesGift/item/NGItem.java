@@ -1,5 +1,6 @@
 package com.EPIICTHUNDERCAT.NaturesGift.item;
 
+import com.EPIICTHUNDERCAT.NaturesGift.Misc.NGCreativeTabs;
 import com.EPIICTHUNDERCAT.NaturesGift.init.NGItems;
 
 import net.minecraft.creativetab.CreativeTabs;
@@ -10,7 +11,7 @@ public class NGItem extends Item {
 	public NGItem(String name) {
 		this.setRegistryName(name);
 		this.setUnlocalizedName(name.toLowerCase());
-		this.setCreativeTab(CreativeTabs.MISC);
+		this.setCreativeTab(NGCreativeTabs.NGMaterials);
 		addToItems(this);
 	}
 

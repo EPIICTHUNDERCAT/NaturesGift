@@ -1,0 +1,11 @@
+# This is an example of an animation with a pause in it.
+# The first frame (Index 0) is displayed for 2 seconds.
+# The speed of the rest of the animation is set to 2 (1/10 second).
+
+# You can replace any number in the frame lineup with this code: { "index": 0, "time": 40 }
+# In this example only the first frame has special timing, but it can be any frame.
+
+# The "index" is the frame number (starting with 0 at the top.
+# The "time" is the number of ticks (1/20 second incriments) that frame is displayed for.
+
+{ "animation": { "frametime": 2, "frames": [ { "index": 0, "time": 1200 }, 1, 2, 3 ] } }

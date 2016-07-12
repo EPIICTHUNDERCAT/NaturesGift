@@ -45,7 +45,8 @@ public class NGItems extends Items {
 	public static Item MINI_MOTOR_BLADE = new NGItem("MINI_MOTOR_BLADE");
 	public static Item HEAVY_BRANCH = new NGItem("HEAVY_BRANCH");
 	public static Item SKY_ESSENCE = new NGItem("SKY_ESSENCE");
-	public static Item PINK_DIAMOND_MOSSY_SHIELD = new NGItem("PINK_DIAMOND_MOSSY_SHIELD");
+	public static Item PINK_DIAMOND_MOSSY_SHIELD = new NGShields("PINK_DIAMOND_MOSSY_SHIELD");
+	public static Item EMPTY_MOSSY_SHIELD = new NGShields("EMPTY_MOSSY_SHIELD");
 
 	private static List<Item> getItems() {
 		return items;

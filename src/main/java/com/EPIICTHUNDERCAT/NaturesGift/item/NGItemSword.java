@@ -1,8 +1,8 @@
 package com.EPIICTHUNDERCAT.NaturesGift.item;
 
+import com.EPIICTHUNDERCAT.NaturesGift.Misc.NGCreativeTabs;
 import com.EPIICTHUNDERCAT.NaturesGift.init.NGItems;
 
-import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.init.MobEffects;
 import net.minecraft.item.Item;
@@ -11,8 +11,6 @@ import net.minecraft.item.ItemSword;
 import net.minecraft.potion.PotionEffect;
 import net.minecraft.util.text.TextFormatting;
 import net.minecraft.util.text.translation.I18n;
-import net.minecraftforge.common.util.EnumHelper;
-import net.minecraftforge.fml.common.registry.GameRegistry;
 
 public class NGItemSword extends ItemSword {
 	public NGItemSword(String name, ToolMaterial material) {
@@ -20,7 +18,7 @@ public class NGItemSword extends ItemSword {
 		setRegistryName(name);
 		setUnlocalizedName(name.toLowerCase());
 		addToItems(this);
-		this.setCreativeTab(CreativeTabs.COMBAT);
+		this.setCreativeTab(NGCreativeTabs.NGCombat);
 	}
 
 	@Override

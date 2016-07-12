@@ -43,8 +43,9 @@ public class NGRecipes {
 		// Shaped Recipe// - Bartz Wand
 		// Shaped Recipe// - Bartz Dagger
 		// Shaped Recipe// - Pink Diamond
-		// Shaped Recipe// -
-		// Shaped Recipe// -
+		// Shaped Recipe// - Empty Mossy Shield
+		// Shaped Recipe// - Pink Diamond Mossy Shield
+		GameRegistry.addShapelessRecipe(new ItemStack(NGItems.PINK_DIAMOND_MOSSY_SHIELD), new ItemStack(NGItems.EMPTY_MOSSY_SHIELD));
 		// Shaped Recipe// -
 		
 		// Shaped Recipe// - Seq's Scepter

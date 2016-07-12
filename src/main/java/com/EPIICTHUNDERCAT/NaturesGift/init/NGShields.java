@@ -18,18 +18,19 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 public class NGShields extends ItemShield {
 
 	public NGShields(String name) {
-	        this.maxStackSize = 1;
-			this.setRegistryName(name);
-			this.setUnlocalizedName(name);
-			addToItems(this);
-	        this.setMaxDamage(1000);
-	        this.addPropertyOverride(new ResourceLocation("blocking"), new IItemPropertyGetter() {
-	            @SideOnly(Side.CLIENT)
-	            public float apply(ItemStack stack, @Nullable World worldIn, @Nullable EntityLivingBase entityIn) {
-	                return entityIn != null && entityIn.isHandActive() && entityIn.getActiveItemStack() == stack ? 1.0F : 0.0F;
-	            }
-	        });
-	    }
+		this.maxStackSize = 1;
+		this.setRegistryName(name);
+		this.setUnlocalizedName(name.toLowerCase());
+		addToItems(this);
+		this.setMaxDamage(1000);
+		this.addPropertyOverride(new ResourceLocation("blocking"), new IItemPropertyGetter() {
+			@SideOnly(Side.CLIENT)
+			public float apply(ItemStack stack, @Nullable World worldIn, @Nullable EntityLivingBase entityIn) {
+				return entityIn != null && entityIn.isHandActive() && entityIn.getActiveItemStack() == stack ? 1.0F
+						: 0.0F;
+			}
+		});
+	}
 
 	private void addToItems(Item item) {
 		NGItems.items.add(item);

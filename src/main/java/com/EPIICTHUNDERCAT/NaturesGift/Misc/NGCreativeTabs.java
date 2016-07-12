@@ -25,7 +25,7 @@ public class NGCreativeTabs extends CreativeTabs {
 		}
 	};
 
-	public static final NGCreativeTabs HFMaterials = new NGCreativeTabs(CreativeTabs.getNextID(), "ngmaterials") {
+	public static final NGCreativeTabs NGMaterials = new NGCreativeTabs(CreativeTabs.getNextID(), "ngmaterials") {
 		@SideOnly(Side.CLIENT)
 		public Item getTabIconItem() {
 			return NGItems.GOO_ESSENCE;

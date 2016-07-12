@@ -1,7 +1,7 @@
 {
 	"parent": "item/generated",
 	"textures": {
-        "layer0": "hempfarmer:items/empty_mossy_shield"
+        "layer0": "naturesgift:items/empty_mossy_shield"
 	},
 	"display": {
         "thirdperson_righthand": {

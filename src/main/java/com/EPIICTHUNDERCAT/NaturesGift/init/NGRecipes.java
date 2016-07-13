@@ -10,6 +10,7 @@ import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 import net.minecraftforge.oredict.OreDictionary;
 import net.minecraftforge.oredict.ShapedOreRecipe;
+import net.minecraftforge.oredict.ShapelessOreRecipe;
 
 public class NGRecipes {
 
@@ -41,26 +42,29 @@ public class NGRecipes {
 		// Shaped Recipe// - Hammer
 		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(NGItems.HAMMER),
 				new Object[] { "GIG", "III", " S ", 'S', "stickWood", 'I', "ingotIron", 'G', "ingotGold" }));
-		// Shaped Recipe// - Heavy Branch
+		// Shaped Recipe// -
 
 		// Shaped Recipe// - Stones
-		GameRegistry.addShapelessRecipe(new ItemStack(NGItems.STONES, 9), new ItemStack(NGItems.HAMMER, 1, OreDictionary.WILDCARD_VALUE
-),
-				new ItemStack(Blocks.COBBLESTONE));
+		GameRegistry.addShapelessRecipe(new ItemStack(NGItems.STONES, 9),
+				new ItemStack(NGItems.HAMMER, 1, OreDictionary.WILDCARD_VALUE), new ItemStack(Blocks.COBBLESTONE));
 		// Shaped Recipe// - Nature Infused Star
 		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(NGItems.NATURE_INFUSED_STAR),
 				new Object[] { "NGN", "GSG", "NGN", 'N', "natureChips", 'G', "essenceGoo", 'S', "netherStar" }));
 		// Shaped Recipe// - Bartz Wand
-		
+
 		// Shaped Recipe// - Bartz Dagger
+
 		// Shaped Recipe// - Pink Diamond
-		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(NGItems.PINK_DIAMOND), new Object [] { " S ", "PDP", " S ", 'S', "gemSky", 'D', "gemDiamond", 'P', "dyePink" }));
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(NGItems.PINK_DIAMOND),
+				new Object[] { " S ", "PDP", " S ", 'S', "gemSky", 'D', "gemDiamond", 'P', "dyePink" }));
 		// Shaped Recipe// - Empty Mossy Shield
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(NGItems.EMPTY_MOSSY_SHIELD), new Object [] {"MMM", "M M", " M ", 'M', new ItemStack(Blocks.MOSSY_COBBLESTONE) }));
 		// Shaped Recipe// - Pink Diamond Mossy Shield
 		GameRegistry.addShapelessRecipe(new ItemStack(NGItems.PINK_DIAMOND_MOSSY_SHIELD),
 				new ItemStack(NGItems.EMPTY_MOSSY_SHIELD), new ItemStack(NGItems.PINK_DIAMOND));
-		// Shaped Recipe// -
-
+		// Shaped Recipe// - Iron Blade
+		GameRegistry.addShapelessRecipe(new ItemStack(NGItems.IRON_BLADE, 2),
+				new ItemStack(NGItems.HAMMER, 1, OreDictionary.WILDCARD_VALUE), new ItemStack(Items.IRON_INGOT));
 		// Shaped Recipe// - Seq's Scepter
 		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(NGItems.SEQS_SCEPTER),
 				new Object[] { "PMP", "GSG", "PNP", 'M', "motorMotor", 'G', "essenceGOO", 'S', "infusedNatureStar", 'N',

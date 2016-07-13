@@ -26,5 +26,5 @@ forge-1.10.2-12.18.1.2011-changelog.txt
 *.txt
 gradlew.bat
 gradle/wrapper/gradle-wrapper.properties
-*.jar
+gradle-wrapper.jar
 build.gradle

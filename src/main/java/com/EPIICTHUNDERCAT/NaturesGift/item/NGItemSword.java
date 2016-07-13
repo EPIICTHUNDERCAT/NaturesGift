@@ -30,7 +30,7 @@ public class NGItemSword extends ItemSword {
 			} else if (stack.getItem() == NGItems.NATURE_INFESTED_SWORD) {
 				((EntityLivingBase) target).addPotionEffect(new PotionEffect(MobEffects.POISON, 180, 3, false, true));
 			} else if (stack.getItem() == NGItems.BARTZ_DAGGER) {
-				((EntityLivingBase) target).addPotionEffect(new PotionEffect(MobEffects.WITHER, 10, 2, false, true));
+				((EntityLivingBase) target).addPotionEffect(new PotionEffect(MobEffects.WITHER, 200, 2, false, true));
 			} else if (stack.getItem() == NGItems.BARTZ_WAND) {
 				((EntityLivingBase) target)
 						.addPotionEffect(new PotionEffect(MobEffects.LEVITATION, 200, 3, false, true));

@@ -12,6 +12,7 @@ import com.EPIICTHUNDERCAT.NaturesGift.Reference;
 
 import net.minecraft.util.text.Style;
 import net.minecraft.util.text.TextComponentString;
+import net.minecraft.util.text.event.ClickEvent;
 import net.minecraft.util.text.event.HoverEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.fml.common.gameevent.TickEvent.PlayerTickEvent;
@@ -71,11 +72,9 @@ public class VersionCheck implements Runnable{
 	            link.setBold(true);
 	           	link.setUnderlined(true);
 	           	link.setHoverEvent(new HoverEvent(HoverEvent.Action.SHOW_TEXT, new TextComponentString("Click here to visit the Curse page.")));
-	           	/*
-	           	 * Need to set the URL to project page once it  is created
-	           	 * 
-	           	link.setClickEvent(new ClickEvent(ClickEvent.Action.OPEN_URL, "http://mods.curse.com/mc-mods/minecraft/CHANGE_THIS"));
-	            */
+	           	
+	           	link.setClickEvent(new ClickEvent(ClickEvent.Action.OPEN_URL, "http://minecraft.curseforge.com/projects/natures-gift"));
+	            
 	            update.setStyle(link);
 	            event.player.addChatMessage(new TextComponentString("NaturesGift is not the recommended version!"));
 	            event.player.addChatMessage(update);

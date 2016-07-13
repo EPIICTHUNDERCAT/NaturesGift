@@ -1,7 +1,7 @@
 {
 	"parent": "item/generated",
 	"textures": {
-        "layer0": "hempfarmer:items/pink_diamond_mossy_shield"
+        "layer0": "naturesgift:items/pink_diamond_mossy_shield"
 	},
 	"display": {
         "thirdperson_righthand": {

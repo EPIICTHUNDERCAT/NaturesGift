@@ -1,3 +1,9 @@
+itemGroup.ngcombat=NaturesGift Combat
+itemGroup.ngspecial=NaturesGift Special
+itemGroup.ngmaterials=NaturesGift Materials
+itemGroup.ngfood=NaturesGift Food
+
+
 item.nature_stick.name=Nature Stick
 item.grass_clippings.name=Grass Clippings
 item.grass_dog.name=Grass Dog
@@ -24,4 +30,7 @@ item.sky_essence.name=Sky Essence
 item.heavy_branch.name=Heavy Branch
 item.pink_diamond_mossy_shield.name=Pink Diamond Mossy Shield
 item.empty_mossy_shield.name=Empty Mossy Shield
-
+item.heavy_branch.name=Heavy Branch
+item.moss.name=Moss
+item.iron_blade.name=Iron Blade
+item.mini_motor_blade.name=Mini Motor Blade

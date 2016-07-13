@@ -31,6 +31,13 @@ public class NGCreativeTabs extends CreativeTabs {
 			return NGItems.GOO_ESSENCE;
 		}
 	};
+	public static final NGCreativeTabs NGFood = new NGCreativeTabs(CreativeTabs.getNextID(), "ngfood") {
+		@SideOnly(Side.CLIENT)
+		public Item getTabIconItem() {
+			return NGItems.GRASS_DOG;
+		}
+	};
+	
 
 	@Override
 	public Item getTabIconItem() {

@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import com.EPIICTHUNDERCAT.NaturesGift.item.BonemealNGItem;
+import com.EPIICTHUNDERCAT.NaturesGift.item.NGDurabilityItem;
 import com.EPIICTHUNDERCAT.NaturesGift.item.NGItem;
 import com.EPIICTHUNDERCAT.NaturesGift.item.NGItemFood;
 import com.EPIICTHUNDERCAT.NaturesGift.item.NGItemSword;
@@ -13,7 +14,6 @@ import net.minecraft.client.renderer.RenderItem;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.init.Items;
 import net.minecraft.item.Item;
-import net.minecraft.item.ItemStack;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.fml.common.registry.GameRegistry;
@@ -32,7 +32,7 @@ public class NGItems extends Items {
 	public static Item LIFE_CORE = new NGItem("LIFE_CORE");
 	public static Item MOTOR = new NGItem("MOTOR");
 	public static Item STONES = new NGItem("STONES");
-	public static Item CLIPPERS = new NGItem("CLIPPERS");
+	public static Item CLIPPERS = new NGDurabilityItem("CLIPPERS", 200);
 	public static Item REDSTONE_WIRE = new NGItem("REDSTONE_WIRE");
 	public static Item PINK_DIAMOND = new NGItem("PINK_DIAMOND");
 	public static Item NATURE_ESSENCE = new NGItem("NATURE_ESSENCE");
@@ -40,13 +40,15 @@ public class NGItems extends Items {
 	public static Item BARTZ_DAGGER = new NGItemSword("BARTZ_DAGGER", NGToolMaterials.SKY_GEM);
 	public static Item BARTZ_WAND = new NGItemSword("BARTZ_WAND", NGToolMaterials.BARTZ_ESSENCE);
 	public static Item BARTZ_ESSENCE = new NGItem("BARTZ_ESSENCE");
-	public static Item HAMMER = new NGItem("HAMMER");
+	public static Item HAMMER = new NGDurabilityItem("HAMMER", 200);
 	public static Item BARTZ_INGOT = new NGItem("BARTZ_INGOT");
 	public static Item MINI_MOTOR_BLADE = new NGItem("MINI_MOTOR_BLADE");
 	public static Item HEAVY_BRANCH = new NGItem("HEAVY_BRANCH");
 	public static Item SKY_ESSENCE = new NGItem("SKY_ESSENCE");
 	public static Item PINK_DIAMOND_MOSSY_SHIELD = new NGShields("PINK_DIAMOND_MOSSY_SHIELD");
 	public static Item EMPTY_MOSSY_SHIELD = new NGShields("EMPTY_MOSSY_SHIELD");
+	public static Item IRON_BLADE = new NGItem("IRON_BLADE");
+	public static Item MOSS = new NGItem("MOSS");
 
 	private static List<Item> getItems() {
 		return items;

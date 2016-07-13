@@ -1,8 +1,8 @@
 package com.EPIICTHUNDERCAT.NaturesGift.item;
 
+import com.EPIICTHUNDERCAT.NaturesGift.Misc.NGCreativeTabs;
 import com.EPIICTHUNDERCAT.NaturesGift.init.NGItems;
 
-import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemFood;
 
@@ -12,7 +12,7 @@ public class NGItemFood extends ItemFood{
 		super(amount, saturation, isWolfFood);
 		this.setRegistryName(name);
 		this.setUnlocalizedName(name.toLowerCase());
-		this.setCreativeTab(CreativeTabs.FOOD);
+		this.setCreativeTab(NGCreativeTabs.NGFood);
 		addToItems(this);
 	}
 

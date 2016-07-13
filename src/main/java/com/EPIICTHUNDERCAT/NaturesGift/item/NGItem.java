@@ -3,8 +3,8 @@ package com.EPIICTHUNDERCAT.NaturesGift.item;
 import com.EPIICTHUNDERCAT.NaturesGift.Misc.NGCreativeTabs;
 import com.EPIICTHUNDERCAT.NaturesGift.init.NGItems;
 
-import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemStack;
 
 public class NGItem extends Item {
 

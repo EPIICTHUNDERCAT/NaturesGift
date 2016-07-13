@@ -9,7 +9,7 @@ import net.minecraft.item.ItemStack;
 public class NGItem extends Item {
 
 	public NGItem(String name) {
-		this.setRegistryName(name);
+		this.setRegistryName(name.toLowerCase());
 		this.setUnlocalizedName(name.toLowerCase());
 		this.setCreativeTab(NGCreativeTabs.NGMaterials);
 		addToItems(this);

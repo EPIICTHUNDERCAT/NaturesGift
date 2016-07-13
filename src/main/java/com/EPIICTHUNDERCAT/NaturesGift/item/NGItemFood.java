@@ -10,7 +10,7 @@ public class NGItemFood extends ItemFood{
 
 	public NGItemFood(String name, int amount, float saturation, boolean isWolfFood) {
 		super(amount, saturation, isWolfFood);
-		this.setRegistryName(name);
+		this.setRegistryName(name.toLowerCase());
 		this.setUnlocalizedName(name.toLowerCase());
 		this.setCreativeTab(NGCreativeTabs.NGFood);
 		addToItems(this);

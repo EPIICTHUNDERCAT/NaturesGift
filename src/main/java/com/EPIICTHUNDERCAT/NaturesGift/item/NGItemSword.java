@@ -15,7 +15,7 @@ import net.minecraft.util.text.translation.I18n;
 public class NGItemSword extends ItemSword {
 	public NGItemSword(String name, ToolMaterial material) {
 		super(material);
-		setRegistryName(name);
+		setRegistryName(name.toLowerCase());
 		setUnlocalizedName(name.toLowerCase());
 		addToItems(this);
 		this.setCreativeTab(NGCreativeTabs.NGCombat);

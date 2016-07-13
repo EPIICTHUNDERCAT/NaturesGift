@@ -19,7 +19,7 @@ public class NGShields extends ItemShield {
 
 	public NGShields(String name) {
 		this.maxStackSize = 1;
-		this.setRegistryName(name);
+		this.setRegistryName(name.toLowerCase());
 		this.setUnlocalizedName(name.toLowerCase());
 		addToItems(this);
 		this.setMaxDamage(1000);

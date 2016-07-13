@@ -1,0 +1,38 @@
+NAME       				RECIPE    TEXTURE/MODEL
+Nature stick			[x]			[x]	[x]
+grass clippings			[x]			[x] [x]
+grass dog				[x]			[x][x]
+magical nature stick	[x]			[x][x]
+seqs scepter			[]			[x][x]
+nature infused star		[x]			[x][x]
+goo essence				[x]			[x][x]
+nature chips			[]			[x][x]
+nature infested sword	[]			[x][x]
+Life Core				[]			[x][x]
+Motor					[]			[x][x]
+Stones					[]			[x][x]
+Clippers				[]			[x][x]
+Redstone_Wire			[]			[x][x]
+pink diamond			[]			[x][x]
+nature essence			[x]			[x][x]
+sky gem					[]			[][]
+bartz dagger			[]			[][]
+bartz wand				[]			[x][x]
+bartz essence			[]			[x][x]
+hammer					[x]			[][]
+bartz ingot				[]			[][]
+heavy branch			[]			[x][x]
+Moss					[]			[x][x]
+iron blade				[]			[][]
+mini motor blade		[]			[x][x]
+pink diamond mossyshield[x]			[x][x]
+
+
+
+
+
+ADD TREE BREAKING DROPS
+ADD TOOLS
+ADD ARMOR
+ADD ORE GEN
+ADD 

@@ -9,6 +9,7 @@ import net.minecraft.item.ItemStack;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
+import net.minecraftforge.fml.common.gameevent.TickEvent.PlayerTickEvent;
 
 public class CommonProxy {
 
@@ -36,6 +37,11 @@ public class CommonProxy {
 	public void registerRenders(FMLInitializationEvent event) {
 		// TODO Auto-generated method stub
 
+	}
+	
+	public void VersionCheck(PlayerTickEvent event) {
+		// TODO Auto-generated method stub
+		
 	}
 
 }

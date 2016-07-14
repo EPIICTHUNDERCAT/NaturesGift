@@ -6,6 +6,7 @@ import java.util.List;
 import com.EPIICTHUNDERCAT.NaturesGift.item.BonemealNGItem;
 import com.EPIICTHUNDERCAT.NaturesGift.item.NGDurabilityItem;
 import com.EPIICTHUNDERCAT.NaturesGift.item.NGItem;
+import com.EPIICTHUNDERCAT.NaturesGift.item.NGItemArmor;
 import com.EPIICTHUNDERCAT.NaturesGift.item.NGItemFood;
 import com.EPIICTHUNDERCAT.NaturesGift.item.NGItemSword;
 
@@ -13,6 +14,7 @@ import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.RenderItem;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.init.Items;
+import net.minecraft.inventory.EntityEquipmentSlot;
 import net.minecraft.item.Item;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
@@ -49,6 +51,10 @@ public class NGItems extends Items {
 	public static Item EMPTY_MOSSY_SHIELD = new NGShields("EMPTY_MOSSY_SHIELD");
 	public static Item IRON_BLADE = new NGItem("IRON_BLADE");
 	public static Item MOSS = new NGItem("MOSS");
+	public static Item PINK_DIAMOND_CHESTPLATE = new NGItemArmor("PINK_DIAMOND_CHESTPLATE", NGItemArmor.Pink_Diamond, 7, EntityEquipmentSlot.CHEST);
+	public static Item PINK_DIAMOND_HELMET = new NGItemArmor("PINK_DIAMOND_HELMET", NGItemArmor.Pink_Diamond, 7, EntityEquipmentSlot.HEAD);
+	public static Item PINK_DIAMOND_LEGGINGS = new NGItemArmor("PINK_DIAMOND_LEGGINGS", NGItemArmor.Pink_Diamond, 7, EntityEquipmentSlot.LEGS);
+	public static Item PINK_DIAMOND_BOOTS = new NGItemArmor("PINK_DIAMOND_BOOTS", NGItemArmor.Pink_Diamond, 7, EntityEquipmentSlot.FEET);
 
 	private static List<Item> getItems() {
 		return items;

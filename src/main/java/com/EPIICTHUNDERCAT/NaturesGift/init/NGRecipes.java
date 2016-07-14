@@ -92,8 +92,14 @@ public class NGRecipes {
 		// X Shaped Recipe// - Sky Gem
 		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(NGItems.SKY_GEM),
 				new Object[] { "NSN", "SDS", "NSN", 'S', "essenceSky", 'N', "essenceNature", 'D', "gemDiamond" }));
-		
-		
+		// Shaped Recipe// - Pink Diamond Helmet
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(NGItems.PINK_DIAMOND_HELMET), new Object [] { "PPP", "P P", "   ", 'P', "gemPinkDiamond", }));
+		// Shaped Recipe// - Pink Diamond ChestPlate
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(NGItems.PINK_DIAMOND_CHESTPLATE), new Object [] { "P P", "PPP", "PPP", 'P', "gemPinkDiamond", }));
+		// Shaped Recipe// - Pink Diamond Leggings
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(NGItems.PINK_DIAMOND_LEGGINGS), new Object [] { "PPP", "P P", "P P", 'P', "gemPinkDiamond", }));
+		// Shaped Recipe// - Pink Diamond Boots
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(NGItems.PINK_DIAMOND_BOOTS), new Object [] { "P P", "P P", "   ", 'P', "gemPinkDiamond", }));
 		
 		
 		

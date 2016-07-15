@@ -6,6 +6,7 @@ import com.EPIICTHUNDERCAT.NaturesGift.Misc.NGCreativeTabs;
 
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.entity.EntityLivingBase;
+import net.minecraft.init.Blocks;
 import net.minecraft.item.IItemPropertyGetter;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemShield;
@@ -36,19 +37,34 @@ public class NGShields extends ItemShield {
 		NGItems.items.add(item);
 	}
 
-	@Override
-	public String getItemStackDisplayName(ItemStack stack) {
-		return "Pink Diamond Mossy Shield";
-	}
 
 	@Override
 	@SideOnly(Side.CLIENT)
 	public CreativeTabs getCreativeTab() {
-		return NGCreativeTabs.NGSpecial;
+		return NGCreativeTabs.NGCombat;
 	}
+	
+	@Override
+	public String getItemStackDisplayName(ItemStack stack) {
+		String name;
+		if (stack.isItemEqual(new ItemStack(NGItems.PINK_DIAMOND_MOSSY_SHIELD))){
+			name = "Pink Diamond Mossy Shield";
+		}
+		else {
+			name = "Mossy Shield";
+		}
+		return name;
+    }
 
 	@Override
 	public boolean getIsRepairable(ItemStack toRepair, ItemStack repair) {
-		return repair.getItem() == NGItems.PINK_DIAMOND ? true : super.getIsRepairable(toRepair, repair);
+		Item repairItem;
+		if (toRepair.isItemEqual(new ItemStack(NGItems.PINK_DIAMOND_MOSSY_SHIELD))){
+			repairItem = NGItems.PINK_DIAMOND;
+		}
+		else {
+			repairItem = Item.getItemFromBlock(Blocks.MOSSY_COBBLESTONE);
+		}
+		return repair.getItem() == repairItem ? true : super.getIsRepairable(toRepair, repair);
 	}
 }

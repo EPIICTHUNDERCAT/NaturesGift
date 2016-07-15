@@ -136,11 +136,11 @@ public class NGRecipes {
 		OreDictionary.registerOre("gemPinkDiamond", new ItemStack(NGItems.PINK_DIAMOND));
 		OreDictionary.registerOre("woodBranch", new ItemStack(NGItems.HEAVY_BRANCH));
 
-		NGMobDrops.addMobDrop(new ItemStack(NGItems.BARTZ_ESSENCE), 15, 1, 1);
-		NGMobDrops.addMobDrop(new ItemStack(NGItems.LIFE_CORE), 10, 1, 1);
-		NGMobDrops.addMobDrop(new ItemStack(NGItems.SKY_ESSENCE), 5, 1, 1);
+		NGMobDrops.addMobDrop(new ItemStack(NGItems.BARTZ_ESSENCE), 3, 1, 1);
+		NGMobDrops.addMobDrop(new ItemStack(NGItems.LIFE_CORE), 3, 1, 1);
+		NGMobDrops.addMobDrop(new ItemStack(NGItems.SKY_ESSENCE), 2, 1, 1);
 		NGTreeDrops.addTreeDrop(new ItemStack(NGItems.HEAVY_BRANCH), 25, 1, 1);
-		NGTreeDrops.addTreeDrop(new ItemStack(NGItems.MOSS), 30, 1, 1);
+		NGTreeDrops.addTreeDrop(new ItemStack(NGItems.MOSS), 25, 1, 1);
 		NGTreeDrops.addTreeDrop(new ItemStack(NGItems.NATURE_ESSENCE), 10, 1, 1);
 	}
 

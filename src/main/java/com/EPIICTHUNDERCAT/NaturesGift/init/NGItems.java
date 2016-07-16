@@ -51,6 +51,8 @@ public class NGItems extends Items {
 	public static Item EMPTY_MOSSY_SHIELD = new NGShields("EMPTY_MOSSY_SHIELD");
 	public static Item IRON_BLADE = new NGItem("IRON_BLADE");
 	public static Item MOSS = new NGItem("MOSS");
+	public static Item NATURE_MATERIAL = new NGItem("NATURE_MATERIAL");
+	public static Item STRONG_NATURE_MATERIAL = new NGItem("STRONG_NATURE_MATERIAL");
 	public static Item PINK_DIAMOND_CHESTPLATE = new NGItemArmor("PINK_DIAMOND_CHESTPLATE", NGItemArmor.PINK_DIAMOND, 7,
 			EntityEquipmentSlot.CHEST);
 	public static Item PINK_DIAMOND_HELMET = new NGItemArmor("PINK_DIAMOND_HELMET", NGItemArmor.PINK_DIAMOND, 7,
@@ -58,6 +60,14 @@ public class NGItems extends Items {
 	public static Item PINK_DIAMOND_LEGGINGS = new NGItemArmor("PINK_DIAMOND_LEGGINGS", NGItemArmor.PINK_DIAMOND, 7,
 			EntityEquipmentSlot.LEGS);
 	public static Item PINK_DIAMOND_BOOTS = new NGItemArmor("PINK_DIAMOND_BOOTS", NGItemArmor.PINK_DIAMOND, 7,
+			EntityEquipmentSlot.FEET);
+	public static Item NATURE_INFUSED_CHESTPLATE = new NGItemArmor("NATURE_INFUSED_CHESTPLATE", NGItemArmor.PINK_DIAMOND, 7,
+			EntityEquipmentSlot.CHEST);
+	public static Item NATURE_INFUSED_HELMET = new NGItemArmor("NATURE_INFUSED_HELMET", NGItemArmor.PINK_DIAMOND, 7,
+			EntityEquipmentSlot.HEAD);
+	public static Item NATURE_INFUSED_LEGGINGS = new NGItemArmor("NATURE_INFUSED_LEGGINGS", NGItemArmor.PINK_DIAMOND, 7,
+			EntityEquipmentSlot.LEGS);
+	public static Item NATURE_INFUSED_BOOTS = new NGItemArmor("NATURE_INFUSED_BOOTS", NGItemArmor.PINK_DIAMOND, 7,
 			EntityEquipmentSlot.FEET);
 
 	private static List<Item> getItems() {

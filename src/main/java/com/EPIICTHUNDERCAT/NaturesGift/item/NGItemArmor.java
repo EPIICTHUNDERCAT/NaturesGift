@@ -13,6 +13,7 @@ public class NGItemArmor extends ItemArmor {
 
 	public static ArmorMaterial PINK_DIAMOND = EnumHelper.addArmorMaterial("PINK_DIAMOND", "naturesgift:pink_diamond",
 			200, new int[] { 3, 6, 6, 2 }, 30, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 0.0F);
+	
 
 	public NGItemArmor(String name, ArmorMaterial material, int renderIndex, EntityEquipmentSlot armorType) {
 		super(material, renderIndex, armorType);

@@ -4,6 +4,7 @@ import com.EPIICTHUNDERCAT.NaturesGift.MiscDrops.NGTreeDrops;
 import com.EPIICTHUNDERCAT.NaturesGift.Mobs.NGMobDrops;
 import com.EPIICTHUNDERCAT.NaturesGift.init.NGItems;
 import com.EPIICTHUNDERCAT.NaturesGift.init.NGRecipes;
+import com.EPIICTHUNDERCAT.NaturesGift.item.NGItemTool;
 
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.common.MinecraftForge;

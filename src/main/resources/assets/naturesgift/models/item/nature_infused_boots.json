@@ -1,7 +1,7 @@
 {
     "parent": "item/generated",
     "textures": {
-        "layer0": "naturesgift:items/nature_infested_boots"
+        "layer0": "naturesgift:items/nature_infused_boots"
  },
     "display": {
         "thirdperson": {

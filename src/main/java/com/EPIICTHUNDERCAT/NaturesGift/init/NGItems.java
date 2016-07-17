@@ -61,13 +61,21 @@ public class NGItems extends Items {
 			EntityEquipmentSlot.LEGS);
 	public static Item PINK_DIAMOND_BOOTS = new NGItemArmor("PINK_DIAMOND_BOOTS", NGItemArmor.PINK_DIAMOND, 7,
 			EntityEquipmentSlot.FEET);
-	public static Item NATURE_INFUSED_CHESTPLATE = new NGItemArmor("NATURE_INFUSED_CHESTPLATE", NGItemArmor.PINK_DIAMOND, 7,
+	public static Item NATURE_INFESTED_CHESTPLATE = new NGItemArmor("NATURE_INFESTED_CHESTPLATE", NGItemArmor.STRONG_NATURE_MATERIAL, 7,
 			EntityEquipmentSlot.CHEST);
-	public static Item NATURE_INFUSED_HELMET = new NGItemArmor("NATURE_INFUSED_HELMET", NGItemArmor.PINK_DIAMOND, 7,
+	public static Item NATURE_INFESTED_HELMET = new NGItemArmor("NATURE_INFESTED_HELMET", NGItemArmor.STRONG_NATURE_MATERIAL, 7,
 			EntityEquipmentSlot.HEAD);
-	public static Item NATURE_INFUSED_LEGGINGS = new NGItemArmor("NATURE_INFUSED_LEGGINGS", NGItemArmor.PINK_DIAMOND, 7,
+	public static Item NATURE_INFESTED_LEGGINGS = new NGItemArmor("NATURE_INFESTED_LEGGINGS", NGItemArmor.STRONG_NATURE_MATERIAL, 7,
 			EntityEquipmentSlot.LEGS);
-	public static Item NATURE_INFUSED_BOOTS = new NGItemArmor("NATURE_INFUSED_BOOTS", NGItemArmor.PINK_DIAMOND, 7,
+	public static Item NATURE_INFESTED_BOOTS = new NGItemArmor("NATURE_INFESTED_BOOTS", NGItemArmor.STRONG_NATURE_MATERIAL, 7,
+			EntityEquipmentSlot.FEET);
+	public static Item NATURE_INFUSED_CHESTPLATE = new NGItemArmor("NATURE_INFUSED_CHESTPLATE", NGItemArmor.NATURE_MATERIAL, 7,
+			EntityEquipmentSlot.CHEST);
+	public static Item NATURE_INFUSED_HELMET = new NGItemArmor("NATURE_INFUSED_HELMET", NGItemArmor.NATURE_MATERIAL, 7,
+			EntityEquipmentSlot.HEAD);
+	public static Item NATURE_INFUSED_LEGGINGS = new NGItemArmor("NATURE_INFUSED_LEGGINGS", NGItemArmor.NATURE_MATERIAL, 7,
+			EntityEquipmentSlot.LEGS);
+	public static Item NATURE_INFUSED_BOOTS = new NGItemArmor("NATURE_INFUSED_BOOTS", NGItemArmor.NATURE_MATERIAL, 7,
 			EntityEquipmentSlot.FEET);
 
 	private static List<Item> getItems() {

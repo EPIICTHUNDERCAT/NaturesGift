@@ -12,8 +12,12 @@ import net.minecraftforge.common.util.EnumHelper;
 public class NGItemArmor extends ItemArmor {
 
 	public static ArmorMaterial PINK_DIAMOND = EnumHelper.addArmorMaterial("PINK_DIAMOND", "naturesgift:pink_diamond",
-			200, new int[] { 3, 6, 6, 2 }, 30, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 0.0F);
-	
+			150, new int[] { 3, 6, 8, 2 }, 30, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 5.0F);
+	public static ArmorMaterial STRONG_NATURE_MATERIAL = EnumHelper.addArmorMaterial("STRONG_NATURE_MATERIAL",
+			"naturesgift:strong_nature_material", 100, new int[] { 2, 6, 5, 3 }, 30,
+			SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 3.0F);
+	public static ArmorMaterial NATURE_MATERIAL = EnumHelper.addArmorMaterial("NATURE_MATERIAL",
+			"naturesgift:nature_material", 5, new int[] { 1, 2, 3, 1 }, 15, SoundEvents.ITEM_ARMOR_EQUIP_LEATHER, 0.0F);
 
 	public NGItemArmor(String name, ArmorMaterial material, int renderIndex, EntityEquipmentSlot armorType) {
 		super(material, renderIndex, armorType);

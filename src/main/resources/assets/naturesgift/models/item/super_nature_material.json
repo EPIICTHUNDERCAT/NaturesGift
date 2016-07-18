@@ -1,6 +1,0 @@
-{
-    "parent": "item/generated",
-    "textures": {
-        "layer0": "naturesgift:items/super_nature_material"
-    }
-}

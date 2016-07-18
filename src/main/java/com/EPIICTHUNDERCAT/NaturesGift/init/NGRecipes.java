@@ -114,8 +114,34 @@ public class NGRecipes {
 		GameRegistry.addShapelessRecipe(new ItemStack(Items.STICK, 4), new ItemStack(NGItems.HEAVY_BRANCH));
 		// Shaped Recipe// - Feather
 		GameRegistry.addShapedRecipe(new ItemStack(Items.FEATHER), "S  ", " S ", "  S", 'S', new ItemStack(NGItems.SKY_ESSENCE));
+		// Shaped Recipe// - Nature Material
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(NGItems.NATURE_MATERIAL), new Object [] { "CMC", "EWE", "CMC", 'C', "natureChips", 'M', "mossMoss", 'E', "essenceNature", 'W', new ItemStack(Blocks.WOOL) }));
+		// Shaped Recipe// - Strong Nature Material
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(NGItems.STRONG_NATURE_MATERIAL), new Object [] { "CNT", "NGN", "SNC", 'T', "treeSapling", 'C', "blockCactus", 'S', "sugarcane", 'N', "natureMaterial", 'G', "gemSky" }));
+		// Shaped Recipe// - Nature Infested Helmet
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(NGItems.NATURE_INFESTED_HELMET), new Object [] { "NNN", "NSN", "   ", 'N', "strongNatureMaterial", 'S', "essenceSky" }));
+		// Shaped Recipe// - Nature Infested ChestPlate
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(NGItems.NATURE_INFESTED_CHESTPLATE), new Object [] { "NSN", "NNN", "NNN", 'N', "strongNatureMaterial", 'S', "essenceSky" }));
+		// Shaped Recipe// - Nature Infested Leggings
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(NGItems.NATURE_INFESTED_LEGGINGS), new Object [] { "NNN", "NSN", "N N", 'N', "strongNatureMaterial", 'S', "essenceSky" }));
+		// Shaped Recipe// - Nature Infested Boots
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(NGItems.NATURE_INFESTED_BOOTS), new Object [] { "NSN", "N N", "   ", 'N', "strongNatureMaterial", 'S', "essenceSky" }));
+		// Shaped Recipe// - Nature Infused Helmet
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(NGItems.NATURE_INFUSED_HELMET), new Object [] { "NNN", "N N", "   ", 'N', "natureMaterial" }));
+		// Shaped Recipe// - Nature Infused Chestplate
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(NGItems.NATURE_INFUSED_CHESTPLATE), new Object [] { "N N", "NNN", "NNN", 'N', "natureMaterial" }));
+		// Shaped Recipe// - Nature Infused Leggings
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(NGItems.NATURE_INFUSED_LEGGINGS), new Object [] { "NNN", "N N", "N N", 'N', "natureMaterial" }));
+		// Shaped Recipe// - Nature Infused Boots
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(NGItems.NATURE_INFUSED_BOOTS), new Object [] { "N N", "N N", "   ", 'N', "natureMaterial" }));
 		
-
+		
+		
+		
+		
+		
+		
+		
 		OreDictionary.registerOre("grassClippings", new ItemStack(NGItems.GRASS_CLIPPINGS));
 		OreDictionary.registerOre("essenceGoo", new ItemStack(NGItems.GOO_ESSENCE));
 		OreDictionary.registerOre("natureChips", new ItemStack(NGItems.NATURE_CHIPS));
@@ -135,12 +161,14 @@ public class NGRecipes {
 		OreDictionary.registerOre("ironBlade", new ItemStack(NGItems.IRON_BLADE));
 		OreDictionary.registerOre("gemPinkDiamond", new ItemStack(NGItems.PINK_DIAMOND));
 		OreDictionary.registerOre("woodBranch", new ItemStack(NGItems.HEAVY_BRANCH));
+		OreDictionary.registerOre("strongNatureMaterial", new ItemStack(NGItems.STRONG_NATURE_MATERIAL));
+		OreDictionary.registerOre("natureMaterial", new ItemStack(NGItems.NATURE_MATERIAL));
 
 		NGMobDrops.addMobDrop(new ItemStack(NGItems.BARTZ_ESSENCE), 3, 1, 1);
 		NGMobDrops.addMobDrop(new ItemStack(NGItems.LIFE_CORE), 3, 1, 1);
-		NGMobDrops.addMobDrop(new ItemStack(NGItems.SKY_ESSENCE), 2, 1, 1);
-		NGTreeDrops.addTreeDrop(new ItemStack(NGItems.HEAVY_BRANCH), 25, 1, 1);
-		NGTreeDrops.addTreeDrop(new ItemStack(NGItems.MOSS), 25, 1, 1);
+		NGMobDrops.addMobDrop(new ItemStack(NGItems.SKY_ESSENCE), 1, 1, 1);
+		NGTreeDrops.addTreeDrop(new ItemStack(NGItems.HEAVY_BRANCH), 10, 1, 1);
+		NGTreeDrops.addTreeDrop(new ItemStack(NGItems.MOSS), 10, 1, 1);
 		NGTreeDrops.addTreeDrop(new ItemStack(NGItems.NATURE_ESSENCE), 10, 1, 1);
 	}
 

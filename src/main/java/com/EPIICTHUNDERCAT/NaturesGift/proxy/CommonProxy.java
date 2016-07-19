@@ -2,6 +2,7 @@ package com.EPIICTHUNDERCAT.NaturesGift.proxy;
 
 import com.EPIICTHUNDERCAT.NaturesGift.MiscDrops.NGTreeDrops;
 import com.EPIICTHUNDERCAT.NaturesGift.Mobs.NGMobDrops;
+import com.EPIICTHUNDERCAT.NaturesGift.init.NGBlocks;
 import com.EPIICTHUNDERCAT.NaturesGift.init.NGItems;
 import com.EPIICTHUNDERCAT.NaturesGift.init.NGRecipes;
 import com.EPIICTHUNDERCAT.NaturesGift.item.NGItemTool;
@@ -29,6 +30,7 @@ public class CommonProxy {
 		MinecraftForge.addGrassSeed(new ItemStack(NGItems.GRASS_CLIPPINGS), 10);
 		MinecraftForge.addGrassSeed(new ItemStack(NGItems.NATURE_ESSENCE), 10);
 		NGRecipes.register(preEvent);
+		NGBlocks.register(preEvent);
 		MinecraftForge.EVENT_BUS.register(new NGMobDrops());
 		MinecraftForge.EVENT_BUS.register(new NGTreeDrops());
 		// TODO Auto-generated method stub

@@ -1,12 +1,6 @@
 {
-    "parent": "block/cube",
+    "parent": "block/cube_all",
     "textures": {
-        "particle": "naturesgift:blocks/pink_diamond_block",
-        "down": "naturesgift:blocks/pink_diamond_block",
-        "up": "naturesgift:blocks/pink_diamond_block",
-        "north": "naturesgift:blocks/pink_diamond_block",
-        "east": "naturesgift:blocks/pink_diamond_block",
-        "south": "naturesgift:blocks/pink_diamond_block",
-        "west": "naturesgift:blocks/pink_diamond_block"
+        "all": "naturesgift:blocks/pink_diamond_block"
     }
 }

@@ -1,5 +1,6 @@
 package com.EPIICTHUNDERCAT.NaturesGift.proxy;
 
+import com.EPIICTHUNDERCAT.NaturesGift.init.NGBlocks;
 import com.EPIICTHUNDERCAT.NaturesGift.init.NGItems;
 import com.EPIICTHUNDERCAT.NaturesGift.util.VersionCheck;
 
@@ -23,7 +24,7 @@ public class ClientProxy extends CommonProxy{
 	@Override
 	public void registerRenders(FMLInitializationEvent event) {
 	NGItems.registerRender(event);
-	// TODO Auto-generated method stub
+	NGBlocks.registerRender(event);
 	}
 	
 	@Override

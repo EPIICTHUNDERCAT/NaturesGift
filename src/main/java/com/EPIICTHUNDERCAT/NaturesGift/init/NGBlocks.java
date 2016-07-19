@@ -3,10 +3,11 @@ package com.EPIICTHUNDERCAT.NaturesGift.init;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.EPIICTHUNDERCAT.NaturesGift.Blocks.NGBlockMaterial;
-import com.EPIICTHUNDERCAT.NaturesGift.Blocks.PreciousBlocks.PinkDiamondBlock;
+import com.EPIICTHUNDERCAT.NaturesGift.block.NGBlock;
+import com.EPIICTHUNDERCAT.NaturesGift.block.material.NGMaterial;
 
 import net.minecraft.block.Block;
+import net.minecraft.block.material.Material;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.RenderItem;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
@@ -19,28 +20,23 @@ import net.minecraftforge.fml.common.registry.GameRegistry;
 
 public class NGBlocks extends Blocks{
 	
-	public static List<Item> items = new ArrayList();
-
 	public static List<Block> blocks = new ArrayList();
-	public static Block Pink_Diamond_Block = new PinkDiamondBlock(NGBlockMaterial.PINK_DIAMOND, "pink_diamond_block");
 	
+	public static Block PINK_DIAMOND_BLOCK = new NGBlock("PINK_DIAMOND_BLOCK", NGMaterial.PINK_DIAMOND);
 	
-	
-	public static List<Block> blockList(){
+	public static List<Block> blockList() {
 		return blocks;		
 	}
 	
 	public static void register(FMLPreInitializationEvent preEvent) {
 		for (Block block : blockList()){
 			ItemBlock iBlock = new ItemBlock(block);
-			if (block.getRegistryName().toString().endsWith("_crop")){
-				iBlock.setMaxStackSize(1);
-			}
 			GameRegistry.register(block);
 		    GameRegistry.register(iBlock, block.getRegistryName());
 		}
 	}
-	public static void registerRender(FMLInitializationEvent event){
+	
+	public static void registerRender(FMLInitializationEvent event) {
 		for (Block block : blockList()){
 		Item item = new Item().getItemFromBlock(block);
 		RenderItem renderItem = Minecraft.getMinecraft().getRenderItem();

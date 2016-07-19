@@ -12,4 +12,13 @@ public class NGToolMaterials {
 	public static ToolMaterial NATURE_MATERIAL = EnumHelper.addToolMaterial("NATURE_MATERIAL", 1, 250, 6.0F, 4.0F, 20);
 	public static ToolMaterial STRONG_NATURE_MATERIAL = EnumHelper.addToolMaterial("STRONG_NATURE_MATERIAL", 3, 2500,
 			10.0F, 12.0F, 30);
+	
+	public float getDamageVsEntity() {
+		
+		return 0;
+	}
+	public int getMaxUses() {
+	
+		return 0;
+	}
 }

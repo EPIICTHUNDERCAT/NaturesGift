@@ -9,6 +9,7 @@ import com.EPIICTHUNDERCAT.NaturesGift.item.NGItem;
 import com.EPIICTHUNDERCAT.NaturesGift.item.NGItemArmor;
 import com.EPIICTHUNDERCAT.NaturesGift.item.NGItemFood;
 import com.EPIICTHUNDERCAT.NaturesGift.item.NGItemSword;
+import com.EPIICTHUNDERCAT.NaturesGift.item.NGNatureHoe;
 
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.RenderItem;
@@ -87,6 +88,12 @@ public class NGItems extends Items {
 			EntityEquipmentSlot.LEGS);
 	public static Item NATURE_INFUSED_BOOTS = new NGItemArmor("NATURE_INFUSED_BOOTS", NGItemArmor.NATURE_MATERIAL, 7,
 			EntityEquipmentSlot.FEET);
+	
+	//Tools//
+	public static Item NATURE_HOE = new NGNatureHoe("NATURE_HOE", NGToolMaterials.NATURE_MATERIAL);
+	
+	
+	
 
 	private static List<Item> getItems() {
 		return items;

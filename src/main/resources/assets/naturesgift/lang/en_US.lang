@@ -48,3 +48,6 @@ item.nature_infused_helmet.name=Nature Infused Helmet
 item.nature_infused_chestplate.name=Nature Infused Chestplate
 item.nature_infused_leggings.name=Nature Infused Leggings
 item.nature_infused_boots.name=Nature Infused Boots
+
+
+tile.pink_diamond_block.name=Pink Diamond Block

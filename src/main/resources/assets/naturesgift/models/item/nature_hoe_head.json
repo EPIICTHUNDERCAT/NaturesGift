@@ -2,5 +2,27 @@
     "parent": "item/handheld",
     "textures": {
         "layer0": "naturesgift:items/nature_hoe_head"
+    },
+    "display": {
+        "thirdperson_righthand": {
+            "rotation": [ 150, 90, -90 ],
+            "translation": [ 0, 5, 3 ],
+            "scale": [ -0.8, 0.8, 0.8 ]
+        },
+		"thirdperson_lefthand": {
+            "rotation": [ 150, 90, -90 ],
+            "translation": [ 0, 5, 3 ],
+            "scale": [ 0.8, 0.8, 0.8 ]
+        },
+        "firstperson_righthand": {
+            "rotation": [ 0, -90, 0 ],
+            "translation": [ 0, 2.4, 0 ],
+            "scale": [ 0.8, 0.8, 0.8 ]
+        },
+		"firstperson_lefthand": {
+            "rotation": [ 0, 90, 0 ],
+            "translation": [ 0, 2.4, 0 ],
+            "scale": [ 0.8, 0.8, 0.8 ]
+        }
     }
 }

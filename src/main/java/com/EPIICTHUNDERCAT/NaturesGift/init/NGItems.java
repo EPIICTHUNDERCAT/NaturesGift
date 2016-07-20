@@ -9,7 +9,9 @@ import com.EPIICTHUNDERCAT.NaturesGift.item.NGItem;
 import com.EPIICTHUNDERCAT.NaturesGift.item.NGItemArmor;
 import com.EPIICTHUNDERCAT.NaturesGift.item.NGItemFood;
 import com.EPIICTHUNDERCAT.NaturesGift.item.NGItemSword;
-import com.EPIICTHUNDERCAT.NaturesGift.item.NGNatureHoe;
+import com.EPIICTHUNDERCAT.NaturesGift.item.Tools.NGNatureAxe;
+import com.EPIICTHUNDERCAT.NaturesGift.item.Tools.NGNatureHoe;
+import com.EPIICTHUNDERCAT.NaturesGift.item.Tools.NGNaturePickaxe;
 
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.RenderItem;
@@ -91,8 +93,8 @@ public class NGItems extends Items {
 	
 	//Tools//
 	public static Item NATURE_HOE = new NGNatureHoe("NATURE_HOE", NGToolMaterials.NATURE_MATERIAL);
-	
-	
+	public static Item NATURE_AXE = new NGNatureAxe("NATURE_AXE", NGToolMaterials.NATURE_MATERIAL);
+	public static Item NATURE_PICKAXE = new NGNaturePickaxe("NATURE_PICKAXEAXE", NGToolMaterials.NATURE_MATERIAL);
 	
 
 	private static List<Item> getItems() {

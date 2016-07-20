@@ -1,4 +1,4 @@
-package com.EPIICTHUNDERCAT.NaturesGift.item;
+package com.EPIICTHUNDERCAT.NaturesGift.item.Tools;
 
 import com.EPIICTHUNDERCAT.NaturesGift.Misc.NGCreativeTabs;
 import com.EPIICTHUNDERCAT.NaturesGift.init.NGItems;

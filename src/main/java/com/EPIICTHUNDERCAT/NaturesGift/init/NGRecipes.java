@@ -92,32 +92,32 @@ public class NGRecipes {
 		// X Shaped Recipe// - Sky Gem
 		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(NGItems.SKY_GEM),
 				new Object[] { "NSN", "SDS", "NSN", 'S', "essenceSky", 'N', "essenceNature", 'D', "gemDiamond" }));
-		// Shaped Recipe// - Pink Diamond Helmet
-		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(NGItems.PINK_DIAMOND_HELMET), new Object [] { "PPP", "P P", "   ", 'P', "gemPinkDiamond", }));
-		// Shaped Recipe// - Pink Diamond ChestPlate
-		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(NGItems.PINK_DIAMOND_CHESTPLATE), new Object [] { "P P", "PPP", "PPP", 'P', "gemPinkDiamond", }));
-		// Shaped Recipe// - Pink Diamond Leggings
-		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(NGItems.PINK_DIAMOND_LEGGINGS), new Object [] { "PPP", "P P", "P P", 'P', "gemPinkDiamond", }));
-		// Shaped Recipe// - Pink Diamond Boots
-		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(NGItems.PINK_DIAMOND_BOOTS), new Object [] { "P P", "P P", "   ", 'P', "gemPinkDiamond", }));
-		
+		// Shaped Recipe// - Nature Material
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(NGItems.NATURE_MATERIAL), new Object [] { "CMC", "EWE", "CMC", 'C', "natureChips", 'M', "mossMoss", 'E', "essenceNature", 'W', new ItemStack(Blocks.WOOL) }));
+		// Shaped Recipe// - Strong Nature Material
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(NGItems.STRONG_NATURE_MATERIAL), new Object [] { "CNT", "NGN", "SNC", 'T', "treeSapling", 'C', "blockCactus", 'S', "sugarcane", 'N', "natureMaterial", 'G', "gemSky" }));
+				
+	
 		
 		
 		
 		
 		//Added Vanilla Recipes//
+		
 		// Shapeless Recipe// - Seeds
 		GameRegistry.addShapelessRecipe(new ItemStack(Items.WHEAT_SEEDS), new ItemStack(NGItems.GRASS_CLIPPINGS));
 		// Shaped Recipe// - Seeds2
-		GameRegistry.addShapedRecipe(new ItemStack(Items.WHEAT_SEEDS), "NNN", "   ", "   ", 'N', new ItemStack(NGItems.NATURE_ESSENCE));
+		GameRegistry.addShapedRecipe(new ItemStack(Items.WHEAT_SEEDS, 12), "NNN", "   ", "   ", 'N', new ItemStack(NGItems.NATURE_ESSENCE));
 		// Shapeless Recipe// - Sticks		
 		GameRegistry.addShapelessRecipe(new ItemStack(Items.STICK, 4), new ItemStack(NGItems.HEAVY_BRANCH));
 		// Shaped Recipe// - Feather
-		GameRegistry.addShapedRecipe(new ItemStack(Items.FEATHER), "S  ", " S ", "  S", 'S', new ItemStack(NGItems.SKY_ESSENCE));
-		// Shaped Recipe// - Nature Material
-		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(NGItems.NATURE_MATERIAL), new Object [] { "CMC", "EWE", "CMC", 'C', "natureChips", 'M', "mossMoss", 'E', "essenceNature", 'W', new ItemStack(Blocks.WOOL) }));
-		// Shaped Recipe// - Strong Nature Material
-		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(NGItems.STRONG_NATURE_MATERIAL), new Object [] { "CNT", "NGN", "SNC", 'T', "treeSapling", 'C', "blockCactus", 'S', "sugarcane", 'N', "natureMaterial", 'G', "gemSky" }));
+		GameRegistry.addShapedRecipe(new ItemStack(Items.FEATHER, 6), "S  ", " S ", "  S", 'S', new ItemStack(NGItems.SKY_ESSENCE));
+		
+		
+		
+		
+		//ARMORS//
+		
 		// Shaped Recipe// - Nature Infested Helmet
 		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(NGItems.NATURE_INFESTED_HELMET), new Object [] { "NNN", "NSN", "   ", 'N', "strongNatureMaterial", 'S', "essenceSky" }));
 		// Shaped Recipe// - Nature Infested ChestPlate
@@ -134,6 +134,14 @@ public class NGRecipes {
 		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(NGItems.NATURE_INFUSED_LEGGINGS), new Object [] { "NNN", "N N", "N N", 'N', "natureMaterial" }));
 		// Shaped Recipe// - Nature Infused Boots
 		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(NGItems.NATURE_INFUSED_BOOTS), new Object [] { "N N", "N N", "   ", 'N', "natureMaterial" }));
+		// Shaped Recipe// - Pink Diamond Helmet
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(NGItems.PINK_DIAMOND_HELMET), new Object [] { "PPP", "P P", "   ", 'P', "gemPinkDiamond", }));
+		// Shaped Recipe// - Pink Diamond ChestPlate
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(NGItems.PINK_DIAMOND_CHESTPLATE), new Object [] { "P P", "PPP", "PPP", 'P', "gemPinkDiamond", }));
+		// Shaped Recipe// - Pink Diamond Leggings
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(NGItems.PINK_DIAMOND_LEGGINGS), new Object [] { "PPP", "P P", "P P", 'P', "gemPinkDiamond", }));
+		// Shaped Recipe// - Pink Diamond Boots
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(NGItems.PINK_DIAMOND_BOOTS), new Object [] { "P P", "P P", "   ", 'P', "gemPinkDiamond", }));
 		
 		
 		

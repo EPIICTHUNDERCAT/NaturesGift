@@ -21,7 +21,7 @@ item.stones.name=Stones
 item.clippers.name=Clippers
 item.nature_essence.name=Nature Essence
 item.sky_gem.name=Sky Gem
-item.bartz_dagger.name=Bartz_Dagger
+item.bartz_dagger.name=Bartz Dagger
 item.bartz_wand.name=Bartz Wand
 item.bartz_essence.name=Bartz Essence
 item.hammer.name=Hammer
@@ -48,6 +48,14 @@ item.nature_infused_helmet.name=Nature Infused Helmet
 item.nature_infused_chestplate.name=Nature Infused Chestplate
 item.nature_infused_leggings.name=Nature Infused Leggings
 item.nature_infused_boots.name=Nature Infused Boots
+item.nature_infested_axe.name=Nature Infested Axe
+item.nature_infested_pickaxe.name=Nature Infested Pickaxe
+item.nature_infested_shovel.name=Nature Infested Shovel
+item.nature_infested_hoe.name=Nature Infested Hoe
+item.nature_pickaxe.name=Nature Pickaxe
+item.nature_axe.name=Nature Axe
+item.nature_shovel.name=Nature Shovel
+item.nature_hoe.name=Nature Hoe
 
 
 tile.pink_diamond_block.name=Pink Diamond Block

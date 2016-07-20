@@ -6,11 +6,12 @@ import com.EPIICTHUNDERCAT.NaturesGift.init.NGItems;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemAxe;
 import net.minecraft.item.ItemStack;
+import net.minecraft.item.Item.ToolMaterial;
 
-public class NGNatureAxe extends ItemAxe {
+public class NatureInfestedAxe extends ItemAxe{
 
-	public NGNatureAxe(String name, ToolMaterial material) {
-		super(material, 2.0f, 2.0f);
+	public NatureInfestedAxe(String name, ToolMaterial material) {
+		super(material, 6.0f, 6.0f);
 		setRegistryName(name.toLowerCase());
 		setUnlocalizedName(name.toLowerCase());
 		addToItems(this);
@@ -24,9 +25,10 @@ public class NGNatureAxe extends ItemAxe {
 	}
 
 	public boolean getIsRepairable(ItemStack toRepair, ItemStack repair) {
-		if (toRepair.getItem() == NGItems.NATURE_AXE) {
-			return repair.getItem() == NGItems.NATURE_MATERIAL;
+		if (toRepair.getItem() == NGItems.NATURE_INFESTED_AXE) {
+			return repair.getItem() == NGItems.STRONG_NATURE_MATERIAL;
 		}
 		return false;
 	}
+
 }

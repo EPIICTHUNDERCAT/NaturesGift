@@ -4,29 +4,23 @@ import com.EPIICTHUNDERCAT.NaturesGift.Misc.NGCreativeTabs;
 import com.EPIICTHUNDERCAT.NaturesGift.init.NGItems;
 
 import net.minecraft.item.Item;
-import net.minecraft.item.ItemAxe;
-import net.minecraft.item.ItemStack;
+import net.minecraft.item.ItemPickaxe;
+import net.minecraft.item.Item.ToolMaterial;
 
-public class NGNatureAxe extends ItemAxe {
-
-	public NGNatureAxe(String name, ToolMaterial material) {
-		super(material, 2.0f, 2.0f);
+public class NatureInfestedPickaxe extends ItemPickaxe{
+	
+	public NatureInfestedPickaxe(String name, ToolMaterial material) {
+		super(material);
 		setRegistryName(name.toLowerCase());
 		setUnlocalizedName(name.toLowerCase());
 		addToItems(this);
 		this.setCreativeTab(NGCreativeTabs.NGCombat);
+		
 	}
-
 	private void addToItems(Item item) {
 
 		NGItems.items.add(item);
 
 	}
 
-	public boolean getIsRepairable(ItemStack toRepair, ItemStack repair) {
-		if (toRepair.getItem() == NGItems.NATURE_AXE) {
-			return repair.getItem() == NGItems.NATURE_MATERIAL;
-		}
-		return false;
-	}
 }

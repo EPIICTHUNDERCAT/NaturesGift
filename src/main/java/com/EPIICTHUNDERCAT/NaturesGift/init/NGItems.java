@@ -12,6 +12,7 @@ import com.EPIICTHUNDERCAT.NaturesGift.item.NGItemSword;
 import com.EPIICTHUNDERCAT.NaturesGift.item.Tools.NGNatureAxe;
 import com.EPIICTHUNDERCAT.NaturesGift.item.Tools.NGNatureHoe;
 import com.EPIICTHUNDERCAT.NaturesGift.item.Tools.NGNaturePickaxe;
+import com.EPIICTHUNDERCAT.NaturesGift.item.Tools.NGNatureShovel;
 
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.RenderItem;
@@ -94,7 +95,13 @@ public class NGItems extends Items {
 	//Tools//
 	public static Item NATURE_HOE = new NGNatureHoe("NATURE_HOE", NGToolMaterials.NATURE_MATERIAL);
 	public static Item NATURE_AXE = new NGNatureAxe("NATURE_AXE", NGToolMaterials.NATURE_MATERIAL);
-	public static Item NATURE_PICKAXE = new NGNaturePickaxe("NATURE_PICKAXEAXE", NGToolMaterials.NATURE_MATERIAL);
+	public static Item NATURE_PICKAXE = new NGNaturePickaxe("NATURE_PICKAXE", NGToolMaterials.NATURE_MATERIAL);
+	public static Item NATURE_SHOVEL = new NGNatureShovel("NATURE_SHOVEL", NGToolMaterials.NATURE_MATERIAL);
+	//Parts//
+	public static Item NATURE_HOE_HEAD = new NGItem("NATURE_HOE_HEAD");
+	public static Item NATURE_AXE_HEAD = new NGItem("NATURE_AXE_HEAD");
+	public static Item NATURE_PICKAXE_HEAD = new NGItem("NATURE_PICKAXE_HEAD");
+	public static Item NATURE_SHOVEL_HEAD = new NGItem("NATURE_SHOVEL_HEAD");
 	
 
 	private static List<Item> getItems() {

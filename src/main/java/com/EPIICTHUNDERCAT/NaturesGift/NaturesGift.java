@@ -1,11 +1,13 @@
 package com.EPIICTHUNDERCAT.NaturesGift;
 
+import com.EPIICTHUNDERCAT.NaturesGift.Misc.NGAchievement;
+import com.EPIICTHUNDERCAT.NaturesGift.init.NGItems;
 import com.EPIICTHUNDERCAT.NaturesGift.proxy.CommonProxy;
 import com.EPIICTHUNDERCAT.NaturesGift.util.VersionCheck;
 
-import net.minecraft.entity.monster.EntityZombie;
+import net.minecraft.item.ItemStack;
 import net.minecraftforge.common.config.Configuration;
-import net.minecraftforge.event.entity.living.LivingDropsEvent;
+import net.minecraftforge.event.entity.player.EntityItemPickupEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
 import net.minecraftforge.fml.common.Mod.Instance;
@@ -30,7 +32,7 @@ public class NaturesGift {
 	public static String latest;
 	public static boolean isLatest;
 	public static boolean warned;
-	
+
 	@EventHandler
 	private void preInit(FMLPreInitializationEvent preEvent) {
 		proxy.preInit(preEvent);
@@ -40,11 +42,21 @@ public class NaturesGift {
 	private void init(FMLInitializationEvent event) {
 		proxy.init(event);
 	}
-	
-	@SubscribeEvent(priority=EventPriority.NORMAL, receiveCanceled=true)
-    public void onPlayerTick(PlayerTickEvent event) {
+
+	@SubscribeEvent(priority = EventPriority.NORMAL, receiveCanceled = true)
+	public void onPlayerTick(PlayerTickEvent event) {
 		proxy.VersionCheck(event);
-    }
+	}
+
+	@SubscribeEvent
+	public void onItemPickup(EntityItemPickupEvent event) {
+
+if(event.getItem().getEntityItem().isItemEqual((new ItemStack(NGItems.GRASS_CLIPPINGS)))) {
+
+	event.getEntityPlayer().addStat(NGAchievement.YouBrokeGrass, 1);
+
+	
+	}
 
 	/*
 	@SubscribeEvent
@@ -54,4 +66,4 @@ public class NaturesGift {
 	}
 	*/
 
-}
+}}

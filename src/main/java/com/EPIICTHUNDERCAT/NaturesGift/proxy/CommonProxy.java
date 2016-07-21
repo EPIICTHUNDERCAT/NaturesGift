@@ -1,13 +1,14 @@
 package com.EPIICTHUNDERCAT.NaturesGift.proxy;
 
+import com.EPIICTHUNDERCAT.NaturesGift.Misc.NGAchievement;
 import com.EPIICTHUNDERCAT.NaturesGift.MiscDrops.NGTreeDrops;
 import com.EPIICTHUNDERCAT.NaturesGift.Mobs.NGMobDrops;
 import com.EPIICTHUNDERCAT.NaturesGift.init.NGBlocks;
 import com.EPIICTHUNDERCAT.NaturesGift.init.NGItems;
 import com.EPIICTHUNDERCAT.NaturesGift.init.NGRecipes;
-import com.EPIICTHUNDERCAT.NaturesGift.item.NGItemTool;
 
 import net.minecraft.item.ItemStack;
+import net.minecraftforge.common.AchievementPage;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
@@ -22,8 +23,10 @@ public class CommonProxy {
 
 	public void init(FMLInitializationEvent event) {
 		registerRenders(event);
-
-	}
+	
+		AchievementPage.registerAchievementPage(NGAchievement.NGAchievePage);
+}
+	
 
 	private void register(FMLPreInitializationEvent preEvent) {
 		NGItems.register(preEvent);
@@ -41,10 +44,10 @@ public class CommonProxy {
 		// TODO Auto-generated method stub
 
 	}
-	
+
 	public void VersionCheck(PlayerTickEvent event) {
 		// TODO Auto-generated method stub
-		
+
 	}
 
 }

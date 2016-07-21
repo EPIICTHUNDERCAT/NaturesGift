@@ -10,8 +10,8 @@ public class NGToolMaterials {
 	public static ToolMaterial BARTZ_ESSENCE = EnumHelper.addToolMaterial("BARTZ_ESSENCE", 2, 800, 2.0F, 1.0F, 10);
 	public static ToolMaterial PINK_DIAMOND = EnumHelper.addToolMaterial("PINK_DIAMOND", 3, 5000, 10.0F, 10.0F, 30);
 	public static ToolMaterial NATURE_MATERIAL = EnumHelper.addToolMaterial("NATURE_MATERIAL", 2, 510, 1.0F, 1.0F, 20);
-	public static ToolMaterial STRONG_NATURE_MATERIAL = EnumHelper.addToolMaterial("STRONG_NATURE_MATERIAL", 3, 2500,
-			10.0F, 12.0F, 30);
+	public static ToolMaterial STRONG_NATURE_MATERIAL = EnumHelper.addToolMaterial("STRONG_NATURE_MATERIAL", 3, 1200,
+			14.0F, 4.0F, 30);
 	
 	public float getDamageVsEntity() {
 		

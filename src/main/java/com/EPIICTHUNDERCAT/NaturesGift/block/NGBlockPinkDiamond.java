@@ -8,6 +8,6 @@ public class NGBlockPinkDiamond extends NGBlock{
 
 	public NGBlockPinkDiamond(String name) {
 		super(name, NGMaterial.PINK_DIAMOND);
-		this.setHardness(5.0F);
+		this.setHardness(3.0F);
 		}
 }

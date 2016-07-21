@@ -1,11 +1,14 @@
 package com.EPIICTHUNDERCAT.NaturesGift.item.Tools;
 
+import com.EPIICTHUNDERCAT.NaturesGift.Misc.NGAchievement;
 import com.EPIICTHUNDERCAT.NaturesGift.Misc.NGCreativeTabs;
 import com.EPIICTHUNDERCAT.NaturesGift.init.NGItems;
 
+import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemAxe;
 import net.minecraft.item.ItemStack;
+import net.minecraft.world.World;
 import net.minecraft.item.Item.ToolMaterial;
 
 public class NatureInfestedAxe extends ItemAxe{
@@ -31,4 +34,9 @@ public class NatureInfestedAxe extends ItemAxe{
 		return false;
 	}
 
+	@Override
+    public void onCreated(final ItemStack item, final World world, final EntityPlayer crafter) {
+        super.onCreated(item, world, crafter);
+        crafter.addStat(NGAchievement.InfestedAxe, 1);
+    }
 }

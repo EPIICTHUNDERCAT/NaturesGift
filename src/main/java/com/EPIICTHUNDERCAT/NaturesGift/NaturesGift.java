@@ -8,6 +8,7 @@ import com.EPIICTHUNDERCAT.NaturesGift.util.VersionCheck;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.common.config.Configuration;
 import net.minecraftforge.event.entity.player.EntityItemPickupEvent;
+import net.minecraftforge.fml.common.FMLLog;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
 import net.minecraftforge.fml.common.Mod.Instance;
@@ -51,19 +52,32 @@ public class NaturesGift {
 	@SubscribeEvent
 	public void onItemPickup(EntityItemPickupEvent event) {
 
-if(event.getItem().getEntityItem().isItemEqual((new ItemStack(NGItems.GRASS_CLIPPINGS)))) {
+		FMLLog.info(Reference.ID + "Event Handler called");
 
-	event.getEntityPlayer().addStat(NGAchievement.YouBrokeGrass, 1);
+		if (event.getItem().getEntityItem().isItemEqual((new ItemStack(NGItems.GRASS_CLIPPINGS)))) {
+			FMLLog.info(Reference.ID + "Event Handler called");
+			event.getEntityPlayer().addStat(NGAchievement.YouBrokeGrass, 1); }
+			
+			else if (event.getItem().getEntityItem().isItemEqual((new ItemStack(NGItems.NATURE_ESSENCE)))) {
+				event.getEntityPlayer().addStat(NGAchievement.ThisIsOdd, 1);}
+		
+				else if (event.getItem().getEntityItem().isItemEqual((new ItemStack(NGItems.LIFE_CORE)))) {
+					event.getEntityPlayer().addStat(NGAchievement.LifeCore, 1);}
+		
+					else if (event.getItem().getEntityItem().isItemEqual((new ItemStack(NGItems.SKY_ESSENCE)))) {
+						event.getEntityPlayer().addStat(NGAchievement.SkyEssence, 1);}
+		
+						else if (event.getItem().getEntityItem().isItemEqual((new ItemStack(NGItems.BARTZ_ESSENCE)))) {
+							event.getEntityPlayer().addStat(NGAchievement.WhoIsBartz, 1);}
+		
+							
 
-	
-	}
-
-	/*
-	@SubscribeEvent
-	public void playerKilledEntityZombie(LivingDropsEvent event) {
-		if (event.getEntity() instanceof EntityZombie) {
 		}
-	}
-	*/
 
-}}
+		/*
+		 * @SubscribeEvent public void playerKilledEntityZombie(LivingDropsEvent
+		 * event) { if (event.getEntity() instanceof EntityZombie) { } }
+		 */
+
+	}
+

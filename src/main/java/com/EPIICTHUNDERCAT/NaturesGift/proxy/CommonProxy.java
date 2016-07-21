@@ -1,11 +1,13 @@
 package com.EPIICTHUNDERCAT.NaturesGift.proxy;
 
+import com.EPIICTHUNDERCAT.NaturesGift.NaturesGift;
 import com.EPIICTHUNDERCAT.NaturesGift.Misc.NGAchievement;
 import com.EPIICTHUNDERCAT.NaturesGift.MiscDrops.NGTreeDrops;
 import com.EPIICTHUNDERCAT.NaturesGift.Mobs.NGMobDrops;
 import com.EPIICTHUNDERCAT.NaturesGift.init.NGBlocks;
 import com.EPIICTHUNDERCAT.NaturesGift.init.NGItems;
 import com.EPIICTHUNDERCAT.NaturesGift.init.NGRecipes;
+import com.EPIICTHUNDERCAT.NaturesGift.item.Tools.NatureInfestedAxe;
 
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.common.AchievementPage;
@@ -35,8 +37,9 @@ public class CommonProxy {
 		NGRecipes.register(preEvent);
 		NGBlocks.register(preEvent);
 		MinecraftForge.EVENT_BUS.register(new NGMobDrops());
+		MinecraftForge.EVENT_BUS.register(new NaturesGift());
 		MinecraftForge.EVENT_BUS.register(new NGTreeDrops());
-		// TODO Auto-generated method stub
+
 
 	}
 

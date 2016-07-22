@@ -41,7 +41,7 @@ public class NGAchievement{
 	
 	public static final Achievement InfestedAxe = new Achievement(
 			"InfestedAxe", "infestedaxe", 4, 1,
-			new ItemStack(NGItems.NATURE_INFESTED_AXE, 1),
+			new ItemStack(NGItems.NATURE_INFESTED_AXE),
 			AchievementList.DIAMONDS).registerStat();
 	
 	public static final Achievement SOPINK = new Achievement(

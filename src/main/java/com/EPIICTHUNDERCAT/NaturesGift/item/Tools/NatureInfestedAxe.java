@@ -40,9 +40,10 @@ public class NatureInfestedAxe extends ItemAxe {
 	}
 	@SubscribeEvent
 	public void onCraft(PlayerEvent.ItemCraftedEvent event) {
-
+		System.out.println("HELLO");
 		Item item = event.crafting.getItem();
 		if (item == NGItems.NATURE_INFESTED_AXE) {
+			System.out.println(event.crafting.getDisplayName());
 			event.player.addStat(NGAchievement.InfestedAxe, 1);
 		}
 	}

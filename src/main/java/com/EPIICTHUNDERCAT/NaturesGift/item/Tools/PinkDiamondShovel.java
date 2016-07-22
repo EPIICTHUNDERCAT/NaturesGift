@@ -7,9 +7,9 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemSpade;
 import net.minecraft.item.Item.ToolMaterial;
 
-public class NatureInfestedShovel extends ItemSpade{
+public class PinkDiamondShovel extends ItemSpade{
 
-	public NatureInfestedShovel(String name, ToolMaterial material) {
+	public PinkDiamondShovel(String name, ToolMaterial material) {
 		super(material);
 		setRegistryName(name.toLowerCase());
 		setUnlocalizedName(name.toLowerCase());

@@ -21,7 +21,7 @@ public class NatureInfestedAxe extends ItemAxe {
 		setRegistryName(name.toLowerCase());
 		setUnlocalizedName(name.toLowerCase());
 		addToItems(this);
-		this.setCreativeTab(NGCreativeTabs.NGCombat);
+		this.setCreativeTab(NGCreativeTabs.NGTools);
 	}
 
 	private void addToItems(Item item) {
@@ -38,13 +38,13 @@ public class NatureInfestedAxe extends ItemAxe {
 		}
 		return false;
 	}
-	@SubscribeEvent
-	public void onCraft(PlayerEvent.ItemCraftedEvent event) {
-		System.out.println("HELLO");
-		Item item = event.crafting.getItem();
-		if (item == NGItems.NATURE_INFESTED_AXE) {
-			System.out.println(event.crafting.getDisplayName());
-			event.player.addStat(NGAchievement.InfestedAxe, 1);
-		}
-	}
+	//**@SubscribeEvent
+	//public void onCraft(PlayerEvent.ItemCraftedEvent event) {
+		//System.out.println("HELLO");
+		//Item item = event.crafting.getItem();
+		//if (item == NGItems.NATURE_INFESTED_AXE) {
+			//System.out.println(event.crafting.getDisplayName());
+			//event.player.addStat(NGAchievement.InfestedAxe, 1);
+	//	}
+	//}
 }

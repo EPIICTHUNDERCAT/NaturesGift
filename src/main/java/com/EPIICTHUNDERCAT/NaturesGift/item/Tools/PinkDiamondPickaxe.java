@@ -4,12 +4,12 @@ import com.EPIICTHUNDERCAT.NaturesGift.Misc.NGCreativeTabs;
 import com.EPIICTHUNDERCAT.NaturesGift.init.NGItems;
 
 import net.minecraft.item.Item;
-import net.minecraft.item.ItemSpade;
+import net.minecraft.item.ItemPickaxe;
 import net.minecraft.item.Item.ToolMaterial;
 
-public class NatureInfestedShovel extends ItemSpade{
-
-	public NatureInfestedShovel(String name, ToolMaterial material) {
+public class PinkDiamondPickaxe extends ItemPickaxe{
+	
+	public PinkDiamondPickaxe(String name, ToolMaterial material) {
 		super(material);
 		setRegistryName(name.toLowerCase());
 		setUnlocalizedName(name.toLowerCase());
@@ -22,4 +22,5 @@ public class NatureInfestedShovel extends ItemSpade{
 		NGItems.items.add(item);
 
 	}
+
 }

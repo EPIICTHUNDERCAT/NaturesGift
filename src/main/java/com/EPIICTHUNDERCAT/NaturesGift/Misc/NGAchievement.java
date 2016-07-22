@@ -49,6 +49,11 @@ public class NGAchievement{
 			new ItemStack(NGBlocks.PINK_DIAMOND_BLOCK, 1),
 			AchievementList.DIAMONDS).registerStat();
 	
+	public static final Achievement EarlyGame = new Achievement(
+			"EarlyGame", "earlygame", 4, 2,
+			new ItemStack(NGItems.NATURE_PICKAXE),
+			AchievementList.BUILD_PICKAXE).registerStat();
+	
 	
 	
 	
@@ -59,7 +64,7 @@ public class NGAchievement{
 	
 	
 	public static AchievementPage NGAchievePage = new AchievementPage(
-			"Natures Gift", YouBrokeGrass, ThisIsOdd, WhoIsBartz, SkyEssence, InfestedAxe, LifeCore, SOPINK);
+			"Natures Gift", YouBrokeGrass, ThisIsOdd, WhoIsBartz, SkyEssence, InfestedAxe, LifeCore, SOPINK, EarlyGame);
 
 
 	}

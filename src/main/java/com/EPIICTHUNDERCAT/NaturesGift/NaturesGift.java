@@ -5,6 +5,7 @@ import com.EPIICTHUNDERCAT.NaturesGift.init.NGItems;
 import com.EPIICTHUNDERCAT.NaturesGift.proxy.CommonProxy;
 import com.EPIICTHUNDERCAT.NaturesGift.util.VersionCheck;
 
+import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.common.config.Configuration;
 import net.minecraftforge.event.entity.player.EntityItemPickupEvent;
@@ -17,6 +18,7 @@ import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.fml.common.eventhandler.EventPriority;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
+import net.minecraftforge.fml.common.gameevent.PlayerEvent;
 import net.minecraftforge.fml.common.gameevent.TickEvent.PlayerTickEvent;
 
 @Mod(modid = Reference.ID, name = Reference.NAME, version = Reference.VER)
@@ -73,7 +75,21 @@ public class NaturesGift {
 							
 
 		}
+	@SubscribeEvent
+	public void onCraft(PlayerEvent.ItemCraftedEvent event) {
+		
+		Item item = event.crafting.getItem();
+		if (item == NGItems.NATURE_INFESTED_AXE) {
+	
+			event.player.addStat(NGAchievement.InfestedAxe, 1);
+		}
+		else if (item == NGItems.NATURE_PICKAXE) {
+			
+			event.player.addStat(NGAchievement.EarlyGame, 1);
+		}
+	}
 
+	
 		/*
 		 * @SubscribeEvent public void playerKilledEntityZombie(LivingDropsEvent
 		 * event) { if (event.getEntity() instanceof EntityZombie) { } }

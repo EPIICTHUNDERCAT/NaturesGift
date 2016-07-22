@@ -38,6 +38,13 @@ public class NGCreativeTabs extends CreativeTabs {
 		}
 	};
 	
+	public static final NGCreativeTabs NGTools = new NGCreativeTabs(CreativeTabs.getNextID(), "ngtools") {
+		@SideOnly(Side.CLIENT)
+		public Item getTabIconItem() {
+			return NGItems.NATURE_INFESTED_AXE;
+		}
+	};
+	
 
 	@Override
 	public Item getTabIconItem() {

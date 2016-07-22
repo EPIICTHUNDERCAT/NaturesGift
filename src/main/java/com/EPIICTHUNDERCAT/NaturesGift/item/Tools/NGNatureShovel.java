@@ -14,7 +14,7 @@ public class NGNatureShovel extends ItemSpade{
 		setRegistryName(name.toLowerCase());
 		setUnlocalizedName(name.toLowerCase());
 		addToItems(this);
-		this.setCreativeTab(NGCreativeTabs.NGCombat);
+		this.setCreativeTab(NGCreativeTabs.NGTools);
 		
 	}
 	private void addToItems(Item item) {

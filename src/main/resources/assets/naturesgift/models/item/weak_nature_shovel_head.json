@@ -1,0 +1,6 @@
+{
+    "parent": "item/handheld",
+    "textures": {
+        "layer0": "naturesgift:items/weak_nature_shovel_head"
+    }
+}

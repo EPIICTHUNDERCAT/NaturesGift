@@ -38,7 +38,7 @@ public class CommonProxy {
 		MinecraftForge.EVENT_BUS.register(new NGMobDrops());
 		MinecraftForge.EVENT_BUS.register(new NaturesGift());
 		MinecraftForge.EVENT_BUS.register(new NGTreeDrops());
-		MinecraftForge.EVENT_BUS.register(NGItems.NATURE_INFESTED_AXE);
+		MinecraftForge.EVENT_BUS.register(new ItemStack(NGItems.NATURE_INFESTED_AXE));
 	
 		
 		

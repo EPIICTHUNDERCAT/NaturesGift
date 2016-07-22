@@ -25,7 +25,7 @@ public class NGNatureHoe extends ItemHoe{
 		setRegistryName(name.toLowerCase());
 		setUnlocalizedName(name.toLowerCase());
 		addToItems(this);
-		this.setCreativeTab(NGCreativeTabs.NGCombat);
+		this.setCreativeTab(NGCreativeTabs.NGTools);
 	}
 	
 

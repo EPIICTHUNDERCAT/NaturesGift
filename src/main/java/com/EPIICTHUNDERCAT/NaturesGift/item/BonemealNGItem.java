@@ -1,5 +1,7 @@
 package com.EPIICTHUNDERCAT.NaturesGift.item;
 
+import com.EPIICTHUNDERCAT.NaturesGift.Misc.NGCreativeTabs;
+
 import net.minecraft.block.IGrowable;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.entity.player.EntityPlayer;
@@ -16,6 +18,7 @@ public class BonemealNGItem extends NGItem {
 		super(name);
 		this.setMaxDamage(100);
 		this.setMaxStackSize(1);
+		this.setCreativeTab(NGCreativeTabs.NGSpecial);
 	}
 
 	public EnumActionResult onItemUse(ItemStack stack, EntityPlayer playerIn, World worldIn, BlockPos pos,

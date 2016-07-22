@@ -101,11 +101,19 @@ public class NGItems extends Items {
 	public static Item NATURE_INFESTED_AXE = new NGNatureAxe("NATURE_INFESTED_AXE", NGToolMaterials.STRONG_NATURE_MATERIAL);
 	public static Item NATURE_INFESTED_PICKAXE = new NGNaturePickaxe("NATURE_INFESTED_PICKAXE", NGToolMaterials.STRONG_NATURE_MATERIAL);
 	public static Item NATURE_INFESTED_SHOVEL = new NGNatureShovel("NATURE_INFESTED_SHOVEL", NGToolMaterials.STRONG_NATURE_MATERIAL);
+	public static Item PINK_DIAMOND_HOE = new NGNatureHoe("PINK_DIAMOND_HOE", NGToolMaterials.PINK_DIAMOND);
+	public static Item PINK_DIAMOND_AXE = new NGNatureAxe("PINK_DIAMOND_AXE", NGToolMaterials.PINK_DIAMOND);
+	public static Item PINK_DIAMOND_PICKAXE = new NGNaturePickaxe("PINK_DIAMOND_PICKAXE", NGToolMaterials.PINK_DIAMOND);
+	public static Item PINK_DIAMOND_SHOVEL = new NGNatureShovel("PINK_DIAMOND_SHOVEL", NGToolMaterials.PINK_DIAMOND);
 	//Parts//
 	public static Item NATURE_HOE_HEAD = new NGItem("NATURE_HOE_HEAD");
 	public static Item NATURE_AXE_HEAD = new NGItem("NATURE_AXE_HEAD");
 	public static Item NATURE_PICKAXE_HEAD = new NGItem("NATURE_PICKAXE_HEAD");
 	public static Item NATURE_SHOVEL_HEAD = new NGItem("NATURE_SHOVEL_HEAD");
+	public static Item WEAK_NATURE_HOE_HEAD = new NGItem("WEAK_NATURE_HOE_HEAD");
+	public static Item WEAK_NATURE_AXE_HEAD = new NGItem("WEAK_NATURE_AXE_HEAD");
+	public static Item WEAK_NATURE_PICKAXE_HEAD = new NGItem("WEAK_NATURE_PICKAXE_HEAD");
+	public static Item WEAK_NATURE_SHOVEL_HEAD = new NGItem("WEAK_NATURE_SHOVEL_HEAD");
 	
 
 	private static List<Item> getItems() {

@@ -4,18 +4,16 @@ import com.EPIICTHUNDERCAT.NaturesGift.Misc.NGCreativeTabs;
 import com.EPIICTHUNDERCAT.NaturesGift.init.NGItems;
 
 import net.minecraft.item.Item;
-import net.minecraft.item.ItemSpade;
-import net.minecraft.item.Item.ToolMaterial;
+import net.minecraft.item.ItemAxe;
 
-public class NatureInfestedShovel extends ItemSpade{
+public class PinkDiamondAxe extends ItemAxe {
 
-	public NatureInfestedShovel(String name, ToolMaterial material) {
-		super(material);
+	public PinkDiamondAxe(String name, ToolMaterial material) {
+		super(material, 10.0f, 10.0f);
 		setRegistryName(name.toLowerCase());
 		setUnlocalizedName(name.toLowerCase());
 		addToItems(this);
 		this.setCreativeTab(NGCreativeTabs.NGTools);
-		
 	}
 	private void addToItems(Item item) {
 

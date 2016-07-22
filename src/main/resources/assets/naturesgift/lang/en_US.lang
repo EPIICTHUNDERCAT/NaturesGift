@@ -2,6 +2,7 @@ itemGroup.ngcombat=NaturesGift Combat
 itemGroup.ngspecial=NaturesGift Special
 itemGroup.ngmaterials=NaturesGift Materials
 itemGroup.ngfood=NaturesGift Food
+itemGroup.ngtools=NaturesGift Tools
 
 
 item.nature_stick.name=Nature Stick
@@ -56,6 +57,23 @@ item.nature_pickaxe.name=Nature Pickaxe
 item.nature_axe.name=Nature Axe
 item.nature_shovel.name=Nature Shovel
 item.nature_hoe.name=Nature Hoe
+item.pink_diamond_hoe.name=Pink Diamond Hoe
+item.pink_diamond_pickaxe.name=Pink Diamond Pickaxe
+item.pink_diamond_axe.name=Pink Diamond Axe
+item.pink_diamond_shovel.name=Pink Diamond Shovel
+item.nature_pickaxe_head.name=Nature Pickaxe Head
+item.nature_axe_head.name=Nature Axe Head
+item.nature_shovel_head.name=Nature Shovel Head
+item.nature_hoe_head.name=Nature Hoe Head
+item.nature_infested_pickaxe_head.name=Nature Infested Pickaxe Head
+item.nature_infested_axe_head.name=Nature Infested Axe Head
+item.nature_infested_shovel_head.name=Nature Infested Shovel Head
+item.nature_infested_hoe_head.name=Nature Infested Hoe Head
+item.weak_nature_pickaxe_head.name=Weak Nature Pickaxe Head
+item.weak_nature_axe_head.name=Weak Nature Axe Head
+item.weak_nature_shovel_head.name=Weak Nature Shovel Head
+item.weak_nature_hoe_head.name=Weak Nature Hoe Head
+
 
 
 tile.pink_diamond_block.name=Pink Diamond Block
@@ -67,4 +85,5 @@ achievement.skyessence=Whats This?
 achievement.lifecore=LifeCore?!
 achievement.whoisbartz=Who is Bartz?
 achievement.thisisodd=This is Odd..
-achievement.youbrokegrass=You Broke Grass!
+achievement.youbrokegrass!=You Broke Grass!
+achievement.earlygame=Early Game

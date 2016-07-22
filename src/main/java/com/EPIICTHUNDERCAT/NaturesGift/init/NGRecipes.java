@@ -146,8 +146,28 @@ public class NGRecipes {
 		//TOOLS//
 		//Shaped Recipe// - Nature Infested Axe(TEMPORARY)
 		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(NGItems.NATURE_INFESTED_AXE), new Object [] { "P P", "P P", "   ", 'P', "strongNatureMaterial", }));
+		//Shaped Recipe// - Nature Pickaxe
+		GameRegistry.addShapedRecipe(new ItemStack(NGItems.NATURE_PICKAXE), "  H", " B ", "B  ", 'H', new ItemStack(NGItems.NATURE_PICKAXE_HEAD), 'B', new ItemStack(NGItems.HEAVY_BRANCH));
 		
 		
+		
+		//PARTS//
+		//Shaped Recipe// - Weak Nature Pickaxe Head
+		GameRegistry.addShapedRecipe(new ItemStack(NGItems.WEAK_NATURE_PICKAXE_HEAD), "HHH", "   ", "   ", 'H', new ItemStack(NGItems.NATURE_MATERIAL));
+		//Shaped Recipe// - Weak Nature Axe Head
+		GameRegistry.addShapedRecipe(new ItemStack(NGItems.WEAK_NATURE_AXE_HEAD), "HH ", "H  ", "   ", 'H', new ItemStack(NGItems.NATURE_MATERIAL));
+		//Shaped Recipe// - Weak Nature Shovel Head
+		GameRegistry.addShapedRecipe(new ItemStack(NGItems.WEAK_NATURE_SHOVEL_HEAD), " H ", "H H", "   ", 'H', new ItemStack(NGItems.NATURE_MATERIAL));
+		//Shaped Recipe// - Weak Nature Hoe Head
+		GameRegistry.addShapedRecipe(new ItemStack(NGItems.WEAK_NATURE_HOE_HEAD), " HH", "   ", "   ", 'H', new ItemStack(NGItems.NATURE_MATERIAL));
+		//Shaped Recipe// - Nature Pickaxe Head
+		GameRegistry.addSmelting(new ItemStack(NGItems.WEAK_NATURE_PICKAXE_HEAD), new ItemStack(NGItems.NATURE_PICKAXE_HEAD), 50.0f);
+		//Shaped Recipe// - Nature Axe Head
+		GameRegistry.addSmelting(new ItemStack(NGItems.WEAK_NATURE_AXE_HEAD), new ItemStack(NGItems.NATURE_AXE_HEAD), 50.0f);
+		//Shaped Recipe// - Nature Shovel Head
+		GameRegistry.addSmelting(new ItemStack(NGItems.WEAK_NATURE_SHOVEL_HEAD), new ItemStack(NGItems.NATURE_SHOVEL_HEAD), 50.0f);
+		//Shaped Recipe// - Nature Hoe Head
+		GameRegistry.addSmelting(new ItemStack(NGItems.WEAK_NATURE_HOE_HEAD), new ItemStack(NGItems.NATURE_HOE_HEAD), 50.0f);
 		
 		
 		
@@ -173,6 +193,7 @@ public class NGRecipes {
 		OreDictionary.registerOre("woodBranch", new ItemStack(NGItems.HEAVY_BRANCH));
 		OreDictionary.registerOre("strongNatureMaterial", new ItemStack(NGItems.STRONG_NATURE_MATERIAL));
 		OreDictionary.registerOre("natureMaterial", new ItemStack(NGItems.NATURE_MATERIAL));
+		
 
 		NGMobDrops.addMobDrop(new ItemStack(NGItems.BARTZ_ESSENCE), 3, 1, 1);
 		NGMobDrops.addMobDrop(new ItemStack(NGItems.LIFE_CORE), 3, 1, 1);

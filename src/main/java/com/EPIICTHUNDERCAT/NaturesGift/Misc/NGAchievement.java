@@ -1,5 +1,7 @@
 package com.EPIICTHUNDERCAT.NaturesGift.Misc;
 
+import com.EPIICTHUNDERCAT.NaturesGift.block.NGBlock;
+import com.EPIICTHUNDERCAT.NaturesGift.init.NGBlocks;
 import com.EPIICTHUNDERCAT.NaturesGift.init.NGItems;
 
 import net.minecraft.block.Block;
@@ -18,28 +20,33 @@ public class NGAchievement{
 			AchievementList.OPEN_INVENTORY).registerStat();
 	
 	public static final Achievement ThisIsOdd = new Achievement(
-			"ThisIsOdd", "thisisodd", 0, 4,
+			"ThisIsOdd", "thisisodd", 0, 2,
 			new ItemStack(NGItems.NATURE_ESSENCE, 1),
 			AchievementList.OPEN_INVENTORY).registerStat();
 	
 	public static final Achievement LifeCore = new Achievement(
-			"LifeCore", "lifecore", 0, 5,
+			"LifeCore", "lifecore", 2, 0,
 			new ItemStack(NGItems.LIFE_CORE, 1),
 			AchievementList.OPEN_INVENTORY).registerStat();
 	
 	public static final Achievement SkyEssence = new Achievement(
-			"SkyEssence", "skyessence", 0, 6,
+			"SkyEssence", "skyessence", 2, 1,
 			new ItemStack(NGItems.SKY_ESSENCE, 1),
 			AchievementList.OPEN_INVENTORY).registerStat();
 	
 	public static final Achievement WhoIsBartz = new Achievement(
-			"WhoIsBartz", "whoisbartz", 0, 7,
+			"WhoIsBartz", "whoisbartz", 2, 2,
 			new ItemStack(NGItems.BARTZ_ESSENCE, 1),
 			AchievementList.OPEN_INVENTORY).registerStat();
 	
 	public static final Achievement InfestedAxe = new Achievement(
-			"InfestedAxe", "infestedaxe", 0, -1,
-			new ItemStack(NGItems.BARTZ_ESSENCE, 1),
+			"InfestedAxe", "infestedaxe", 4, 1,
+			new ItemStack(NGItems.NATURE_INFESTED_AXE, 1),
+			AchievementList.DIAMONDS).registerStat();
+	
+	public static final Achievement SOPINK = new Achievement(
+			"SOPINK", "sopink", 3, 1,
+			new ItemStack(NGBlocks.PINK_DIAMOND_BLOCK, 1),
 			AchievementList.DIAMONDS).registerStat();
 	
 	
@@ -52,7 +59,7 @@ public class NGAchievement{
 	
 	
 	public static AchievementPage NGAchievePage = new AchievementPage(
-			"Natures Gift", YouBrokeGrass, ThisIsOdd);
+			"Natures Gift", YouBrokeGrass, ThisIsOdd, WhoIsBartz, SkyEssence, InfestedAxe, LifeCore, SOPINK);
 
 
 	}

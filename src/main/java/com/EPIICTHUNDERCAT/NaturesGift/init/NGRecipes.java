@@ -143,7 +143,9 @@ public class NGRecipes {
 		// Shaped Recipe// - Pink Diamond Boots
 		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(NGItems.PINK_DIAMOND_BOOTS), new Object [] { "P P", "P P", "   ", 'P', "gemPinkDiamond", }));
 		
-		
+		//TOOLS//
+		//Shaped Recipe// - Nature Infested Axe(TEMPORARY)
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(NGItems.NATURE_INFESTED_AXE), new Object [] { "P P", "P P", "   ", 'P', "strongNatureMaterial", }));
 		
 		
 		

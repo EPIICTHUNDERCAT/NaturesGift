@@ -13,6 +13,14 @@ import com.EPIICTHUNDERCAT.NaturesGift.item.Tools.NGNatureAxe;
 import com.EPIICTHUNDERCAT.NaturesGift.item.Tools.NGNatureHoe;
 import com.EPIICTHUNDERCAT.NaturesGift.item.Tools.NGNaturePickaxe;
 import com.EPIICTHUNDERCAT.NaturesGift.item.Tools.NGNatureShovel;
+import com.EPIICTHUNDERCAT.NaturesGift.item.Tools.NatureInfestedAxe;
+import com.EPIICTHUNDERCAT.NaturesGift.item.Tools.NatureInfestedHoe;
+import com.EPIICTHUNDERCAT.NaturesGift.item.Tools.NatureInfestedPickaxe;
+import com.EPIICTHUNDERCAT.NaturesGift.item.Tools.NatureInfestedShovel;
+import com.EPIICTHUNDERCAT.NaturesGift.item.Tools.PinkDiamondAxe;
+import com.EPIICTHUNDERCAT.NaturesGift.item.Tools.PinkDiamondHoe;
+import com.EPIICTHUNDERCAT.NaturesGift.item.Tools.PinkDiamondPickaxe;
+import com.EPIICTHUNDERCAT.NaturesGift.item.Tools.PinkDiamondShovel;
 
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.RenderItem;
@@ -97,14 +105,14 @@ public class NGItems extends Items {
 	public static Item NATURE_AXE = new NGNatureAxe("NATURE_AXE", NGToolMaterials.NATURE_MATERIAL);
 	public static Item NATURE_PICKAXE = new NGNaturePickaxe("NATURE_PICKAXE", NGToolMaterials.NATURE_MATERIAL);
 	public static Item NATURE_SHOVEL = new NGNatureShovel("NATURE_SHOVEL", NGToolMaterials.NATURE_MATERIAL);
-	public static Item NATURE_INFESTED_HOE = new NGNatureHoe("NATURE_INFESTED_HOE", NGToolMaterials.STRONG_NATURE_MATERIAL);
-	public static Item NATURE_INFESTED_AXE = new NGNatureAxe("NATURE_INFESTED_AXE", NGToolMaterials.STRONG_NATURE_MATERIAL);
-	public static Item NATURE_INFESTED_PICKAXE = new NGNaturePickaxe("NATURE_INFESTED_PICKAXE", NGToolMaterials.STRONG_NATURE_MATERIAL);
-	public static Item NATURE_INFESTED_SHOVEL = new NGNatureShovel("NATURE_INFESTED_SHOVEL", NGToolMaterials.STRONG_NATURE_MATERIAL);
-	public static Item PINK_DIAMOND_HOE = new NGNatureHoe("PINK_DIAMOND_HOE", NGToolMaterials.PINK_DIAMOND);
-	public static Item PINK_DIAMOND_AXE = new NGNatureAxe("PINK_DIAMOND_AXE", NGToolMaterials.PINK_DIAMOND);
-	public static Item PINK_DIAMOND_PICKAXE = new NGNaturePickaxe("PINK_DIAMOND_PICKAXE", NGToolMaterials.PINK_DIAMOND);
-	public static Item PINK_DIAMOND_SHOVEL = new NGNatureShovel("PINK_DIAMOND_SHOVEL", NGToolMaterials.PINK_DIAMOND);
+	public static Item NATURE_INFESTED_HOE = new NatureInfestedHoe("NATURE_INFESTED_HOE", NGToolMaterials.STRONG_NATURE_MATERIAL);
+	public static Item NATURE_INFESTED_AXE = new NatureInfestedAxe("NATURE_INFESTED_AXE", NGToolMaterials.STRONG_NATURE_MATERIAL);
+	public static Item NATURE_INFESTED_PICKAXE = new NatureInfestedPickaxe("NATURE_INFESTED_PICKAXE", NGToolMaterials.STRONG_NATURE_MATERIAL);
+	public static Item NATURE_INFESTED_SHOVEL = new NatureInfestedShovel("NATURE_INFESTED_SHOVEL", NGToolMaterials.STRONG_NATURE_MATERIAL);
+	public static Item PINK_DIAMOND_HOE = new PinkDiamondHoe("PINK_DIAMOND_HOE", NGToolMaterials.PINK_DIAMOND);
+	public static Item PINK_DIAMOND_AXE = new PinkDiamondAxe("PINK_DIAMOND_AXE", NGToolMaterials.PINK_DIAMOND);
+	public static Item PINK_DIAMOND_PICKAXE = new PinkDiamondPickaxe("PINK_DIAMOND_PICKAXE", NGToolMaterials.PINK_DIAMOND);
+	public static Item PINK_DIAMOND_SHOVEL = new PinkDiamondShovel("PINK_DIAMOND_SHOVEL", NGToolMaterials.PINK_DIAMOND);
 	//Parts//
 	public static Item NATURE_HOE_HEAD = new NGItem("NATURE_HOE_HEAD");
 	public static Item NATURE_AXE_HEAD = new NGItem("NATURE_AXE_HEAD");

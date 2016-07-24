@@ -112,7 +112,7 @@ public class NGRecipes {
 				new ItemStack(NGItems.HEAVY_BRANCH), 'M', new ItemStack(NGItems.MOSS), 'E',
 				new ItemStack(NGItems.NATURE_ESSENCE));
 		// Shaped Recipe// - Pink Diamond Block
-		GameRegistry.addRecipe(new ItemStack(Item.getItemFromBlock(NGBlocks.PINK_DIAMOND_BLOCK)), "PPP", "PPP", "PPP", 'P',
+		GameRegistry.addRecipe(new ItemStack(NGBlocks.PINK_DIAMOND_BLOCK), "PPP", "PPP", "PPP", 'P',
 						new ItemStack(NGItems.PINK_DIAMOND));
 		
 		

@@ -3,6 +3,7 @@ package com.EPIICTHUNDERCAT.NaturesGift.init;
 import java.util.ArrayList;
 import java.util.List;
 
+import com.EPIICTHUNDERCAT.NaturesGift.block.NGBlockPinkDiamond;
 import com.EPIICTHUNDERCAT.NaturesGift.item.BonemealNGItem;
 import com.EPIICTHUNDERCAT.NaturesGift.item.NGDurabilityItem;
 import com.EPIICTHUNDERCAT.NaturesGift.item.NGItem;
@@ -22,6 +23,7 @@ import com.EPIICTHUNDERCAT.NaturesGift.item.Tools.PinkDiamondHoe;
 import com.EPIICTHUNDERCAT.NaturesGift.item.Tools.PinkDiamondPickaxe;
 import com.EPIICTHUNDERCAT.NaturesGift.item.Tools.PinkDiamondShovel;
 
+import net.minecraft.block.Block;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.RenderItem;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
@@ -62,23 +64,21 @@ public class NGItems extends Items {
 	public static Item STRONG_NATURE_MATERIAL = new NGItem("STRONG_NATURE_MATERIAL");
 	public static Item STRONG_NATURE_MIXTURE = new NGItem("STRONG_NATURE_MIXTURE");
 	public static Item HARDENED_NATURE_MIXTURE = new NGItem("HARDENED_NATURE_MIXTURE");
+	public static Item NATURE_INFESTED_BRANCH = new NGItem("NATURE_INFESTED_BRANCH");
 	
 	
 	
-	
-	//Shields//
+	// Shields//
 	public static Item PINK_DIAMOND_MOSSY_SHIELD = new NGShields("PINK_DIAMOND_MOSSY_SHIELD");
 	public static Item EMPTY_MOSSY_SHIELD = new NGShields("EMPTY_MOSSY_SHIELD");
-	
-	
-	//Weapons//
+
+	// Weapons//
 	public static Item BARTZ_DAGGER = new NGItemSword("BARTZ_DAGGER", NGToolMaterials.SKY_GEM);
 	public static Item BARTZ_WAND = new NGItemSword("BARTZ_WAND", NGToolMaterials.BARTZ_ESSENCE);
 	public static Item NATURE_INFESTED_SWORD = new NGItemSword("NATURE_INFESTED_SWORD", NGToolMaterials.NATURE_CHIPS);
 	public static Item SEQS_SCEPTER = new NGItemSword("SEQS_SCEPTER", NGToolMaterials.GOO_ESSENCE);
-	
-	
-	//Armors//
+
+	// Armors//
 	public static Item PINK_DIAMOND_CHESTPLATE = new NGItemArmor("PINK_DIAMOND_CHESTPLATE", NGItemArmor.PINK_DIAMOND, 7,
 			EntityEquipmentSlot.CHEST);
 	public static Item PINK_DIAMOND_HELMET = new NGItemArmor("PINK_DIAMOND_HELMET", NGItemArmor.PINK_DIAMOND, 7,
@@ -87,37 +87,42 @@ public class NGItems extends Items {
 			EntityEquipmentSlot.LEGS);
 	public static Item PINK_DIAMOND_BOOTS = new NGItemArmor("PINK_DIAMOND_BOOTS", NGItemArmor.PINK_DIAMOND, 7,
 			EntityEquipmentSlot.FEET);
-	public static Item NATURE_INFESTED_CHESTPLATE = new NGItemArmor("NATURE_INFESTED_CHESTPLATE", NGItemArmor.STRONG_NATURE_MATERIAL, 7,
-			EntityEquipmentSlot.CHEST);
-	public static Item NATURE_INFESTED_HELMET = new NGItemArmor("NATURE_INFESTED_HELMET", NGItemArmor.STRONG_NATURE_MATERIAL, 7,
-			EntityEquipmentSlot.HEAD);
-	public static Item NATURE_INFESTED_LEGGINGS = new NGItemArmor("NATURE_INFESTED_LEGGINGS", NGItemArmor.STRONG_NATURE_MATERIAL, 7,
-			EntityEquipmentSlot.LEGS);
-	public static Item NATURE_INFESTED_BOOTS = new NGItemArmor("NATURE_INFESTED_BOOTS", NGItemArmor.STRONG_NATURE_MATERIAL, 7,
-			EntityEquipmentSlot.FEET);
-	public static Item NATURE_INFUSED_CHESTPLATE = new NGItemArmor("NATURE_INFUSED_CHESTPLATE", NGItemArmor.NATURE_MATERIAL, 7,
-			EntityEquipmentSlot.CHEST);
+	public static Item NATURE_INFESTED_CHESTPLATE = new NGItemArmor("NATURE_INFESTED_CHESTPLATE",
+			NGItemArmor.STRONG_NATURE_MATERIAL, 7, EntityEquipmentSlot.CHEST);
+	public static Item NATURE_INFESTED_HELMET = new NGItemArmor("NATURE_INFESTED_HELMET",
+			NGItemArmor.STRONG_NATURE_MATERIAL, 7, EntityEquipmentSlot.HEAD);
+	public static Item NATURE_INFESTED_LEGGINGS = new NGItemArmor("NATURE_INFESTED_LEGGINGS",
+			NGItemArmor.STRONG_NATURE_MATERIAL, 7, EntityEquipmentSlot.LEGS);
+	public static Item NATURE_INFESTED_BOOTS = new NGItemArmor("NATURE_INFESTED_BOOTS",
+			NGItemArmor.STRONG_NATURE_MATERIAL, 7, EntityEquipmentSlot.FEET);
+	public static Item NATURE_INFUSED_CHESTPLATE = new NGItemArmor("NATURE_INFUSED_CHESTPLATE",
+			NGItemArmor.NATURE_MATERIAL, 7, EntityEquipmentSlot.CHEST);
 	public static Item NATURE_INFUSED_HELMET = new NGItemArmor("NATURE_INFUSED_HELMET", NGItemArmor.NATURE_MATERIAL, 7,
 			EntityEquipmentSlot.HEAD);
-	public static Item NATURE_INFUSED_LEGGINGS = new NGItemArmor("NATURE_INFUSED_LEGGINGS", NGItemArmor.NATURE_MATERIAL, 7,
-			EntityEquipmentSlot.LEGS);
+	public static Item NATURE_INFUSED_LEGGINGS = new NGItemArmor("NATURE_INFUSED_LEGGINGS", NGItemArmor.NATURE_MATERIAL,
+			7, EntityEquipmentSlot.LEGS);
 	public static Item NATURE_INFUSED_BOOTS = new NGItemArmor("NATURE_INFUSED_BOOTS", NGItemArmor.NATURE_MATERIAL, 7,
 			EntityEquipmentSlot.FEET);
-	
-	//Tools//
+
+	// Tools//
 	public static Item NATURE_HOE = new NGNatureHoe("NATURE_HOE", NGToolMaterials.NATURE_MATERIAL);
 	public static Item NATURE_AXE = new NGNatureAxe("NATURE_AXE", NGToolMaterials.NATURE_MATERIAL);
 	public static Item NATURE_PICKAXE = new NGNaturePickaxe("NATURE_PICKAXE", NGToolMaterials.NATURE_MATERIAL);
 	public static Item NATURE_SHOVEL = new NGNatureShovel("NATURE_SHOVEL", NGToolMaterials.NATURE_MATERIAL);
-	public static Item NATURE_INFESTED_HOE = new NatureInfestedHoe("NATURE_INFESTED_HOE", NGToolMaterials.STRONG_NATURE_MATERIAL);
-	public static Item NATURE_INFESTED_AXE = new NatureInfestedAxe("NATURE_INFESTED_AXE", NGToolMaterials.STRONG_NATURE_MATERIAL);
-	public static Item NATURE_INFESTED_PICKAXE = new NatureInfestedPickaxe("NATURE_INFESTED_PICKAXE", NGToolMaterials.STRONG_NATURE_MATERIAL);
-	public static Item NATURE_INFESTED_SHOVEL = new NatureInfestedShovel("NATURE_INFESTED_SHOVEL", NGToolMaterials.STRONG_NATURE_MATERIAL);
+	public static Item NATURE_INFESTED_HOE = new NatureInfestedHoe("NATURE_INFESTED_HOE",
+			NGToolMaterials.STRONG_NATURE_MATERIAL);
+	public static Item NATURE_INFESTED_AXE = new NatureInfestedAxe("NATURE_INFESTED_AXE",
+			NGToolMaterials.STRONG_NATURE_MATERIAL);
+	public static Item NATURE_INFESTED_PICKAXE = new NatureInfestedPickaxe("NATURE_INFESTED_PICKAXE",
+			NGToolMaterials.STRONG_NATURE_MATERIAL);
+	public static Item NATURE_INFESTED_SHOVEL = new NatureInfestedShovel("NATURE_INFESTED_SHOVEL",
+			NGToolMaterials.STRONG_NATURE_MATERIAL);
 	public static Item PINK_DIAMOND_HOE = new PinkDiamondHoe("PINK_DIAMOND_HOE", NGToolMaterials.PINK_DIAMOND);
 	public static Item PINK_DIAMOND_AXE = new PinkDiamondAxe("PINK_DIAMOND_AXE", NGToolMaterials.PINK_DIAMOND);
-	public static Item PINK_DIAMOND_PICKAXE = new PinkDiamondPickaxe("PINK_DIAMOND_PICKAXE", NGToolMaterials.PINK_DIAMOND);
+	public static Item PINK_DIAMOND_PICKAXE = new PinkDiamondPickaxe("PINK_DIAMOND_PICKAXE",
+			NGToolMaterials.PINK_DIAMOND);
 	public static Item PINK_DIAMOND_SHOVEL = new PinkDiamondShovel("PINK_DIAMOND_SHOVEL", NGToolMaterials.PINK_DIAMOND);
-	//Parts//
+	// Parts//
 	public static Item NATURE_HOE_HEAD = new NGItem("NATURE_HOE_HEAD");
 	public static Item NATURE_AXE_HEAD = new NGItem("NATURE_AXE_HEAD");
 	public static Item NATURE_PICKAXE_HEAD = new NGItem("NATURE_PICKAXE_HEAD");
@@ -130,7 +135,6 @@ public class NGItems extends Items {
 	public static Item NATURE_INFESTED_AXE_HEAD = new NGItem("NATURE_INFESTED_AXE_HEAD");
 	public static Item NATURE_INFESTED_PICKAXE_HEAD = new NGItem("NATURE_INFESTED_PICKAXE_HEAD");
 	public static Item NATURE_INFESTED_SHOVEL_HEAD = new NGItem("NATURE_INFESTED_SHOVEL_HEAD");
-	
 
 	private static List<Item> getItems() {
 		return items;

@@ -93,111 +93,159 @@ public class NGRecipes {
 		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(NGItems.SKY_GEM),
 				new Object[] { "NSN", "SDS", "NSN", 'S', "essenceSky", 'N', "essenceNature", 'D', "gemDiamond" }));
 		// Shaped Recipe// - Nature Material
-		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(NGItems.NATURE_MATERIAL), new Object [] { "CMC", "EWE", "CMC", 'C', "natureChips", 'M', "mossMoss", 'E', "essenceNature", 'W', new ItemStack(Blocks.WOOL) }));
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(NGItems.NATURE_MATERIAL), new Object[] { "CMC", "EWE",
+				"CMC", 'C', "natureChips", 'M', "mossMoss", 'E', "essenceNature", 'W', new ItemStack(Blocks.WOOL) }));
 		// Shaped Recipe // - Strong Nature Material
-		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(NGItems.STRONG_NATURE_MATERIAL), new Object [] { "CNT", "NGN", "SNC", 'T', "treeSapling", 'C', "blockCactus", 'S', "sugarcane", 'N', "natureMaterial", 'G', "gemSky" }));
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(NGItems.STRONG_NATURE_MATERIAL),
+				new Object[] { "CNT", "NGN", "SNC", 'T', "treeSapling", 'C', "blockCactus", 'S', "sugarcane", 'N',
+						"natureMaterial", 'G', "gemSky" }));
 		// Shaped Recipe // - Strong Nature Mixture
-		GameRegistry.addShapedRecipe(new ItemStack(NGItems.STRONG_NATURE_MIXTURE, 2), "CCC", "SMS", "CCC", 'C', new ItemStack(Items.CLAY_BALL), 'S', new ItemStack(NGItems.STONES), 'M', new ItemStack(NGItems.STRONG_NATURE_MATERIAL));
+		GameRegistry.addShapedRecipe(new ItemStack(NGItems.STRONG_NATURE_MIXTURE, 2), "CCC", "SMS", "CCC", 'C',
+				new ItemStack(Items.CLAY_BALL), 'S', new ItemStack(NGItems.STONES), 'M',
+				new ItemStack(NGItems.STRONG_NATURE_MATERIAL));
 		// Smelt Recipe // - Hardened Nature Mixture
-		GameRegistry.addSmelting(new ItemStack(NGItems.STRONG_NATURE_MIXTURE), new ItemStack(NGItems.HARDENED_NATURE_MIXTURE), 100.0f);
+		GameRegistry.addSmelting(new ItemStack(NGItems.STRONG_NATURE_MIXTURE),
+				new ItemStack(NGItems.HARDENED_NATURE_MIXTURE), 100.0f);
+		// Shaped Recipe// - Nature Infested Branch
+		GameRegistry.addShapedRecipe(new ItemStack(NGItems.NATURE_INFESTED_BRANCH), "MEM", "EBE", "MEM", 'B',
+				new ItemStack(NGItems.HEAVY_BRANCH), 'M', new ItemStack(NGItems.MOSS), 'E',
+				new ItemStack(NGItems.NATURE_ESSENCE));
+		// Shaped Recipe// - Pink Diamond Block
+		GameRegistry.addRecipe(new ItemStack(NGBlocks.PINK_DIAMOND_BLOCK), "PPP", "PPP", "PPP", 'P',
+						new ItemStack(NGItems.PINK_DIAMOND));
 		
 		
 		
-		
-		
-		//Added Vanilla Recipes//
-		
+
+		// Added Vanilla Recipes//
+
 		// Shapeless Recipe// - Seeds
 		GameRegistry.addShapelessRecipe(new ItemStack(Items.WHEAT_SEEDS), new ItemStack(NGItems.GRASS_CLIPPINGS));
 		// Shaped Recipe// - Seeds2
-		GameRegistry.addShapedRecipe(new ItemStack(Items.WHEAT_SEEDS, 12), "NNN", "   ", "   ", 'N', new ItemStack(NGItems.NATURE_ESSENCE));
-		// Shapeless Recipe// - Sticks		
+		GameRegistry.addShapedRecipe(new ItemStack(Items.WHEAT_SEEDS, 12), "NNN", "   ", "   ", 'N',
+				new ItemStack(NGItems.NATURE_ESSENCE));
+		// Shapeless Recipe// - Sticks
 		GameRegistry.addShapelessRecipe(new ItemStack(Items.STICK, 4), new ItemStack(NGItems.HEAVY_BRANCH));
 		// Shaped Recipe// - Feather
-		GameRegistry.addShapedRecipe(new ItemStack(Items.FEATHER, 6), "S  ", " S ", "  S", 'S', new ItemStack(NGItems.SKY_ESSENCE));
-		
-		
-		
-		
-		//ARMORS//
-		
+		GameRegistry.addShapedRecipe(new ItemStack(Items.FEATHER, 6), "S  ", " S ", "  S", 'S',
+				new ItemStack(NGItems.SKY_ESSENCE));
+
+		// ARMORS//
+
 		// Shaped Recipe// - Nature Infested Helmet
-		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(NGItems.NATURE_INFESTED_HELMET), new Object [] { "NNN", "NSN", "   ", 'N', "strongNatureMaterial", 'S', "essenceSky" }));
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(NGItems.NATURE_INFESTED_HELMET),
+				new Object[] { "NNN", "NSN", "   ", 'N', "strongNatureMaterial", 'S', "essenceSky" }));
 		// Shaped Recipe// - Nature Infested ChestPlate
-		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(NGItems.NATURE_INFESTED_CHESTPLATE), new Object [] { "NSN", "NNN", "NNN", 'N', "strongNatureMaterial", 'S', "essenceSky" }));
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(NGItems.NATURE_INFESTED_CHESTPLATE),
+				new Object[] { "NSN", "NNN", "NNN", 'N', "strongNatureMaterial", 'S', "essenceSky" }));
 		// Shaped Recipe// - Nature Infested Leggings
-		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(NGItems.NATURE_INFESTED_LEGGINGS), new Object [] { "NNN", "NSN", "N N", 'N', "strongNatureMaterial", 'S', "essenceSky" }));
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(NGItems.NATURE_INFESTED_LEGGINGS),
+				new Object[] { "NNN", "NSN", "N N", 'N', "strongNatureMaterial", 'S', "essenceSky" }));
 		// Shaped Recipe// - Nature Infested Boots
-		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(NGItems.NATURE_INFESTED_BOOTS), new Object [] { "NSN", "N N", "   ", 'N', "strongNatureMaterial", 'S', "essenceSky" }));
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(NGItems.NATURE_INFESTED_BOOTS),
+				new Object[] { "NSN", "N N", "   ", 'N', "strongNatureMaterial", 'S', "essenceSky" }));
 		// Shaped Recipe// - Nature Infused Helmet
-		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(NGItems.NATURE_INFUSED_HELMET), new Object [] { "NNN", "N N", "   ", 'N', "natureMaterial" }));
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(NGItems.NATURE_INFUSED_HELMET),
+				new Object[] { "NNN", "N N", "   ", 'N', "natureMaterial" }));
 		// Shaped Recipe// - Nature Infused Chestplate
-		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(NGItems.NATURE_INFUSED_CHESTPLATE), new Object [] { "N N", "NNN", "NNN", 'N', "natureMaterial" }));
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(NGItems.NATURE_INFUSED_CHESTPLATE),
+				new Object[] { "N N", "NNN", "NNN", 'N', "natureMaterial" }));
 		// Shaped Recipe// - Nature Infused Leggings
-		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(NGItems.NATURE_INFUSED_LEGGINGS), new Object [] { "NNN", "N N", "N N", 'N', "natureMaterial" }));
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(NGItems.NATURE_INFUSED_LEGGINGS),
+				new Object[] { "NNN", "N N", "N N", 'N', "natureMaterial" }));
 		// Shaped Recipe// - Nature Infused Boots
-		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(NGItems.NATURE_INFUSED_BOOTS), new Object [] { "N N", "N N", "   ", 'N', "natureMaterial" }));
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(NGItems.NATURE_INFUSED_BOOTS),
+				new Object[] { "N N", "N N", "   ", 'N', "natureMaterial" }));
 		// Shaped Recipe// - Pink Diamond Helmet
-		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(NGItems.PINK_DIAMOND_HELMET), new Object [] { "PPP", "P P", "   ", 'P', "gemPinkDiamond", }));
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(NGItems.PINK_DIAMOND_HELMET),
+				new Object[] { "PPP", "P P", "   ", 'P', "gemPinkDiamond", }));
 		// Shaped Recipe// - Pink Diamond ChestPlate
-		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(NGItems.PINK_DIAMOND_CHESTPLATE), new Object [] { "P P", "PPP", "PPP", 'P', "gemPinkDiamond", }));
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(NGItems.PINK_DIAMOND_CHESTPLATE),
+				new Object[] { "P P", "PPP", "PPP", 'P', "gemPinkDiamond", }));
 		// Shaped Recipe// - Pink Diamond Leggings
-		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(NGItems.PINK_DIAMOND_LEGGINGS), new Object [] { "PPP", "P P", "P P", 'P', "gemPinkDiamond", }));
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(NGItems.PINK_DIAMOND_LEGGINGS),
+				new Object[] { "PPP", "P P", "P P", 'P', "gemPinkDiamond", }));
 		// Shaped Recipe// - Pink Diamond Boots
-		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(NGItems.PINK_DIAMOND_BOOTS), new Object [] { "P P", "P P", "   ", 'P', "gemPinkDiamond", }));
-		
-		//TOOLS//
-		//Shaped Recipe// - Nature Infested Axe(TEMPORARY)
-		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(NGItems.NATURE_INFESTED_AXE), new Object [] { "P P", "P P", "   ", 'P', "strongNatureMaterial", }));
-		//Shaped Recipe// - Nature Pickaxe
-		GameRegistry.addShapedRecipe(new ItemStack(NGItems.NATURE_PICKAXE), "  H", " B ", "B  ", 'H', new ItemStack(NGItems.NATURE_PICKAXE_HEAD), 'B', new ItemStack(NGItems.HEAVY_BRANCH));
-		//Shaped Recipe// - Nature Axe
-		GameRegistry.addShapedRecipe(new ItemStack(NGItems.NATURE_AXE), "  H", " B ", "B  ", 'H', new ItemStack(NGItems.NATURE_AXE_HEAD), 'B', new ItemStack(NGItems.HEAVY_BRANCH));
-		//Shaped Recipe// - Nature Hoe
-		GameRegistry.addShapedRecipe(new ItemStack(NGItems.NATURE_HOE), "  H", " B ", "B  ", 'H', new ItemStack(NGItems.NATURE_HOE_HEAD), 'B', new ItemStack(NGItems.HEAVY_BRANCH));
-		//Shaped Recipe// - Nature Shovel
-		GameRegistry.addShapedRecipe(new ItemStack(NGItems.NATURE_SHOVEL), "  H", " B ", "B  ", 'H', new ItemStack(NGItems.NATURE_SHOVEL_HEAD), 'B', new ItemStack(NGItems.HEAVY_BRANCH));
-		//Shaped Recipe// - Pink Diamond Pickaxe
-		GameRegistry.addShapedRecipe(new ItemStack(NGItems.PINK_DIAMOND_PICKAXE), "DDD", " N ", " N ", 'D', new ItemStack(NGItems.PINK_DIAMOND), 'N', new ItemStack(NGItems.NATURE_STICK));
-		//Shaped Recipe// - Pink Diamond Axe
-		GameRegistry.addShapedRecipe(new ItemStack(NGItems.PINK_DIAMOND_AXE), "DD ", "DN ", " N ", 'D', new ItemStack(NGItems.PINK_DIAMOND), 'N', new ItemStack(NGItems.NATURE_STICK));
-		//Shaped Recipe// - Pink Diamond Shovel
-		GameRegistry.addShapedRecipe(new ItemStack(NGItems.PINK_DIAMOND_SHOVEL), " D ", " N ", " N ", 'D', new ItemStack(NGItems.PINK_DIAMOND), 'N', new ItemStack(NGItems.NATURE_STICK));
-		//Shaped Recipe// - Pink Diamond Hoe
-		GameRegistry.addShapedRecipe(new ItemStack(NGItems.PINK_DIAMOND_HOE), "DD ", " N ", " N ", 'D', new ItemStack(NGItems.PINK_DIAMOND), 'N', new ItemStack(NGItems.NATURE_STICK));
-		
-		
-		
-		//PARTS//
-		//Shaped Recipe// - Weak Nature Pickaxe Head
-		GameRegistry.addShapedRecipe(new ItemStack(NGItems.WEAK_NATURE_PICKAXE_HEAD), "HHH", "   ", "   ", 'H', new ItemStack(NGItems.NATURE_MATERIAL));
-		//Shaped Recipe// - Weak Nature Axe Head
-		GameRegistry.addShapedRecipe(new ItemStack(NGItems.WEAK_NATURE_AXE_HEAD), "HH ", "H  ", "   ", 'H', new ItemStack(NGItems.NATURE_MATERIAL));
-		//Shaped Recipe// - Weak Nature Shovel Head
-		GameRegistry.addShapedRecipe(new ItemStack(NGItems.WEAK_NATURE_SHOVEL_HEAD), " H ", "H H", "   ", 'H', new ItemStack(NGItems.NATURE_MATERIAL));
-		//Shaped Recipe// - Weak Nature Hoe Head
-		GameRegistry.addShapedRecipe(new ItemStack(NGItems.WEAK_NATURE_HOE_HEAD), " HH", "   ", "   ", 'H', new ItemStack(NGItems.NATURE_MATERIAL));
-		//Shaped Recipe// - Nature Pickaxe Head
-		GameRegistry.addSmelting(new ItemStack(NGItems.WEAK_NATURE_PICKAXE_HEAD), new ItemStack(NGItems.NATURE_PICKAXE_HEAD), 50.0f);
-		//Shaped Recipe// - Nature Axe Head
-		GameRegistry.addSmelting(new ItemStack(NGItems.WEAK_NATURE_AXE_HEAD), new ItemStack(NGItems.NATURE_AXE_HEAD), 50.0f);
-		//Shaped Recipe// - Nature Shovel Head
-		GameRegistry.addSmelting(new ItemStack(NGItems.WEAK_NATURE_SHOVEL_HEAD), new ItemStack(NGItems.NATURE_SHOVEL_HEAD), 50.0f);
-		//Shaped Recipe// - Nature Hoe Head
-		GameRegistry.addSmelting(new ItemStack(NGItems.WEAK_NATURE_HOE_HEAD), new ItemStack(NGItems.NATURE_HOE_HEAD), 50.0f);
-		//Shaped Recipe// - Nature Infested Pickaxe Head
-		GameRegistry.addShapedRecipe(new ItemStack(NGItems.NATURE_INFESTED_PICKAXE_HEAD), "HHH", "   ", "   ", 'H', new ItemStack(NGItems.HARDENED_NATURE_MIXTURE));
-		//Shaped Recipe// - Nature Infested Axe Head
-		GameRegistry.addShapedRecipe(new ItemStack(NGItems.NATURE_INFESTED_AXE_HEAD), "HH ", "H  ", "   ", 'H', new ItemStack(NGItems.HARDENED_NATURE_MIXTURE));
-		//Shaped Recipe// - Nature Infested Shovel Head
-		GameRegistry.addShapedRecipe(new ItemStack(NGItems.NATURE_INFESTED_SHOVEL_HEAD), " H ", "H H", "   ", 'H', new ItemStack(NGItems.HARDENED_NATURE_MIXTURE));
-		//Shaped Recipe// - Nature Infested Hoe Head
-		GameRegistry.addShapedRecipe(new ItemStack(NGItems.NATURE_INFESTED_HOE_HEAD), " HH", "   ", "   ", 'H', new ItemStack(NGItems.HARDENED_NATURE_MIXTURE));
-		
-		
-		
-		
-		
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(NGItems.PINK_DIAMOND_BOOTS),
+				new Object[] { "P P", "P P", "   ", 'P', "gemPinkDiamond", }));
+
+		// TOOLS//
+
+		// Shaped Recipe// - Nature Pickaxe
+		GameRegistry.addShapedRecipe(new ItemStack(NGItems.NATURE_PICKAXE), "  H", " B ", "B  ", 'H',
+				new ItemStack(NGItems.NATURE_PICKAXE_HEAD), 'B', new ItemStack(NGItems.HEAVY_BRANCH));
+		// Shaped Recipe// - Nature Axe
+		GameRegistry.addShapedRecipe(new ItemStack(NGItems.NATURE_AXE), "  H", " B ", "B  ", 'H',
+				new ItemStack(NGItems.NATURE_AXE_HEAD), 'B', new ItemStack(NGItems.HEAVY_BRANCH));
+		// Shaped Recipe// - Nature Hoe
+		GameRegistry.addShapedRecipe(new ItemStack(NGItems.NATURE_HOE), "  H", " B ", "B  ", 'H',
+				new ItemStack(NGItems.NATURE_HOE_HEAD), 'B', new ItemStack(NGItems.HEAVY_BRANCH));
+		// Shaped Recipe// - Nature Shovel
+		GameRegistry.addShapedRecipe(new ItemStack(NGItems.NATURE_SHOVEL), "  H", " B ", "B  ", 'H',
+				new ItemStack(NGItems.NATURE_SHOVEL_HEAD), 'B', new ItemStack(NGItems.HEAVY_BRANCH));
+		// Shaped Recipe// - Pink Diamond Pickaxe
+		GameRegistry.addShapedRecipe(new ItemStack(NGItems.PINK_DIAMOND_PICKAXE), "DDD", " N ", " N ", 'D',
+				new ItemStack(NGItems.PINK_DIAMOND), 'N', new ItemStack(NGItems.NATURE_STICK));
+		// Shaped Recipe// - Pink Diamond Axe
+		GameRegistry.addShapedRecipe(new ItemStack(NGItems.PINK_DIAMOND_AXE), "DD ", "DN ", " N ", 'D',
+				new ItemStack(NGItems.PINK_DIAMOND), 'N', new ItemStack(NGItems.NATURE_STICK));
+		// Shaped Recipe// - Pink Diamond Shovel
+		GameRegistry.addShapedRecipe(new ItemStack(NGItems.PINK_DIAMOND_SHOVEL), " D ", " N ", " N ", 'D',
+				new ItemStack(NGItems.PINK_DIAMOND), 'N', new ItemStack(NGItems.NATURE_STICK));
+		// Shaped Recipe// - Pink Diamond Hoe
+		GameRegistry.addShapedRecipe(new ItemStack(NGItems.PINK_DIAMOND_HOE), "DD ", " N ", " N ", 'D',
+				new ItemStack(NGItems.PINK_DIAMOND), 'N', new ItemStack(NGItems.NATURE_STICK));
+		// Shaped Recipe// - Nature Infested Axe
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(NGItems.NATURE_INFESTED_AXE), new Object[] { "H  ",
+				"N  ", "   ", 'H', new ItemStack(NGItems.NATURE_INFESTED_AXE_HEAD), 'N', "natureInfestedBranch" }));
+		// Shaped Recipe// - Nature Infested Pickaxe
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(NGItems.NATURE_INFESTED_PICKAXE), new Object[] { "H  ",
+				"N  ", "   ", 'H', new ItemStack(NGItems.NATURE_INFESTED_PICKAXE_HEAD), 'N', "natureInfestedBranch" }));
+		// Shaped Recipe// - Nature Infested Shovel
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(NGItems.NATURE_INFESTED_SHOVEL), new Object[] { "H  ",
+				"N  ", "   ", 'H', new ItemStack(NGItems.NATURE_INFESTED_SHOVEL_HEAD), 'N', "natureInfestedBranch" }));
+		// Shaped Recipe// - Nature Infested Hoe
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(NGItems.NATURE_INFESTED_HOE), new Object[] { "H  ",
+				"N  ", "   ", 'H', new ItemStack(NGItems.NATURE_INFESTED_HOE_HEAD), 'N', "natureInfestedBranch" }));
+
+		// PARTS//
+		// Shaped Recipe// - Weak Nature Pickaxe Head
+		GameRegistry.addShapedRecipe(new ItemStack(NGItems.WEAK_NATURE_PICKAXE_HEAD), "HHH", "   ", "   ", 'H',
+				new ItemStack(NGItems.NATURE_MATERIAL));
+		// Shaped Recipe// - Weak Nature Axe Head
+		GameRegistry.addShapedRecipe(new ItemStack(NGItems.WEAK_NATURE_AXE_HEAD), "HH ", "H  ", "   ", 'H',
+				new ItemStack(NGItems.NATURE_MATERIAL));
+		// Shaped Recipe// - Weak Nature Shovel Head
+		GameRegistry.addShapedRecipe(new ItemStack(NGItems.WEAK_NATURE_SHOVEL_HEAD), " H ", "H H", "   ", 'H',
+				new ItemStack(NGItems.NATURE_MATERIAL));
+		// Shaped Recipe// - Weak Nature Hoe Head
+		GameRegistry.addShapedRecipe(new ItemStack(NGItems.WEAK_NATURE_HOE_HEAD), " HH", "   ", "   ", 'H',
+				new ItemStack(NGItems.NATURE_MATERIAL));
+		// Shaped Recipe// - Nature Pickaxe Head
+		GameRegistry.addSmelting(new ItemStack(NGItems.WEAK_NATURE_PICKAXE_HEAD),
+				new ItemStack(NGItems.NATURE_PICKAXE_HEAD), 50.0f);
+		// Shaped Recipe// - Nature Axe Head
+		GameRegistry.addSmelting(new ItemStack(NGItems.WEAK_NATURE_AXE_HEAD), new ItemStack(NGItems.NATURE_AXE_HEAD),
+				50.0f);
+		// Shaped Recipe// - Nature Shovel Head
+		GameRegistry.addSmelting(new ItemStack(NGItems.WEAK_NATURE_SHOVEL_HEAD),
+				new ItemStack(NGItems.NATURE_SHOVEL_HEAD), 50.0f);
+		// Shaped Recipe// - Nature Hoe Head
+		GameRegistry.addSmelting(new ItemStack(NGItems.WEAK_NATURE_HOE_HEAD), new ItemStack(NGItems.NATURE_HOE_HEAD),
+				50.0f);
+		// Shaped Recipe// - Nature Infested Pickaxe Head
+		GameRegistry.addShapedRecipe(new ItemStack(NGItems.NATURE_INFESTED_PICKAXE_HEAD), "HHH", "   ", "   ", 'H',
+				new ItemStack(NGItems.HARDENED_NATURE_MIXTURE));
+		// Shaped Recipe// - Nature Infested Axe Head
+		GameRegistry.addShapedRecipe(new ItemStack(NGItems.NATURE_INFESTED_AXE_HEAD), "HH ", "H  ", "   ", 'H',
+				new ItemStack(NGItems.HARDENED_NATURE_MIXTURE));
+		// Shaped Recipe// - Nature Infested Shovel Head
+		GameRegistry.addShapedRecipe(new ItemStack(NGItems.NATURE_INFESTED_SHOVEL_HEAD), " H ", "H H", "   ", 'H',
+				new ItemStack(NGItems.HARDENED_NATURE_MIXTURE));
+		// Shaped Recipe// - Nature Infested Hoe Head
+		GameRegistry.addShapedRecipe(new ItemStack(NGItems.NATURE_INFESTED_HOE_HEAD), " HH", "   ", "   ", 'H',
+				new ItemStack(NGItems.HARDENED_NATURE_MIXTURE));
+
 		OreDictionary.registerOre("grassClippings", new ItemStack(NGItems.GRASS_CLIPPINGS));
 		OreDictionary.registerOre("essenceGoo", new ItemStack(NGItems.GOO_ESSENCE));
 		OreDictionary.registerOre("natureChips", new ItemStack(NGItems.NATURE_CHIPS));
@@ -219,7 +267,7 @@ public class NGRecipes {
 		OreDictionary.registerOre("woodBranch", new ItemStack(NGItems.HEAVY_BRANCH));
 		OreDictionary.registerOre("strongNatureMaterial", new ItemStack(NGItems.STRONG_NATURE_MATERIAL));
 		OreDictionary.registerOre("natureMaterial", new ItemStack(NGItems.NATURE_MATERIAL));
-		
+		OreDictionary.registerOre("natureInfestedBranch", new ItemStack(NGItems.NATURE_INFESTED_BRANCH));
 
 		NGMobDrops.addMobDrop(new ItemStack(NGItems.BARTZ_ESSENCE), 3, 1, 1);
 		NGMobDrops.addMobDrop(new ItemStack(NGItems.LIFE_CORE), 3, 1, 1);

@@ -115,6 +115,7 @@ public class NGRecipes {
 		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(NGBlocks.PINK_DIAMOND_BLOCK),new Object[]{"ddd",
 							"ddd",
 							"ddd", 'd', "gemPinkDiamond"}));
+
 		
 		 
 		

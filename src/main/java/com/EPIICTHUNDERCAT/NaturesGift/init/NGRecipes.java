@@ -94,10 +94,13 @@ public class NGRecipes {
 				new Object[] { "NSN", "SDS", "NSN", 'S', "essenceSky", 'N', "essenceNature", 'D', "gemDiamond" }));
 		// Shaped Recipe// - Nature Material
 		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(NGItems.NATURE_MATERIAL), new Object [] { "CMC", "EWE", "CMC", 'C', "natureChips", 'M', "mossMoss", 'E', "essenceNature", 'W', new ItemStack(Blocks.WOOL) }));
-		// Shaped Recipe// - Strong Nature Material
+		// Shaped Recipe // - Strong Nature Material
 		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(NGItems.STRONG_NATURE_MATERIAL), new Object [] { "CNT", "NGN", "SNC", 'T', "treeSapling", 'C', "blockCactus", 'S', "sugarcane", 'N', "natureMaterial", 'G', "gemSky" }));
-				
-	
+		// Shaped Recipe // - Strong Nature Mixture
+		GameRegistry.addShapedRecipe(new ItemStack(NGItems.STRONG_NATURE_MIXTURE, 2), "CCC", "SMS", "CCC", 'C', new ItemStack(Items.CLAY_BALL), 'S', new ItemStack(NGItems.STONES), 'M', new ItemStack(NGItems.STRONG_NATURE_MATERIAL));
+		// Smelt Recipe // - Hardened Nature Mixture
+		GameRegistry.addSmelting(new ItemStack(NGItems.STRONG_NATURE_MIXTURE), new ItemStack(NGItems.HARDENED_NATURE_MIXTURE), 100.0f);
+		
 		
 		
 		
@@ -174,14 +177,23 @@ public class NGRecipes {
 		GameRegistry.addShapedRecipe(new ItemStack(NGItems.WEAK_NATURE_SHOVEL_HEAD), " H ", "H H", "   ", 'H', new ItemStack(NGItems.NATURE_MATERIAL));
 		//Shaped Recipe// - Weak Nature Hoe Head
 		GameRegistry.addShapedRecipe(new ItemStack(NGItems.WEAK_NATURE_HOE_HEAD), " HH", "   ", "   ", 'H', new ItemStack(NGItems.NATURE_MATERIAL));
-		//Shaped Recipe// - Weak Nature Pickaxe Head
+		//Shaped Recipe// - Nature Pickaxe Head
 		GameRegistry.addSmelting(new ItemStack(NGItems.WEAK_NATURE_PICKAXE_HEAD), new ItemStack(NGItems.NATURE_PICKAXE_HEAD), 50.0f);
-		//Shaped Recipe// - Weak Nature Axe Head
+		//Shaped Recipe// - Nature Axe Head
 		GameRegistry.addSmelting(new ItemStack(NGItems.WEAK_NATURE_AXE_HEAD), new ItemStack(NGItems.NATURE_AXE_HEAD), 50.0f);
-		//Shaped Recipe// - Weak Nature Shovel Head
+		//Shaped Recipe// - Nature Shovel Head
 		GameRegistry.addSmelting(new ItemStack(NGItems.WEAK_NATURE_SHOVEL_HEAD), new ItemStack(NGItems.NATURE_SHOVEL_HEAD), 50.0f);
-		//Shaped Recipe// - Weak Nature Hoe Head
+		//Shaped Recipe// - Nature Hoe Head
 		GameRegistry.addSmelting(new ItemStack(NGItems.WEAK_NATURE_HOE_HEAD), new ItemStack(NGItems.NATURE_HOE_HEAD), 50.0f);
+		//Shaped Recipe// - Nature Infested Pickaxe Head
+		GameRegistry.addShapedRecipe(new ItemStack(NGItems.NATURE_INFESTED_PICKAXE_HEAD), "HHH", "   ", "   ", 'H', new ItemStack(NGItems.HARDENED_NATURE_MIXTURE));
+		//Shaped Recipe// - Nature Infested Axe Head
+		GameRegistry.addShapedRecipe(new ItemStack(NGItems.NATURE_INFESTED_AXE_HEAD), "HH ", "H  ", "   ", 'H', new ItemStack(NGItems.HARDENED_NATURE_MIXTURE));
+		//Shaped Recipe// - Nature Infested Shovel Head
+		GameRegistry.addShapedRecipe(new ItemStack(NGItems.NATURE_INFESTED_SHOVEL_HEAD), " H ", "H H", "   ", 'H', new ItemStack(NGItems.HARDENED_NATURE_MIXTURE));
+		//Shaped Recipe// - Nature Infested Hoe Head
+		GameRegistry.addShapedRecipe(new ItemStack(NGItems.NATURE_INFESTED_HOE_HEAD), " HH", "   ", "   ", 'H', new ItemStack(NGItems.HARDENED_NATURE_MIXTURE));
+		
 		
 		
 		

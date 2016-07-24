@@ -60,6 +60,10 @@ public class NGItems extends Items {
 	public static Item MOSS = new NGItem("MOSS");
 	public static Item NATURE_MATERIAL = new NGItem("NATURE_MATERIAL");
 	public static Item STRONG_NATURE_MATERIAL = new NGItem("STRONG_NATURE_MATERIAL");
+	public static Item STRONG_NATURE_MIXTURE = new NGItem("STRONG_NATURE_MIXTURE");
+	public static Item HARDENED_NATURE_MIXTURE = new NGItem("HARDENED_NATURE_MIXTURE");
+	
+	
 	
 	
 	//Shields//
@@ -122,6 +126,10 @@ public class NGItems extends Items {
 	public static Item WEAK_NATURE_AXE_HEAD = new NGItem("WEAK_NATURE_AXE_HEAD");
 	public static Item WEAK_NATURE_PICKAXE_HEAD = new NGItem("WEAK_NATURE_PICKAXE_HEAD");
 	public static Item WEAK_NATURE_SHOVEL_HEAD = new NGItem("WEAK_NATURE_SHOVEL_HEAD");
+	public static Item NATURE_INFESTED_HOE_HEAD = new NGItem("NATURE_INFESTED_HOE_HEAD");
+	public static Item NATURE_INFESTED_AXE_HEAD = new NGItem("NATURE_INFESTED_AXE_HEAD");
+	public static Item NATURE_INFESTED_PICKAXE_HEAD = new NGItem("NATURE_INFESTED_PICKAXE_HEAD");
+	public static Item NATURE_INFESTED_SHOVEL_HEAD = new NGItem("NATURE_INFESTED_SHOVEL_HEAD");
 	
 
 	private static List<Item> getItems() {

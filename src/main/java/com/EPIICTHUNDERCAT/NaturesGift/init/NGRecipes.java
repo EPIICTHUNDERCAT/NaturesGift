@@ -5,6 +5,7 @@ import com.EPIICTHUNDERCAT.NaturesGift.Mobs.NGMobDrops;
 
 import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;
+import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.fml.common.registry.GameRegistry;
@@ -111,7 +112,7 @@ public class NGRecipes {
 				new ItemStack(NGItems.HEAVY_BRANCH), 'M', new ItemStack(NGItems.MOSS), 'E',
 				new ItemStack(NGItems.NATURE_ESSENCE));
 		// Shaped Recipe// - Pink Diamond Block
-		GameRegistry.addRecipe(new ItemStack(NGBlocks.PINK_DIAMOND_BLOCK), "PPP", "PPP", "PPP", 'P',
+		GameRegistry.addRecipe(new ItemStack(Item.getItemFromBlock(NGBlocks.PINK_DIAMOND_BLOCK)), "PPP", "PPP", "PPP", 'P',
 						new ItemStack(NGItems.PINK_DIAMOND));
 		
 		

@@ -54,8 +54,6 @@ public class NaturesGift {
 	@SubscribeEvent
 	public void onItemPickup(EntityItemPickupEvent event) {
 
-		FMLLog.info(Reference.ID + "Event Handler called");
-
 		if (event.getItem().getEntityItem().isItemEqual((new ItemStack(NGItems.GRASS_CLIPPINGS)))) {
 			FMLLog.info(Reference.ID + "Event Handler called");
 			event.getEntityPlayer().addStat(NGAchievement.YouBrokeGrass, 1); }

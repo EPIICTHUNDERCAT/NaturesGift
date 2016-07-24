@@ -31,10 +31,10 @@ public class CommonProxy {
 
 	private void register(FMLPreInitializationEvent preEvent) {
 		NGItems.register(preEvent);
+		NGBlocks.register(preEvent);
+		NGRecipes.register(preEvent);
 		MinecraftForge.addGrassSeed(new ItemStack(NGItems.GRASS_CLIPPINGS), 10);
 		MinecraftForge.addGrassSeed(new ItemStack(NGItems.NATURE_ESSENCE), 10);
-		NGRecipes.register(preEvent);
-		NGBlocks.register(preEvent);
 		MinecraftForge.EVENT_BUS.register(new NGMobDrops());
 		MinecraftForge.EVENT_BUS.register(new NaturesGift());
 		MinecraftForge.EVENT_BUS.register(new NGTreeDrops());

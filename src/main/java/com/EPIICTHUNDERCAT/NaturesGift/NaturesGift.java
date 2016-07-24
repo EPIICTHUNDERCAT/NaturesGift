@@ -73,6 +73,7 @@ public class NaturesGift {
 							
 
 		}
+	
 	@SubscribeEvent
 	public void onCraft(PlayerEvent.ItemCraftedEvent event) {
 		
@@ -81,12 +82,11 @@ public class NaturesGift {
 	
 			event.player.addStat(NGAchievement.InfestedAxe, 1);
 		}
-		else if (item == NGItems.NATURE_PICKAXE) {
+		if (item == NGItems.NATURE_PICKAXE) {
 			
 			event.player.addStat(NGAchievement.EarlyGame, 1);
 		}
 	}
-
 	
 		/*
 		 * @SubscribeEvent public void playerKilledEntityZombie(LivingDropsEvent

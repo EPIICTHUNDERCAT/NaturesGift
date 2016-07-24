@@ -64,7 +64,6 @@ public class NGAchievement{
 	
 	
 	public static AchievementPage NGAchievePage = new AchievementPage(
-			"Natures Gift", YouBrokeGrass, ThisIsOdd, WhoIsBartz, SkyEssence, InfestedAxe, LifeCore, SOPINK, EarlyGame);
 
 
 	}

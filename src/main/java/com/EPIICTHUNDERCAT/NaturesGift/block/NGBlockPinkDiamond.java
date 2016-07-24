@@ -1,8 +1,12 @@
 package com.EPIICTHUNDERCAT.NaturesGift.block;
 
 import com.EPIICTHUNDERCAT.NaturesGift.Misc.NGAchievement;
+import com.EPIICTHUNDERCAT.NaturesGift.Misc.NGCreativeTabs;
 import com.EPIICTHUNDERCAT.NaturesGift.block.material.NGMaterial;
+import com.EPIICTHUNDERCAT.NaturesGift.init.NGBlocks;
 
+import net.minecraft.block.Block;
+import net.minecraft.block.material.Material;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.player.EntityPlayer;
@@ -12,8 +16,8 @@ import net.minecraft.world.World;
 
 public class NGBlockPinkDiamond extends NGBlock {
 
-	public NGBlockPinkDiamond(String name) {
-		super(name, NGMaterial.PINK_DIAMOND);
+	public NGBlockPinkDiamond(String name, Material material) {
+		super(name, material);
 		this.setHardness(3.0F);
 	}
 
@@ -26,4 +30,5 @@ public class NGBlockPinkDiamond extends NGBlock {
 			((EntityPlayer) placer).addStat(NGAchievement.SOPINK, 1);
 		}
 	}
+	
 }

@@ -21,7 +21,7 @@ public class NGBlocks extends Blocks{
 	
 	public static List<Block> blocks = new ArrayList();
 	
-	public static Block PINK_DIAMOND_BLOCK = new NGBlockPinkDiamond("PINK_DIAMOND_BLOCK");
+	public static Block PINK_DIAMOND_BLOCK = new NGBlockPinkDiamond("PINK_DIAMOND_BLOCK", NGMaterial.PINK_DIAMOND);
 	
 	
 	

@@ -111,10 +111,12 @@ public class NGRecipes {
 		GameRegistry.addShapedRecipe(new ItemStack(NGItems.NATURE_INFESTED_BRANCH), "MEM", "EBE", "MEM", 'B',
 				new ItemStack(NGItems.HEAVY_BRANCH), 'M', new ItemStack(NGItems.MOSS), 'E',
 				new ItemStack(NGItems.NATURE_ESSENCE));
-		// Shaped Recipe// - Pink Diamond Block
+		// Shaped Recipe // - Pink Diamond Block
 		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(NGBlocks.PINK_DIAMOND_BLOCK),new Object[]{"ddd",
 							"ddd",
 							"ddd", 'd', "gemPinkDiamond"}));
+		// Furnace Recipe // - Dry Moss
+		GameRegistry.addSmelting(new ItemStack(NGItems.MOSS), new ItemStack(NGItems.DRY_MOSS), 25.0f);
 
 		
 		 

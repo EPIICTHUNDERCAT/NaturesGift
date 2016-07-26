@@ -65,7 +65,7 @@ public class NGItems extends Items {
 	public static Item STRONG_NATURE_MIXTURE = new NGItem("STRONG_NATURE_MIXTURE");
 	public static Item HARDENED_NATURE_MIXTURE = new NGItem("HARDENED_NATURE_MIXTURE");
 	public static Item NATURE_INFESTED_BRANCH = new NGItem("NATURE_INFESTED_BRANCH");
-	
+	public static Item DRY_MOSS = new NGItemFood("DRY_MOSS", 2, 0.2f, false);
 	
 	
 	// Shields//

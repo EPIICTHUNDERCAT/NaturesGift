@@ -76,6 +76,7 @@ item.weak_nature_hoe_head.name=Weak Nature Hoe Head
 item.strong_nature_mixture.name=Strong Nature Mixture
 item.hardened_nature_mixture.name=Hardened Nature Mixture
 item.nature_infested_branch.name=Nature Infested Branch
+item.dry_moss.name=Dry Moss
 
 
 tile.pink_diamond_block.name=Pink Diamond Block

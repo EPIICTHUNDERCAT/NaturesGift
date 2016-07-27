@@ -32,6 +32,6 @@ pinkdiamond mossy shield[x]			[x][x]
 
 
 Add Tree Breaking Drops [DONE]
-ADD TOOLS
-ADD ARMOR
+ADD TOOLS[DONE]
+ADD ARMOR[DONE]
 ADD ORE GEN

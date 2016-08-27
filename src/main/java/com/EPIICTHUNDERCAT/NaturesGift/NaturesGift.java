@@ -55,7 +55,7 @@ public class NaturesGift {
 	public void onItemPickup(EntityItemPickupEvent event) {
 
 		if (event.getItem().getEntityItem().isItemEqual((new ItemStack(NGItems.GRASS_CLIPPINGS)))) {
-			FMLLog.info(Reference.ID + "Event Handler called");
+			//FMLLog.info(Reference.ID + "Event Handler called");
 			event.getEntityPlayer().addStat(NGAchievement.YouBrokeGrass, 1); }
 			
 			else if (event.getItem().getEntityItem().isItemEqual((new ItemStack(NGItems.NATURE_ESSENCE)))) {

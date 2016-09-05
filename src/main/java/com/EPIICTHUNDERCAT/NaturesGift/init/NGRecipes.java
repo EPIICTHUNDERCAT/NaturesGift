@@ -14,6 +14,14 @@ import net.minecraftforge.oredict.ShapedOreRecipe;
 import net.minecraftforge.oredict.ShapelessOreRecipe;
 
 public class NGRecipes {
+	
+	
+	public static int moDrop;
+	public static int neDrop;
+	public static int hbDrop;
+	public static int seDrop;
+	public static int lcDrop;
+	public static int beDrop;
 
 	public static void register(FMLPreInitializationEvent preEvent) {
 		// X Shaped Recipe// - Nature Stick
@@ -112,15 +120,10 @@ public class NGRecipes {
 				new ItemStack(NGItems.HEAVY_BRANCH), 'M', new ItemStack(NGItems.MOSS), 'E',
 				new ItemStack(NGItems.NATURE_ESSENCE));
 		// Shaped Recipe // - Pink Diamond Block
-		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(NGBlocks.PINK_DIAMOND_BLOCK),new Object[]{"ddd",
-							"ddd",
-							"ddd", 'd', "gemPinkDiamond"}));
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(NGBlocks.PINK_DIAMOND_BLOCK),
+				new Object[] { "ddd", "ddd", "ddd", 'd', "gemPinkDiamond" }));
 		// Furnace Recipe // - Dry Moss
 		GameRegistry.addSmelting(new ItemStack(NGItems.MOSS), new ItemStack(NGItems.DRY_MOSS), 25.0f);
-
-		
-		 
-		
 
 		// Added Vanilla Recipes//
 
@@ -274,12 +277,22 @@ public class NGRecipes {
 		OreDictionary.registerOre("natureMaterial", new ItemStack(NGItems.NATURE_MATERIAL));
 		OreDictionary.registerOre("natureInfestedBranch", new ItemStack(NGItems.NATURE_INFESTED_BRANCH));
 
-		NGMobDrops.addMobDrop(new ItemStack(NGItems.BARTZ_ESSENCE), 3, 1, 1);
-		NGMobDrops.addMobDrop(new ItemStack(NGItems.LIFE_CORE), 3, 1, 1);
-		NGMobDrops.addMobDrop(new ItemStack(NGItems.SKY_ESSENCE), 1, 1, 1);
-		NGTreeDrops.addTreeDrop(new ItemStack(NGItems.HEAVY_BRANCH), 10, 1, 1);
-		NGTreeDrops.addTreeDrop(new ItemStack(NGItems.MOSS), 10, 1, 1);
-		NGTreeDrops.addTreeDrop(new ItemStack(NGItems.NATURE_ESSENCE), 10, 1, 1);
+		NGMobDrops.addMobDrop(new ItemStack(NGItems.BARTZ_ESSENCE), beDrop, 1, 1);
+		NGMobDrops.addMobDrop(new ItemStack(NGItems.LIFE_CORE), lcDrop, 1, 1);
+		NGMobDrops.addMobDrop(new ItemStack(NGItems.SKY_ESSENCE), seDrop, 1, 1);
+		NGTreeDrops.addTreeDrop(new ItemStack(NGItems.HEAVY_BRANCH), hbDrop, 1, 1);
+		NGTreeDrops.addTreeDrop(new ItemStack(NGItems.MOSS), moDrop, 1, 1);
+		NGTreeDrops.addTreeDrop(new ItemStack(NGItems.NATURE_ESSENCE), neDrop, 1, 1);
+
+		/*
+		 * NGMobDrops.addMobDrop(new ItemStack(NGItems.BARTZ_ESSENCE), 3, 1, 1);
+		 * NGMobDrops.addMobDrop(new ItemStack(NGItems.LIFE_CORE), 3, 1, 1);
+		 * NGMobDrops.addMobDrop(new ItemStack(NGItems.SKY_ESSENCE), 1, 1, 1);
+		 * NGTreeDrops.addTreeDrop(new ItemStack(NGItems.HEAVY_BRANCH), 10, 1,
+		 * 1); NGTreeDrops.addTreeDrop(new ItemStack(NGItems.MOSS), 10, 1, 1);
+		 * NGTreeDrops.addTreeDrop(new ItemStack(NGItems.NATURE_ESSENCE), 10, 1,
+		 * 1);
+		 */
 	}
 
 }

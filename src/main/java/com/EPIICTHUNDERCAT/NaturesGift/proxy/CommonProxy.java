@@ -7,6 +7,7 @@ import com.EPIICTHUNDERCAT.NaturesGift.Mobs.NGMobDrops;
 import com.EPIICTHUNDERCAT.NaturesGift.init.NGBlocks;
 import com.EPIICTHUNDERCAT.NaturesGift.init.NGItems;
 import com.EPIICTHUNDERCAT.NaturesGift.init.NGRecipes;
+import com.EPIICTHUNDERCAT.NaturesGift.util.NGConfig;
 
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.common.AchievementPage;
@@ -17,8 +18,12 @@ import net.minecraftforge.fml.common.gameevent.TickEvent.PlayerTickEvent;
 
 public class CommonProxy {
 
+	public static int neDrop;
+	public static int gcDrop;
+
 	public void preInit(FMLPreInitializationEvent preEvent) {
 		register(preEvent);
+		NGConfig.config(preEvent);
 
 	}
 
@@ -33,8 +38,8 @@ public class CommonProxy {
 		NGItems.register(preEvent);
 		NGBlocks.register(preEvent);
 		NGRecipes.register(preEvent);
-		MinecraftForge.addGrassSeed(new ItemStack(NGItems.GRASS_CLIPPINGS), 10);
-		MinecraftForge.addGrassSeed(new ItemStack(NGItems.NATURE_ESSENCE), 10);
+		MinecraftForge.addGrassSeed(new ItemStack(NGItems.GRASS_CLIPPINGS), gcDrop);
+		MinecraftForge.addGrassSeed(new ItemStack(NGItems.NATURE_ESSENCE), neDrop);
 		MinecraftForge.EVENT_BUS.register(new NGMobDrops());
 		MinecraftForge.EVENT_BUS.register(new NaturesGift());
 		MinecraftForge.EVENT_BUS.register(new NGTreeDrops());

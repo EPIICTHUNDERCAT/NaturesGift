@@ -30,3 +30,5 @@ gradle-wrapper.jar
 build.gradle
 
 gradlew
+
+.DS_Store

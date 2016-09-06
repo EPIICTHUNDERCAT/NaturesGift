@@ -27,14 +27,14 @@ public class EntityNatureBeam extends EntityThrowable {
 		if (result.typeOfHit.equals(result.typeOfHit.ENTITY)) {
 			if (result.entityHit instanceof EntityPlayer && player) {
 				EntityLivingBase entity = (EntityLivingBase) result.entityHit;
-				if (!world.isRemote) {
+				if (!this.getEntityWorld().isRemote) {
 					entity.addPotionEffect(new PotionEffect(Potion.getPotionById(19), 100, 1, false, false));
 
 				}
 			}
 			if (result.entityHit instanceof EntityLiving && entity) {
 				EntityLivingBase entity = (EntityLivingBase) result.entityHit;
-				if (!world.isRemote) {
+				if (!this.getEntityWorld().isRemote) {
 					entity.addPotionEffect(new PotionEffect(Potion.getPotionById(19), 100, 1, false, false));
 				
 				}

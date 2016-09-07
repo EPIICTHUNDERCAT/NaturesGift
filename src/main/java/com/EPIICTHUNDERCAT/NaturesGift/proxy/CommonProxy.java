@@ -4,6 +4,7 @@ import com.EPIICTHUNDERCAT.NaturesGift.NaturesGift;
 import com.EPIICTHUNDERCAT.NaturesGift.Misc.NGAchievement;
 import com.EPIICTHUNDERCAT.NaturesGift.MiscDrops.NGTreeDrops;
 import com.EPIICTHUNDERCAT.NaturesGift.Mobs.NGMobDrops;
+import com.EPIICTHUNDERCAT.NaturesGift.init.LegacyRecipes;
 import com.EPIICTHUNDERCAT.NaturesGift.init.NGBlocks;
 import com.EPIICTHUNDERCAT.NaturesGift.init.NGItems;
 import com.EPIICTHUNDERCAT.NaturesGift.init.NGRecipes;
@@ -16,7 +17,6 @@ import net.minecraftforge.common.AchievementPage;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
-import net.minecraftforge.fml.common.gameevent.TickEvent.PlayerTickEvent;
 
 public class CommonProxy {
 
@@ -31,15 +31,19 @@ public class CommonProxy {
 
 	public void init(FMLInitializationEvent event) {
 		registerRenders(event);
-	
+
 		AchievementPage.registerAchievementPage(NGAchievement.NGAchievePage);
-}
-	
+	}
 
 	private void register(FMLPreInitializationEvent preEvent) {
 		NGItems.register(preEvent);
 		NGBlocks.register(preEvent);
-		NGRecipes.register(preEvent);
+		
+		if(versionCompare(MinecraftForge.MC_VERSION) >= 0)
+			NGRecipes.register(preEvent);
+		else
+			LegacyRecipes.register(preEvent);
+		
 		MinecraftForge.addGrassSeed(new ItemStack(NGItems.GRASS_CLIPPINGS), gcDrop);
 		MinecraftForge.addGrassSeed(new ItemStack(NGItems.NATURE_ESSENCE), neDrop);
 		MinecraftForge.EVENT_BUS.register(new NGMobDrops());
@@ -47,19 +51,34 @@ public class CommonProxy {
 		MinecraftForge.EVENT_BUS.register(new NGTreeDrops());
 		MinecraftForge.EVENT_BUS.register(new EventManager());
 		MinecraftForge.EVENT_BUS.register(new ItemStack(NGItems.NATURE_INFESTED_AXE));
-	
-		
-		
 
 	}
-	public void spawnParticleLeaf(World world, double x, double y, double z, double vx, double vy, double vz, double r, double g, double b){
-		//
-	}
+
 	public void registerRenders(FMLInitializationEvent event) {
-		// TODO Auto-generated method stub
 
 	}
 
+	public void spawnParticleLeaf(World world, double x, double y, double z, double vx, double vy, double vz, double r,
+			double g, double b) {
 
+	}
+	public static int versionCompare(String version) {
+	    String cutoff = "1.10.0";
+	    String[] mcVersion = version.split("\\.");
+	    String[] cutoffVersion = cutoff.split("\\.");
+	    int i = 0;
+	    // set index to first non-equal ordinal or length of shortest version string
+	    while (i < mcVersion.length && i < cutoffVersion.length && mcVersion[i].equals(cutoffVersion[i])) {
+	      i++;
+	    }
+	    // compare first non-equal ordinal number
+	    if (i < mcVersion.length && i < cutoffVersion.length) {
+	        int diff = Integer.valueOf(mcVersion[i]).compareTo(Integer.valueOf(cutoffVersion[i]));
+	        return Integer.signum(diff);
+	    }
+	    // the strings are equal or one string is a substring of the other
+	    // e.g. "1.2.3" = "1.2.3" or "1.2.3" < "1.2.3.4"
+	    return Integer.signum(mcVersion.length - cutoffVersion.length);
+	}
 
 }

@@ -76,6 +76,7 @@ public class ParticleLeaf extends Particle{
 			this.particleScale = 5.0f*(lifeCoeff);
 		}
 	}
+	
 	}
 
 

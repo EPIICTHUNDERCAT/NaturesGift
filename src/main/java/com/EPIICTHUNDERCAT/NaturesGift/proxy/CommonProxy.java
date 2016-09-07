@@ -7,6 +7,7 @@ import com.EPIICTHUNDERCAT.NaturesGift.Mobs.NGMobDrops;
 import com.EPIICTHUNDERCAT.NaturesGift.init.NGBlocks;
 import com.EPIICTHUNDERCAT.NaturesGift.init.NGItems;
 import com.EPIICTHUNDERCAT.NaturesGift.init.NGRecipes;
+import com.EPIICTHUNDERCAT.NaturesGift.util.EventManager;
 import com.EPIICTHUNDERCAT.NaturesGift.util.NGConfig;
 
 import net.minecraft.item.ItemStack;
@@ -44,6 +45,7 @@ public class CommonProxy {
 		MinecraftForge.EVENT_BUS.register(new NGMobDrops());
 		MinecraftForge.EVENT_BUS.register(new NaturesGift());
 		MinecraftForge.EVENT_BUS.register(new NGTreeDrops());
+		MinecraftForge.EVENT_BUS.register(new EventManager());
 		MinecraftForge.EVENT_BUS.register(new ItemStack(NGItems.NATURE_INFESTED_AXE));
 	
 		
@@ -58,9 +60,6 @@ public class CommonProxy {
 
 	}
 
-	public void VersionCheck(PlayerTickEvent event) {
-		// TODO Auto-generated method stub
 
-	}
 
 }

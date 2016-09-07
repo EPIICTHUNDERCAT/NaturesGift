@@ -10,6 +10,7 @@ import com.EPIICTHUNDERCAT.NaturesGift.init.NGRecipes;
 import com.EPIICTHUNDERCAT.NaturesGift.util.NGConfig;
 
 import net.minecraft.item.ItemStack;
+import net.minecraft.world.World;
 import net.minecraftforge.common.AchievementPage;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
@@ -49,7 +50,9 @@ public class CommonProxy {
 		
 
 	}
-
+	public void spawnParticleLeaf(World world, double x, double y, double z, double vx, double vy, double vz, double r, double g, double b){
+		//
+	}
 	public void registerRenders(FMLInitializationEvent event) {
 		// TODO Auto-generated method stub
 

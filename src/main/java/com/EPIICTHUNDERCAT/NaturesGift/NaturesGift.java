@@ -28,7 +28,8 @@ public class NaturesGift {
 	public static NaturesGift instance;
 
 	@SidedProxy(clientSide = Reference.CLIENT_PROXY, serverSide = Reference.SERVER_PROXY)
-	private static CommonProxy proxy;
+	public
+	static CommonProxy proxy;
 	public static Configuration config;
 	public static VersionCheck versionChecker;
 	public static boolean getUpdates;

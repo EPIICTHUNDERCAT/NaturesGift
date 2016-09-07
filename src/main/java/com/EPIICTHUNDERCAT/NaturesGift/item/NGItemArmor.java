@@ -1,12 +1,16 @@
 package com.EPIICTHUNDERCAT.NaturesGift.item;
 
+import com.EPIICTHUNDERCAT.NaturesGift.NaturesGift;
 import com.EPIICTHUNDERCAT.NaturesGift.Misc.NGCreativeTabs;
 import com.EPIICTHUNDERCAT.NaturesGift.init.NGItems;
 
+import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.init.SoundEvents;
 import net.minecraft.inventory.EntityEquipmentSlot;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemArmor;
+import net.minecraft.item.ItemStack;
+import net.minecraft.world.World;
 import net.minecraftforge.common.util.EnumHelper;
 
 public class NGItemArmor extends ItemArmor {
@@ -31,4 +35,9 @@ public class NGItemArmor extends ItemArmor {
 		NGItems.items.add(item);
 
 	}
+	   @Override
+	    public void onArmorTick(World world, EntityPlayer player, ItemStack stack) {
+	            NaturesGift.proxy.spawnParticleLeaf(world, player.posX, player.posY, player.posZ, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0);
+	}
+	
 }

@@ -20,10 +20,6 @@ public class NaturesGift {
 	public static CommonProxy proxy;
 	public static Configuration config;
 
-	public static boolean getUpdates;
-	public static String latest;
-	public static boolean isLatest;
-	public static boolean warned;
 
 	@EventHandler
 	private void preInit(FMLPreInitializationEvent preEvent) {

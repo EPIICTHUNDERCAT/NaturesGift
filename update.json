@@ -1,0 +1,23 @@
+{
+  "homepage": "https://minecraft.curseforge.com/projects/natures-gift",
+  "promos": {
+    "1.10.2-latest": "0.7.0",
+    "1.10.0-latest": "0.7.0",
+    "1.9.4-latest": "0.7.0",
+    "1.10.2-recommended": "0.7.0",
+    "1.10.0-recommended": "0.7.0",
+    "1.9.4-recommended": "0.7.0"
+
+  },
+  "1.10.2": {
+    "0.7.0": "Release 0.7.0 - New Config, Forge Versioning, Compatibilty."
+
+  },
+  "1.10.0": {
+   "0.7.0": "Release 0.7.0 - New Config, Forge Versioning, Compatibilty."
+    
+  },
+  "1.9.4": {
+    "0.7.0": "Release 0.7.0 - New Config, Forge Versioning, Compatibilty."
+  }
+}

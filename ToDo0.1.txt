@@ -31,7 +31,11 @@ pinkdiamond mossy shield[x]			[x][x]
 
 
 
+
 Add Tree Breaking Drops [DONE]
 ADD TOOLS[DONE]
 ADD ARMOR[DONE]
 ADD ORE GEN
+TWEAK EARLY GAME, pickaxe too slow for how annoying it is to make
+Add NAture Wand, shoots nature beam
+fix shields durability issue

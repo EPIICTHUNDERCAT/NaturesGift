@@ -38,7 +38,7 @@ public class CommonProxy {
 	private void register(FMLPreInitializationEvent preEvent) {
 		NGItems.register(preEvent);
 		NGBlocks.register(preEvent);
-		
+		//recipe change for 1.9.4 handling
 		if(versionCompare(MinecraftForge.MC_VERSION) >= 0)
 			NGRecipes.register(preEvent);
 		else

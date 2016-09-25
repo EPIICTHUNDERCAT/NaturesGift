@@ -295,4 +295,4 @@ public class LegacyRecipes {
 
 }
 
-}
+

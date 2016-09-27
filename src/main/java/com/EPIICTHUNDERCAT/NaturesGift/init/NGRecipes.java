@@ -30,7 +30,7 @@ public class NGRecipes {
 						'S', "stickWood", 'C', "dyeCyan", 'G', "dyeGreen", 'O', "dyeOrange", 'P', "dyePurple" }));
 		// X Shaped Recipe// - Magical Nature Stick
 		GameRegistry.addRecipe(new ItemStack(NGItems.MAGICAL_NATURE_STICK), "bbb", "gng", "bbb", 'b',
-				new ItemStack(Blocks.field_189880_di), 'g', new ItemStack(NGItems.GRASS_CLIPPINGS), 'n',
+				new ItemStack(Items.BONE), 'g', new ItemStack(NGItems.GRASS_CLIPPINGS), 'n',
 				new ItemStack(NGItems.NATURE_STICK));
 		// X Shaped Recipe// -Nature Infested Sword
 		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(NGItems.NATURE_INFESTED_SWORD),

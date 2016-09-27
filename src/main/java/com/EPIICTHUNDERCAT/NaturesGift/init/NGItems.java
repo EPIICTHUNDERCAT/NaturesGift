@@ -10,6 +10,7 @@ import com.EPIICTHUNDERCAT.NaturesGift.item.NGItem;
 import com.EPIICTHUNDERCAT.NaturesGift.item.NGItemArmor;
 import com.EPIICTHUNDERCAT.NaturesGift.item.NGItemFood;
 import com.EPIICTHUNDERCAT.NaturesGift.item.NGItemSword;
+import com.EPIICTHUNDERCAT.NaturesGift.item.NGNatureWand;
 import com.EPIICTHUNDERCAT.NaturesGift.item.Tools.NGNatureAxe;
 import com.EPIICTHUNDERCAT.NaturesGift.item.Tools.NGNatureHoe;
 import com.EPIICTHUNDERCAT.NaturesGift.item.Tools.NGNaturePickaxe;
@@ -135,6 +136,8 @@ public class NGItems extends Items {
 	public static Item NATURE_INFESTED_AXE_HEAD = new NGItem("NATURE_INFESTED_AXE_HEAD");
 	public static Item NATURE_INFESTED_PICKAXE_HEAD = new NGItem("NATURE_INFESTED_PICKAXE_HEAD");
 	public static Item NATURE_INFESTED_SHOVEL_HEAD = new NGItem("NATURE_INFESTED_SHOVEL_HEAD");
+	
+	public static Item NATURE_WAND = new NGNatureWand("NATURE_WAND");
 
 	private static List<Item> getItems() {
 		return items;

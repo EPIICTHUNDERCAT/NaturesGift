@@ -17,12 +17,13 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 
 public class EventManager {
 	
-	@SideOnly(Side.CLIENT)
+	/*@SideOnly(Side.CLIENT)
     @SubscribeEvent
     public void onTextureStitch(TextureStitchEvent event){
         ResourceLocation leafparticle = new ResourceLocation("naturesgift:entity/leafparticle");
         event.getMap().registerSprite(leafparticle);
     }
+    */
 	@SubscribeEvent
 	public void onCraft(PlayerEvent.ItemCraftedEvent event) {
 		

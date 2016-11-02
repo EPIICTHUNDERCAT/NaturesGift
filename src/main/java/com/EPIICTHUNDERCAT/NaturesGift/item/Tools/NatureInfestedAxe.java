@@ -1,8 +1,8 @@
 package com.EPIICTHUNDERCAT.NaturesGift.item.Tools;
 
-import com.EPIICTHUNDERCAT.NaturesGift.Misc.NGAchievement;
-import com.EPIICTHUNDERCAT.NaturesGift.Misc.NGCreativeTabs;
 import com.EPIICTHUNDERCAT.NaturesGift.init.NGItems;
+import com.EPIICTHUNDERCAT.NaturesGift.misc.NGAchievement;
+import com.EPIICTHUNDERCAT.NaturesGift.misc.NGCreativeTabs;
 
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.init.Blocks;

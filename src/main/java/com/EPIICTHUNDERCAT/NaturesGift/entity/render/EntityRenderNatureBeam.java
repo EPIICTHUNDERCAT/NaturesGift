@@ -21,7 +21,7 @@ public class EntityRenderNatureBeam extends Render<EntityNatureBeam>{
 	private Item item;
 	private RenderItem itemRenderer;
 
-	protected EntityRenderNatureBeam(RenderManager renderManager, Item item) {
+	public EntityRenderNatureBeam(RenderManager renderManager, Item item) {
 		super(renderManager);
 		this.item = item;
 		this.itemRenderer = Minecraft.getMinecraft().getRenderItem();

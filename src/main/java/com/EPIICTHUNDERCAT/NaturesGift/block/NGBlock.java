@@ -1,7 +1,7 @@
 package com.EPIICTHUNDERCAT.NaturesGift.block;
 
-import com.EPIICTHUNDERCAT.NaturesGift.Misc.NGCreativeTabs;
 import com.EPIICTHUNDERCAT.NaturesGift.init.NGBlocks;
+import com.EPIICTHUNDERCAT.NaturesGift.misc.NGCreativeTabs;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;

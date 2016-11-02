@@ -1,6 +1,6 @@
 package com.EPIICTHUNDERCAT.NaturesGift.item;
 
-import com.EPIICTHUNDERCAT.NaturesGift.Misc.NGCreativeTabs;
+import com.EPIICTHUNDERCAT.NaturesGift.misc.NGCreativeTabs;
 
 import net.minecraft.block.IGrowable;
 import net.minecraft.block.state.IBlockState;

@@ -1,7 +1,7 @@
 package com.EPIICTHUNDERCAT.NaturesGift.util;
 
-import com.EPIICTHUNDERCAT.NaturesGift.Misc.NGAchievement;
 import com.EPIICTHUNDERCAT.NaturesGift.init.NGItems;
+import com.EPIICTHUNDERCAT.NaturesGift.misc.NGAchievement;
 
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;

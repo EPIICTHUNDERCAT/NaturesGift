@@ -1,15 +1,16 @@
 package com.EPIICTHUNDERCAT.NaturesGift.proxy;
 
-import com.EPIICTHUNDERCAT.NaturesGift.NaturesGift;
-import com.EPIICTHUNDERCAT.NaturesGift.Misc.NGAchievement;
-import com.EPIICTHUNDERCAT.NaturesGift.MiscDrops.NGTreeDrops;
-import com.EPIICTHUNDERCAT.NaturesGift.Mobs.NGMobDrops;
+import com.EPIICTHUNDERCAT.NaturesGift.entity.EntityNatureBeam;
 import com.EPIICTHUNDERCAT.NaturesGift.init.LegacyRecipes;
 import com.EPIICTHUNDERCAT.NaturesGift.init.NGBlocks;
 import com.EPIICTHUNDERCAT.NaturesGift.init.NGItems;
 import com.EPIICTHUNDERCAT.NaturesGift.init.NGRecipes;
+import com.EPIICTHUNDERCAT.NaturesGift.misc.NGAchievement;
+import com.EPIICTHUNDERCAT.NaturesGift.miscdrops.NGTreeDrops;
+import com.EPIICTHUNDERCAT.NaturesGift.mobs.NGMobDrops;
 import com.EPIICTHUNDERCAT.NaturesGift.util.EventManager;
 import com.EPIICTHUNDERCAT.NaturesGift.util.NGConfig;
+import com.EPIICTHUNDERCAT.NaturesGift.NaturesGift;
 
 import net.minecraft.item.ItemStack;
 import net.minecraft.world.World;
@@ -17,6 +18,7 @@ import net.minecraftforge.common.AchievementPage;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
+import net.minecraftforge.fml.common.registry.EntityRegistry;
 
 public class CommonProxy {
 
@@ -36,6 +38,7 @@ public class CommonProxy {
 	}
 
 	private void register(FMLPreInitializationEvent preEvent) {
+		registerEntities(preEvent);
 		NGItems.register(preEvent);
 		NGBlocks.register(preEvent);
 		// recipe change for 1.9.4 handling
@@ -56,6 +59,10 @@ public class CommonProxy {
 
 	public void registerRenders(FMLInitializationEvent event) {
 
+	}
+	public void registerEntities(FMLPreInitializationEvent preEvent) {
+		int id = 0;
+		EntityRegistry.registerModEntity(EntityNatureBeam.class, "naturebeam", id++, NaturesGift.instance, 64, 2, true);
 	}
 
 	/*

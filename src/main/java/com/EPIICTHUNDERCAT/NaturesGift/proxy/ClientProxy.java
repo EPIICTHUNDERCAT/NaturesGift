@@ -1,11 +1,16 @@
 package com.EPIICTHUNDERCAT.NaturesGift.proxy;
 
-import com.EPIICTHUNDERCAT.NaturesGift.Misc.ParticleLeaf;
+import com.EPIICTHUNDERCAT.NaturesGift.entity.EntityNatureBeam;
+import com.EPIICTHUNDERCAT.NaturesGift.entity.render.EntityRenderNatureBeam;
 import com.EPIICTHUNDERCAT.NaturesGift.init.NGBlocks;
 import com.EPIICTHUNDERCAT.NaturesGift.init.NGItems;
+import com.EPIICTHUNDERCAT.NaturesGift.misc.ParticleLeaf;
 
 import net.minecraft.client.Minecraft;
+import net.minecraft.client.renderer.entity.RenderManager;
 import net.minecraft.world.World;
+import net.minecraftforge.fml.client.registry.IRenderFactory;
+import net.minecraftforge.fml.client.registry.RenderingRegistry;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 
@@ -33,6 +38,15 @@ public class ClientProxy extends CommonProxy {
 		ParticleLeaf particle = new ParticleLeaf(world, x, y, z, vx, vy, vz, r, g, b);
 		Minecraft.getMinecraft().effectRenderer.addEffect(particle);
 
+	}
+	@Override
+	public void registerEntities(FMLPreInitializationEvent preEvent) {
+		super.registerEntities(preEvent);
+		RenderingRegistry.registerEntityRenderingHandler(EntityNatureBeam.class, new IRenderFactory<EntityNatureBeam>() {
+            @Override public EntityRenderNatureBeam createRenderFor (RenderManager manager) {
+                return new EntityRenderNatureBeam(manager, NGItems.NATUREBEAM);
+            }
+        });
 	}
 
 }

@@ -25,7 +25,7 @@ group= "com.EPIICTHUNDERCAT.NaturesGift" // http://maven.apache.org/guides/mini/
 archivesBaseName = "naturesgift-1.9.4-1.10.2"
 
 minecraft {
-    version = "1.9.4-12.17.0.1976"
+    version = "1.10.2-12.18.2.2099"
     runDir = "run"
     
     // the mappings can be changed at any time, and must be in the following format.

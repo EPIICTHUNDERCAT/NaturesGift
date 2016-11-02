@@ -11,6 +11,7 @@ import net.minecraft.world.World;
 public class ParticleLeaf extends Particle{
 	
 	Random random = new Random();
+	
 	public double colorR = 0;
 	public double colorG = 0;
 	public double colorB = 0;
@@ -18,6 +19,8 @@ public class ParticleLeaf extends Particle{
 	public ResourceLocation texture = new ResourceLocation("naturesgift:entity/leafparticle");
 	public ParticleLeaf(World worldIn, double x, double y, double z, double vx, double vy, double vz, double r, double g, double b) {
 		super(worldIn, x,y,z,0,0,0);
+		
+		
 		this.colorR = r;
 		this.colorG = g;
 		this.colorB = b;
@@ -48,6 +51,7 @@ public class ParticleLeaf extends Particle{
 	public boolean isTransparent(){
 		return true;
 	}
+	 
 	
 	@Override
 	public int getFXLayer(){

@@ -19,13 +19,14 @@ import net.minecraft.world.World;
 
 public class NGNatureWand extends NGItem{
 	
-	public static int leafDamage;
-	public static int superiorDamage;
+	public static int leafDamage = 100;
+	public static int superiorDamage = 100;
 	private int uses;
 	
 	public NGNatureWand(String name) {
 		super(name);
 		this.setMaxStackSize(1);
+		
 		if (this.getRegistryName().toString().substring(11).startsWith("superior")) {
 			this.setMaxDamage(superiorDamage);
 		} else {
@@ -81,7 +82,7 @@ public void onUpdate(ItemStack stack, World world, Entity entity, int itemSlot, 
 							if (!world.isRemote) {
 								world.playSound((EntityPlayer) null, entity.posX, entity.posY, entity.posZ,
 										SoundEvents.ENTITY_WITHER_SHOOT, SoundCategory.NEUTRAL, 1.5F, 10.0F);
-								EntityNatureBeam beam = new EntityNatureBeam(world, (EntityLivingBase) entity);
+								EntityNatureBeam beam = new EntityNatureBeam(world);
 								beam.setHeadingFromThrower(entity, entity.rotationPitch, entity.rotationYaw, 0.0F,
 										1.0F, 0.0F);
 								entity.getEntityWorld().spawnEntityInWorld(beam);

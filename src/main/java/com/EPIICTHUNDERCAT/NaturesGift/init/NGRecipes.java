@@ -3,6 +3,7 @@ package com.EPIICTHUNDERCAT.NaturesGift.init;
 import com.EPIICTHUNDERCAT.NaturesGift.MiscDrops.NGTreeDrops;
 import com.EPIICTHUNDERCAT.NaturesGift.Mobs.NGMobDrops;
 
+import net.minecraft.block.Block;
 import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;
 import net.minecraft.item.Item;
@@ -30,8 +31,8 @@ public class NGRecipes {
 						'S', "stickWood", 'C', "dyeCyan", 'G', "dyeGreen", 'O', "dyeOrange", 'P', "dyePurple" }));
 		// X Shaped Recipe// - Magical Nature Stick
 		GameRegistry.addRecipe(new ItemStack(NGItems.MAGICAL_NATURE_STICK), "bbb", "gng", "bbb", 'b',
-				new ItemStack(Items.BONE), 'g', new ItemStack(NGItems.GRASS_CLIPPINGS), 'n',
-				new ItemStack(NGItems.NATURE_STICK));
+                new ItemStack(Block.getBlockFromName("bone_block")), 'g', new ItemStack(NGItems.GRASS_CLIPPINGS), 'n',
+                new ItemStack(NGItems.NATURE_STICK));
 		// X Shaped Recipe// -Nature Infested Sword
 		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(NGItems.NATURE_INFESTED_SWORD),
 				new Object[] { "CCG", "SDC", "NSC", 'C', "natureChips", 'G', "grassClippings", 'S', "essenceGoo", 'D',

@@ -138,6 +138,7 @@ public class NGItems extends Items {
 	public static Item NATURE_INFESTED_SHOVEL_HEAD = new NGItem("NATURE_INFESTED_SHOVEL_HEAD");
 	
 	public static Item NATURE_WAND = new NGNatureWand("NATURE_WAND");
+	public static Item NATUREBEAM = new NGItem("NATUREBEAM");
 
 	private static List<Item> getItems() {
 		return items;

@@ -9,7 +9,7 @@ import net.minecraft.item.ItemAxe;
 public class PinkDiamondAxe extends ItemAxe {
 
 	public PinkDiamondAxe(String name, ToolMaterial material) {
-		super(material, 10.0f, 10.0f);
+		super(material, 7.0f, -2.0f);
 		setRegistryName(name.toLowerCase());
 		setUnlocalizedName(name.toLowerCase());
 		addToItems(this);

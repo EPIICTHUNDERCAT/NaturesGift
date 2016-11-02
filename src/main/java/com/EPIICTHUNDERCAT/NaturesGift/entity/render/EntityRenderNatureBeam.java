@@ -1,6 +1,7 @@
 package com.EPIICTHUNDERCAT.NaturesGift.entity.render;
 
 import com.EPIICTHUNDERCAT.NaturesGift.entity.EntityNatureBeam;
+import com.EPIICTHUNDERCAT.NaturesGift.init.NGItems;
 
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.GlStateManager;
@@ -15,6 +16,8 @@ import net.minecraft.util.ResourceLocation;
 
 public class EntityRenderNatureBeam extends Render<EntityNatureBeam>{
 	
+	private static final ResourceLocation NATUREBEAM = new ResourceLocation(
+			"naturesgift:textures/entity/naturebeam.png");
 	private Item item;
 	private RenderItem itemRenderer;
 
@@ -22,6 +25,7 @@ public class EntityRenderNatureBeam extends Render<EntityNatureBeam>{
 		super(renderManager);
 		this.item = item;
 		this.itemRenderer = Minecraft.getMinecraft().getRenderItem();
+		
 
 	}
 	@Override
@@ -54,13 +58,13 @@ public class EntityRenderNatureBeam extends Render<EntityNatureBeam>{
 	}
 
 	private ItemStack getStackToRender(EntityNatureBeam entity) {
-		return new ItemStack(this.item);
-	}
+		return new ItemStack(NGItems.NATUREBEAM);
+			}
 
 	@Override
 	protected ResourceLocation getEntityTexture(EntityNatureBeam entity) {
 		
-		return null;
+		return NATUREBEAM;
 	}
 
 }

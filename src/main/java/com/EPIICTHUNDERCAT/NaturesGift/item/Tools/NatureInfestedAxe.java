@@ -17,7 +17,7 @@ import net.minecraftforge.fml.common.gameevent.PlayerEvent;
 public class NatureInfestedAxe extends ItemAxe {
 
 	public NatureInfestedAxe(String name, ToolMaterial material) {
-		super(material, 6.0f, 6.0f);
+		super(material, 6.0f, -1.0f);
 		setRegistryName(name.toLowerCase());
 		setUnlocalizedName(name.toLowerCase());
 		addToItems(this);

@@ -1,6 +1,7 @@
 package com.EPIICTHUNDERCAT.NaturesGift.item;
 
 import com.EPIICTHUNDERCAT.NaturesGift.entity.EntityNatureBeam;
+import com.EPIICTHUNDERCAT.NaturesGift.misc.NGCreativeTabs;
 
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.entity.Entity;
@@ -15,16 +16,19 @@ import net.minecraft.util.EnumFacing;
 import net.minecraft.util.EnumHand;
 import net.minecraft.util.SoundCategory;
 import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.text.TextFormatting;
+import net.minecraft.util.text.translation.I18n;
 import net.minecraft.world.World;
 
 public class NGNatureWand extends NGItem {
 
-	public static int leafDamage = 1000;
-	public static int superiorDamage = 1000;
+	public static int leafDamage = 575;
+	public static int superiorDamage = 575;
 	private int uses;
 
 	public NGNatureWand(String name) {
 		super(name);
+		this.setCreativeTab(NGCreativeTabs.NGSpecial);
 		this.setMaxStackSize(1);
 
 		if (this.getRegistryName().toString().substring(11).startsWith("superior")) {
@@ -85,7 +89,7 @@ public class NGNatureWand extends NGItem {
 								if (!world.isRemote) {
 									world.playSound((EntityPlayer) null, entity.posX, entity.posY, entity.posZ,
 											SoundEvents.ENTITY_WITHER_SHOOT, SoundCategory.NEUTRAL, 1.5F, 10.0F);
-									EntityNatureBeam beam = new EntityNatureBeam(world);
+									EntityNatureBeam beam = new EntityNatureBeam(world, (EntityLivingBase) entity, 10.0f);
 									beam.setHeadingFromThrower(entity, entity.rotationPitch, entity.rotationYaw, 0.0F,
 											1.0F, 0.0F);
 									entity.getEntityWorld().spawnEntityInWorld(beam);
@@ -105,16 +109,10 @@ public class NGNatureWand extends NGItem {
 		}
 	}
 
-	public float getStrVsBlock(ItemStack stack, IBlockState state) {
-		return !state.getBlock().equals(Blocks.TALLGRASS) || !state.equals(Blocks.GRASS) ? 0.0F : 1.0F;
+	public String getItemStackDisplayName(ItemStack stack) {
+		return (TextFormatting.DARK_GREEN + I18n.translateToLocal(this.getUnlocalizedNameInefficiently(stack) + ".name"))
+				.trim();
 	}
-
-	public boolean onBlockDestroyed(ItemStack stack, World world, IBlockState state, BlockPos pos,
-			EntityLivingBase entityLiving) {
-		return !world.getBlockState(pos).getBlock().equals(Blocks.TALLGRASS)
-				|| !world.getBlockState(pos).equals(Blocks.GRASS);
-	}
-
 	public boolean shouldCauseReequipAnimation(ItemStack oldStack, ItemStack newStack, boolean slotChanged) {
 		return slotChanged;
 	}

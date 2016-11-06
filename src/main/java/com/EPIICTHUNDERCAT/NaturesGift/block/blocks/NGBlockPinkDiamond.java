@@ -1,5 +1,6 @@
-package com.EPIICTHUNDERCAT.NaturesGift.block;
+package com.EPIICTHUNDERCAT.NaturesGift.block.blocks;
 
+import com.EPIICTHUNDERCAT.NaturesGift.block.NGBlock;
 import com.EPIICTHUNDERCAT.NaturesGift.block.material.NGMaterial;
 import com.EPIICTHUNDERCAT.NaturesGift.init.NGBlocks;
 import com.EPIICTHUNDERCAT.NaturesGift.misc.NGAchievement;

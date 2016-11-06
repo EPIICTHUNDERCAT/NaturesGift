@@ -17,13 +17,13 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 
 public class EventManager {
 	
-	/*@SideOnly(Side.CLIENT)
+	@SideOnly(Side.CLIENT)
     @SubscribeEvent
     public void onTextureStitch(TextureStitchEvent event){
         ResourceLocation leafparticle = new ResourceLocation("naturesgift:entity/leafparticle");
         event.getMap().registerSprite(leafparticle);
     }
-    */
+    
 	@SubscribeEvent
 	public void onCraft(PlayerEvent.ItemCraftedEvent event) {
 		
@@ -36,6 +36,9 @@ public class EventManager {
 			
 			event.player.addStat(NGAchievement.EarlyGame, 1);
 		}
+		if (item == NGItems.NATURE_WAND){
+			event.player.addStat(NGAchievement.EndGame, 1);
+		}
 	}
 	
 
@@ -44,7 +47,6 @@ public class EventManager {
 	public void onItemPickup(EntityItemPickupEvent event) {
 
 		if (event.getItem().getEntityItem().isItemEqual((new ItemStack(NGItems.GRASS_CLIPPINGS)))) {
-			//FMLLog.info(Reference.ID + "Event Handler called");
 			event.getEntityPlayer().addStat(NGAchievement.YouBrokeGrass, 1); }
 			
 			else if (event.getItem().getEntityItem().isItemEqual((new ItemStack(NGItems.NATURE_ESSENCE)))) {

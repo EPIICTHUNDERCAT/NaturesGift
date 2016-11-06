@@ -3,7 +3,7 @@ package com.EPIICTHUNDERCAT.NaturesGift;
 public class Reference {
 	
 public static final String ID = "naturesgift";
-public static final String VER = "0.7.0";
+public static final String VER = "0.7.0-test-release";
 public static final String NAME = "NaturesGift";
 
 public static final String CLIENT_PROXY = "com.EPIICTHUNDERCAT.NaturesGift.proxy.ClientProxy";

@@ -1,0 +1,6 @@
+{
+    "parent": "block/cube_all",
+    "textures": {
+        "all": "naturesgift:blocks/nature_wand_core"
+    }
+}

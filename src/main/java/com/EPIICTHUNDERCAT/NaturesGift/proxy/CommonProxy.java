@@ -41,6 +41,7 @@ public class CommonProxy {
 		registerEntities(preEvent);
 		NGItems.register(preEvent);
 		NGBlocks.register(preEvent);
+		
 		// recipe change for 1.9.4 handling
 		if (versionCompare(MinecraftForge.MC_VERSION) >= 0)
 			NGRecipes.register(preEvent);
@@ -62,6 +63,7 @@ public class CommonProxy {
 	}
 	public void registerEntities(FMLPreInitializationEvent preEvent) {
 		int id = 0;
+		
 		EntityRegistry.registerModEntity(EntityNatureBeam.class, "naturebeam", id++, NaturesGift.instance, 64, 2, true);
 	}
 

@@ -1,7 +1,7 @@
 package com.EPIICTHUNDERCAT.NaturesGift.proxy;
 
 import com.EPIICTHUNDERCAT.NaturesGift.entity.EntityNatureBeam;
-import com.EPIICTHUNDERCAT.NaturesGift.entity.render.EntityRenderNatureBeam;
+import com.EPIICTHUNDERCAT.NaturesGift.entity.render.RenderEntityNatureBeam;
 import com.EPIICTHUNDERCAT.NaturesGift.init.NGBlocks;
 import com.EPIICTHUNDERCAT.NaturesGift.init.NGItems;
 import com.EPIICTHUNDERCAT.NaturesGift.misc.ParticleLeaf;
@@ -42,9 +42,10 @@ public class ClientProxy extends CommonProxy {
 	@Override
 	public void registerEntities(FMLPreInitializationEvent preEvent) {
 		super.registerEntities(preEvent);
+		
 		RenderingRegistry.registerEntityRenderingHandler(EntityNatureBeam.class, new IRenderFactory<EntityNatureBeam>() {
-            @Override public EntityRenderNatureBeam createRenderFor (RenderManager manager) {
-                return new EntityRenderNatureBeam(manager, NGItems.NATUREBEAM);
+            @Override public RenderEntityNatureBeam createRenderFor (RenderManager manager) {
+                return new RenderEntityNatureBeam(manager, NGItems.NATUREBEAM);
             }
         });
 	}

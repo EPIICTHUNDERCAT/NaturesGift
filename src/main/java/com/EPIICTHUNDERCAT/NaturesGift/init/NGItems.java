@@ -3,9 +3,9 @@ package com.EPIICTHUNDERCAT.NaturesGift.init;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.EPIICTHUNDERCAT.NaturesGift.block.NGBlockPinkDiamond;
 import com.EPIICTHUNDERCAT.NaturesGift.item.BonemealNGItem;
 import com.EPIICTHUNDERCAT.NaturesGift.item.NGDurabilityItem;
+import com.EPIICTHUNDERCAT.NaturesGift.item.NGEntityItem;
 import com.EPIICTHUNDERCAT.NaturesGift.item.NGItem;
 import com.EPIICTHUNDERCAT.NaturesGift.item.NGItemArmor;
 import com.EPIICTHUNDERCAT.NaturesGift.item.NGItemFood;
@@ -24,7 +24,6 @@ import com.EPIICTHUNDERCAT.NaturesGift.item.Tools.PinkDiamondHoe;
 import com.EPIICTHUNDERCAT.NaturesGift.item.Tools.PinkDiamondPickaxe;
 import com.EPIICTHUNDERCAT.NaturesGift.item.Tools.PinkDiamondShovel;
 
-import net.minecraft.block.Block;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.RenderItem;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
@@ -138,7 +137,8 @@ public class NGItems extends Items {
 	public static Item NATURE_INFESTED_SHOVEL_HEAD = new NGItem("NATURE_INFESTED_SHOVEL_HEAD");
 	
 	public static Item NATURE_WAND = new NGNatureWand("NATURE_WAND");
-	public static Item NATUREBEAM = new NGItem("NATUREBEAM");
+	public static Item NATUREBEAM = new NGEntityItem("NATUREBEAM");
+	
 
 	private static List<Item> getItems() {
 		return items;

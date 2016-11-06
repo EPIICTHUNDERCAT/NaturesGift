@@ -14,14 +14,14 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.ResourceLocation;
 
-public class EntityRenderNatureBeam extends Render<EntityNatureBeam>{
+public class RenderEntityNatureBeam extends Render<EntityNatureBeam>{
 	
 	private static final ResourceLocation NATUREBEAM = new ResourceLocation(
 			"naturesgift:textures/entity/naturebeam.png");
 	private Item item;
 	private RenderItem itemRenderer;
 
-	public EntityRenderNatureBeam(RenderManager renderManager, Item item) {
+	public RenderEntityNatureBeam(RenderManager renderManager, Item item) {
 		super(renderManager);
 		this.item = item;
 		this.itemRenderer = Minecraft.getMinecraft().getRenderItem();

@@ -3,7 +3,8 @@ package com.EPIICTHUNDERCAT.NaturesGift.init;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.EPIICTHUNDERCAT.NaturesGift.block.NGBlockPinkDiamond;
+import com.EPIICTHUNDERCAT.NaturesGift.block.blocks.NGBlockPinkDiamond;
+import com.EPIICTHUNDERCAT.NaturesGift.block.blocks.NGBlockWandCore;
 import com.EPIICTHUNDERCAT.NaturesGift.block.material.NGMaterial;
 
 import net.minecraft.block.Block;
@@ -21,9 +22,8 @@ public class NGBlocks extends Blocks{
 	
 	public static List<Block> blocks = new ArrayList();
 	
+	public static Block NATURE_WAND_CORE = new NGBlockWandCore("NATURE_WAND_CORE", NGMaterial.SKY_GEM);
 	public static Block PINK_DIAMOND_BLOCK = new NGBlockPinkDiamond("PINK_DIAMOND_BLOCK", NGMaterial.PINK_DIAMOND);
-	
-	
 	
 	
 	public static List<Block> blockList() {

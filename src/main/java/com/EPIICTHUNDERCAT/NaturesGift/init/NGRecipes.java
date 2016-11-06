@@ -6,17 +6,14 @@ import com.EPIICTHUNDERCAT.NaturesGift.mobs.NGMobDrops;
 import net.minecraft.block.Block;
 import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;
-import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 import net.minecraftforge.oredict.OreDictionary;
 import net.minecraftforge.oredict.ShapedOreRecipe;
-import net.minecraftforge.oredict.ShapelessOreRecipe;
 
 public class NGRecipes {
-	
-	
+
 	public static int moDrop;
 	public static int neDrop;
 	public static int hbDrop;
@@ -31,8 +28,8 @@ public class NGRecipes {
 						'S', "stickWood", 'C', "dyeCyan", 'G', "dyeGreen", 'O', "dyeOrange", 'P', "dyePurple" }));
 		// X Shaped Recipe// - Magical Nature Stick
 		GameRegistry.addRecipe(new ItemStack(NGItems.MAGICAL_NATURE_STICK), "bbb", "gng", "bbb", 'b',
-                new ItemStack(Block.getBlockFromName("bone_block")), 'g', new ItemStack(NGItems.GRASS_CLIPPINGS), 'n',
-                new ItemStack(NGItems.NATURE_STICK));
+				new ItemStack(Block.getBlockFromName("bone_block")), 'g', new ItemStack(NGItems.GRASS_CLIPPINGS), 'n',
+				new ItemStack(NGItems.NATURE_STICK));
 		// X Shaped Recipe// -Nature Infested Sword
 		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(NGItems.NATURE_INFESTED_SWORD),
 				new Object[] { "CCG", "SDC", "NSC", 'C', "natureChips", 'G', "grassClippings", 'S', "essenceGoo", 'D',
@@ -97,7 +94,7 @@ public class NGRecipes {
 		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Blocks.COBBLESTONE),
 				new Object[] { "SSS", "SSS", "SSS", 'S', "smallStones" }));
 		// X Shaped Recipe// - MossyCobbleStone
-		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Blocks.MOSSY_COBBLESTONE),
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Blocks.MOSSY_COBBLESTONE, 8),
 				new Object[] { "CCC", "CMC", "CCC", 'C', new ItemStack(Blocks.COBBLESTONE), 'M', "mossMoss" }));
 		// X Shaped Recipe// - Sky Gem
 		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(NGItems.SKY_GEM),
@@ -126,6 +123,13 @@ public class NGRecipes {
 		// Furnace Recipe // - Dry Moss
 		GameRegistry.addSmelting(new ItemStack(NGItems.MOSS), new ItemStack(NGItems.DRY_MOSS), 25.0f);
 
+		// Shaped Recipe //- Nature's Gift
+		 GameRegistry.addRecipe(new ShapedOreRecipe(new
+		 ItemStack(NGItems.NATURE_WAND), new Object[] { "mcm", "sss", " n ", 'm', "mossMoss", 'c', new ItemStack(NGBlocks.NATURE_WAND_CORE), 's', new ItemStack(Items.STICK), 'n', new ItemStack(NGItems.NATURE_INFESTED_BRANCH)} ));
+		// Shaped Recipe// - Wand Core
+		GameRegistry.addRecipe(
+				new ShapedOreRecipe(new ItemStack(NGBlocks.NATURE_WAND_CORE), new Object[] { "qsq", "sds", "qsq", 'q',
+						new ItemStack(Blocks.QUARTZ_BLOCK), 's', "gemSky", 'd', new ItemStack(Blocks.DIAMOND_BLOCK) }));
 		// Added Vanilla Recipes//
 
 		// Shapeless Recipe// - Seeds

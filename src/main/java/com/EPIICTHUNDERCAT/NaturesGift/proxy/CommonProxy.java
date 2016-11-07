@@ -1,5 +1,6 @@
 package com.EPIICTHUNDERCAT.NaturesGift.proxy;
 
+
 import com.EPIICTHUNDERCAT.NaturesGift.NaturesGift;
 import com.EPIICTHUNDERCAT.NaturesGift.entity.EntityNatureBeam;
 import com.EPIICTHUNDERCAT.NaturesGift.init.NGBlocks;

@@ -22,10 +22,7 @@ public class NGEntityRegistry {
 		// We want our mob to spawn in Plains and ice plains biomes. If you
 		// don't add this then it will not spawn automatically
 		// but you can of course still make it spawn manually
-		EntityRegistry.addSpawn(EntityNatureSprig.class, 3, 43, 8, EnumCreatureType.MONSTER, Biomes.TAIGA,
-				Biomes.PLAINS, Biomes.FOREST, Biomes.SAVANNA, Biomes.BEACH, Biomes.EXTREME_HILLS, Biomes.JUNGLE,
-				Biomes.SAVANNA_PLATEAU, Biomes.SWAMPLAND, Biomes.ICE_PLAINS, Biomes.BIRCH_FOREST,
-				Biomes.BIRCH_FOREST_HILLS, Biomes.ROOFED_FOREST);
+		//EntityRegistry.addSpawn(EntityNatureSprig.class, 3, 43, 8, EnumCreatureType.MONSTER, Biomes.ROOFED_FOREST);
 
 		// This is the loot table for our mob
 		LootTableList.register(EntityNatureSprig.LOOT);

@@ -282,9 +282,9 @@ public class NGRecipes {
 		OreDictionary.registerOre("natureMaterial", new ItemStack(NGItems.NATURE_MATERIAL));
 		OreDictionary.registerOre("natureInfestedBranch", new ItemStack(NGItems.NATURE_INFESTED_BRANCH));
 
-		NGMobDrops.addMobDrop(new ItemStack(NGItems.BARTZ_ESSENCE), beDrop, 1, 1);
-		NGMobDrops.addMobDrop(new ItemStack(NGItems.LIFE_CORE), lcDrop, 1, 1);
-		NGMobDrops.addMobDrop(new ItemStack(NGItems.SKY_ESSENCE), seDrop, 1, 1);
+		NGMobDrops.addMobDrop(new ItemStack(NGItems.BARTZ_ESSENCE), beDrop, 10, 10);
+		NGMobDrops.addMobDrop(new ItemStack(NGItems.LIFE_CORE), lcDrop, 10, 10);
+		NGMobDrops.addMobDrop(new ItemStack(NGItems.SKY_ESSENCE), seDrop, 10, 10);
 		NGTreeDrops.addTreeDrop(new ItemStack(NGItems.HEAVY_BRANCH), hbDrop, 1, 1);
 		NGTreeDrops.addTreeDrop(new ItemStack(NGItems.MOSS), moDrop, 1, 1);
 		NGTreeDrops.addTreeDrop(new ItemStack(NGItems.NATURE_ESSENCE), neDrop, 1, 1);

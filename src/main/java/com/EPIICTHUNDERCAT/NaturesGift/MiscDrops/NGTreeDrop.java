@@ -1,4 +1,4 @@
-package com.EPIICTHUNDERCAT.NaturesGift.miscdrops;
+package com.EPIICTHUNDERCAT.NaturesGift.Miscdrops;
 
 import net.minecraft.item.ItemStack;
 

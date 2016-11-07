@@ -1,4 +1,4 @@
-package com.EPIICTHUNDERCAT.NaturesGift.mobs.entities;
+package com.EPIICTHUNDERCAT.NaturesGift.Mobs.entities;
 
 import javax.annotation.Nullable;
 

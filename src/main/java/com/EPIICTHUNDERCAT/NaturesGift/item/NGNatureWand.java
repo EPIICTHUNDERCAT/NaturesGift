@@ -1,7 +1,7 @@
 package com.EPIICTHUNDERCAT.NaturesGift.item;
 
+import com.EPIICTHUNDERCAT.NaturesGift.Misc.NGCreativeTabs;
 import com.EPIICTHUNDERCAT.NaturesGift.entity.EntityNatureBeam;
-import com.EPIICTHUNDERCAT.NaturesGift.misc.NGCreativeTabs;
 
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityLivingBase;

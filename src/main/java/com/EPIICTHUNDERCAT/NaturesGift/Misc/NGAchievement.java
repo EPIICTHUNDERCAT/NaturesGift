@@ -1,4 +1,4 @@
-package com.EPIICTHUNDERCAT.NaturesGift.misc;
+package com.EPIICTHUNDERCAT.NaturesGift.Misc;
 
 import com.EPIICTHUNDERCAT.NaturesGift.init.NGBlocks;
 import com.EPIICTHUNDERCAT.NaturesGift.init.NGItems;

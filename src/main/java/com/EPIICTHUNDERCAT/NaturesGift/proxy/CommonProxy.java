@@ -2,13 +2,13 @@ package com.EPIICTHUNDERCAT.NaturesGift.proxy;
 
 
 import com.EPIICTHUNDERCAT.NaturesGift.NaturesGift;
+import com.EPIICTHUNDERCAT.NaturesGift.Misc.NGAchievement;
+import com.EPIICTHUNDERCAT.NaturesGift.Miscdrops.NGTreeDrops;
+import com.EPIICTHUNDERCAT.NaturesGift.Mobs.NGMobDrops;
 import com.EPIICTHUNDERCAT.NaturesGift.entity.EntityNatureBeam;
 import com.EPIICTHUNDERCAT.NaturesGift.init.NGBlocks;
 import com.EPIICTHUNDERCAT.NaturesGift.init.NGItems;
 import com.EPIICTHUNDERCAT.NaturesGift.init.NGRecipes;
-import com.EPIICTHUNDERCAT.NaturesGift.misc.NGAchievement;
-import com.EPIICTHUNDERCAT.NaturesGift.miscdrops.NGTreeDrops;
-import com.EPIICTHUNDERCAT.NaturesGift.mobs.NGMobDrops;
 import com.EPIICTHUNDERCAT.NaturesGift.util.EventManager;
 import com.EPIICTHUNDERCAT.NaturesGift.util.NGConfig;
 import com.EPIICTHUNDERCAT.NaturesGift.util.NGEntityRegistry;

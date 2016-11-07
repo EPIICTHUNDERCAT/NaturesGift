@@ -1,4 +1,4 @@
-package com.EPIICTHUNDERCAT.NaturesGift.mobs;
+package com.EPIICTHUNDERCAT.NaturesGift.Mobs;
 
 import java.util.ArrayList;
 import java.util.List;

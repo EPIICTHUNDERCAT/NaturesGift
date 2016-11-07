@@ -1,10 +1,8 @@
 package com.EPIICTHUNDERCAT.NaturesGift.util;
 
 import com.EPIICTHUNDERCAT.NaturesGift.NaturesGift;
-import com.EPIICTHUNDERCAT.NaturesGift.mobs.entities.EntityNatureSprig;
+import com.EPIICTHUNDERCAT.NaturesGift.Mobs.entities.EntityNatureSprig;
 
-import net.minecraft.entity.EnumCreatureType;
-import net.minecraft.init.Biomes;
 import net.minecraft.world.storage.loot.LootTableList;
 import net.minecraftforge.fml.common.registry.EntityRegistry;
 import net.minecraftforge.fml.relauncher.Side;

@@ -2,7 +2,7 @@ package com.EPIICTHUNDERCAT.NaturesGift.init;
 
 import javax.annotation.Nullable;
 
-import com.EPIICTHUNDERCAT.NaturesGift.misc.NGCreativeTabs;
+import com.EPIICTHUNDERCAT.NaturesGift.Misc.NGCreativeTabs;
 
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.entity.EntityLivingBase;

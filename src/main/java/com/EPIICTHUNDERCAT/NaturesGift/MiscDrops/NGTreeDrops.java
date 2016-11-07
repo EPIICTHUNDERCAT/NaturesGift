@@ -1,4 +1,4 @@
-package com.EPIICTHUNDERCAT.NaturesGift.miscdrops;
+package com.EPIICTHUNDERCAT.NaturesGift.Miscdrops;
 
 import java.util.ArrayList;
 import java.util.List;

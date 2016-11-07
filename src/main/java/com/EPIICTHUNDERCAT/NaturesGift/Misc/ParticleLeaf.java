@@ -1,4 +1,4 @@
-package com.EPIICTHUNDERCAT.NaturesGift.misc;
+package com.EPIICTHUNDERCAT.NaturesGift.Misc;
 
 import java.util.Random;
 

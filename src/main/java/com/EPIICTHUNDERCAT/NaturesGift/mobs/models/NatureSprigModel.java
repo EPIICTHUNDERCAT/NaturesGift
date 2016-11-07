@@ -1,4 +1,4 @@
-package com.EPIICTHUNDERCAT.NaturesGift.mobs.models;
+package com.EPIICTHUNDERCAT.NaturesGift.Mobs.models;
 
 public class NatureSprigModel {
 

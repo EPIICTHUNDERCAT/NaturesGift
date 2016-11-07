@@ -1,7 +1,7 @@
 package com.EPIICTHUNDERCAT.NaturesGift.block.blocks;
 
+import com.EPIICTHUNDERCAT.NaturesGift.Misc.NGAchievement;
 import com.EPIICTHUNDERCAT.NaturesGift.block.NGBlock;
-import com.EPIICTHUNDERCAT.NaturesGift.misc.NGAchievement;
 
 import net.minecraft.block.material.Material;
 import net.minecraft.block.state.IBlockState;

@@ -1,10 +1,10 @@
 package com.EPIICTHUNDERCAT.NaturesGift.proxy;
 
+import com.EPIICTHUNDERCAT.NaturesGift.Misc.ParticleLeaf;
 import com.EPIICTHUNDERCAT.NaturesGift.entity.EntityNatureBeam;
 import com.EPIICTHUNDERCAT.NaturesGift.entity.render.RenderEntityNatureBeam;
 import com.EPIICTHUNDERCAT.NaturesGift.init.NGBlocks;
 import com.EPIICTHUNDERCAT.NaturesGift.init.NGItems;
-import com.EPIICTHUNDERCAT.NaturesGift.misc.ParticleLeaf;
 import com.EPIICTHUNDERCAT.NaturesGift.util.NGEntityRegistry;
 
 import net.minecraft.client.Minecraft;

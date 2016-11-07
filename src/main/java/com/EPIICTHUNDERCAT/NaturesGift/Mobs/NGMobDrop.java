@@ -1,4 +1,4 @@
-package com.EPIICTHUNDERCAT.NaturesGift.mobs;
+package com.EPIICTHUNDERCAT.NaturesGift.Mobs;
 
 import net.minecraft.item.ItemStack;
 

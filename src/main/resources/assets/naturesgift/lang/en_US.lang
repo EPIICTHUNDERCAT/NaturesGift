@@ -86,6 +86,7 @@ tile.nature_wand_core.name=Wand Core
 
 
 achievement.sopink=SO PINK!
+achievement.endgame=EndGame?
 achievement.infestedaxe=Infested Axe
 achievement.skyessence=Whats This?
 achievement.lifecore=LifeCore?!
@@ -93,6 +94,7 @@ achievement.whoisbartz=Who is Bartz?
 achievement.thisisodd=This is Odd..
 achievement.youbrokegrass!=You Broke Grass!
 achievement.earlygame=Early Game
+achievement.endgame.desc=This is End Game? Lame!
 achievement.youbrokegrass!.desc=Breaking grass to get Grass Clippings
 achievement.earlygame.desc=So Early!
 achievement.thisisodd.desc=Hmm I wonder what this does....

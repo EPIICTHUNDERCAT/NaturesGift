@@ -1,18 +1,11 @@
 package com.EPIICTHUNDERCAT.NaturesGift.item.Tools;
 
 import com.EPIICTHUNDERCAT.NaturesGift.init.NGItems;
-import com.EPIICTHUNDERCAT.NaturesGift.misc.NGAchievement;
 import com.EPIICTHUNDERCAT.NaturesGift.misc.NGCreativeTabs;
 
-import net.minecraft.entity.player.EntityPlayer;
-import net.minecraft.init.Blocks;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemAxe;
 import net.minecraft.item.ItemStack;
-import net.minecraft.stats.AchievementList;
-import net.minecraft.world.World;
-import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
-import net.minecraftforge.fml.common.gameevent.PlayerEvent;
 
 public class NatureInfestedAxe extends ItemAxe {
 

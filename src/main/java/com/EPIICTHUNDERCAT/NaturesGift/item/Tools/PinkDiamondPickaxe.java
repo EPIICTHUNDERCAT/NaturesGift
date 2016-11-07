@@ -5,7 +5,6 @@ import com.EPIICTHUNDERCAT.NaturesGift.misc.NGCreativeTabs;
 
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemPickaxe;
-import net.minecraft.item.Item.ToolMaterial;
 
 public class PinkDiamondPickaxe extends ItemPickaxe{
 	

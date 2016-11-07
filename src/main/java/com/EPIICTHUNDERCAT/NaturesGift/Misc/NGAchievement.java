@@ -1,11 +1,8 @@
 package com.EPIICTHUNDERCAT.NaturesGift.misc;
 
-import com.EPIICTHUNDERCAT.NaturesGift.block.NGBlock;
 import com.EPIICTHUNDERCAT.NaturesGift.init.NGBlocks;
 import com.EPIICTHUNDERCAT.NaturesGift.init.NGItems;
 
-import net.minecraft.block.Block;
-import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.stats.Achievement;
 import net.minecraft.stats.AchievementList;

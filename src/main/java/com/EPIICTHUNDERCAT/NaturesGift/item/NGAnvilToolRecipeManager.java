@@ -1,8 +1,5 @@
 package com.EPIICTHUNDERCAT.NaturesGift.item;
 
-import net.minecraftforge.event.AnvilUpdateEvent;
-import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
-
 public class NGAnvilToolRecipeManager {
 	
 	

@@ -5,6 +5,7 @@ import com.EPIICTHUNDERCAT.NaturesGift.entity.render.RenderEntityNatureBeam;
 import com.EPIICTHUNDERCAT.NaturesGift.init.NGBlocks;
 import com.EPIICTHUNDERCAT.NaturesGift.init.NGItems;
 import com.EPIICTHUNDERCAT.NaturesGift.misc.ParticleLeaf;
+import com.EPIICTHUNDERCAT.NaturesGift.util.NGEntityRegistry;
 
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.entity.RenderManager;
@@ -18,6 +19,7 @@ public class ClientProxy extends CommonProxy {
 
 	public void preInit(FMLPreInitializationEvent preEvent) {
 		super.preInit(preEvent);
+		NGEntityRegistry.initModels();
 
 	}
 

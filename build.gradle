@@ -20,7 +20,7 @@ plugins {
     id "net.minecraftforge.gradle.forge" version "2.0.2"
 }
 */
-version = "0.7.0-test-release"
+version = "0.7.1-test-release"
 group= "com.EPIICTHUNDERCAT.NaturesGift" // http://maven.apache.org/guides/mini/guide-naming-conventions.html
 archivesBaseName = "naturesgift-1.10.2"
 

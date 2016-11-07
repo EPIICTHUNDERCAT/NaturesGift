@@ -1,12 +1,8 @@
 package com.EPIICTHUNDERCAT.NaturesGift.block.blocks;
 
 import com.EPIICTHUNDERCAT.NaturesGift.block.NGBlock;
-import com.EPIICTHUNDERCAT.NaturesGift.block.material.NGMaterial;
-import com.EPIICTHUNDERCAT.NaturesGift.init.NGBlocks;
 import com.EPIICTHUNDERCAT.NaturesGift.misc.NGAchievement;
-import com.EPIICTHUNDERCAT.NaturesGift.misc.NGCreativeTabs;
 
-import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.entity.EntityLivingBase;

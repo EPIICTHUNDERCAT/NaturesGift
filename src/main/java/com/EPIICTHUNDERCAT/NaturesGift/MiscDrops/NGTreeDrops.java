@@ -4,9 +4,6 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
-import com.EPIICTHUNDERCAT.NaturesGift.init.NGItems;
-import com.EPIICTHUNDERCAT.NaturesGift.mobs.NGMobDrops;
-
 import net.minecraft.block.BlockLeaves;
 import net.minecraft.entity.item.EntityItem;
 import net.minecraft.item.ItemStack;

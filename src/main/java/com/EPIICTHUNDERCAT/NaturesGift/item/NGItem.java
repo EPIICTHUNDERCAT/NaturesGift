@@ -4,7 +4,6 @@ import com.EPIICTHUNDERCAT.NaturesGift.init.NGItems;
 import com.EPIICTHUNDERCAT.NaturesGift.misc.NGCreativeTabs;
 
 import net.minecraft.item.Item;
-import net.minecraft.item.ItemStack;
 
 public class NGItem extends Item {
 

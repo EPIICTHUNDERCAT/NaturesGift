@@ -1,0 +1,17 @@
+{
+	"agaric_hurt_sound":
+	{
+	"category": "neutral",
+	"sounds": [ "naturesgift:agaric_hurt_sound" ]
+	},
+	"agaric_ambient":
+	{
+	"category": "neutral",
+	"sounds": [ "naturesgift:agaric_ambient" ]
+	},
+	"agaric_death_sound":
+	{
+	"category": "neutral",
+	"sounds":[ "naturesgift:agaric_death_sound"]
+	}
+}

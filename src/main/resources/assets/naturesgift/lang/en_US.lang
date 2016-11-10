@@ -80,9 +80,12 @@ item.dry_moss.name=Dry Moss
 item.naturebeam.name=Nature Beam Item
 item.nature_wand.name=Nature's Gift
 
+entity.Agaric.name=Agaric
+entity.NatureSprig.name=Nature Sprig
 
 tile.pink_diamond_block.name=Pink Diamond Block
 tile.nature_wand_core.name=Wand Core
+tile.pink_diamond_ore.name=Pink Diamond Ore
 
 
 achievement.sopink=SO PINK!

@@ -1,9 +1,9 @@
-package com.EPIICTHUNDERCAT.NaturesGift.Mobs;
+package com.EPIICTHUNDERCAT.NaturesGift.drops;
 
 import net.minecraft.item.ItemStack;
 
-public class NGMobDrop {
-	public NGMobDrop(ItemStack stack, int chance, int min, int max) {
+public class NGTreeDrop {
+	public NGTreeDrop(ItemStack stack, int chance, int min, int max) {
 		stackDrop = stack;
 		dropChance = chance;
 		minAmount = min;
@@ -15,4 +15,5 @@ public class NGMobDrop {
 	public int minAmount;
 	public int maxAmount;
 
+	
 }

@@ -1,7 +1,9 @@
 package com.EPIICTHUNDERCAT.NaturesGift.init;
 
-import com.EPIICTHUNDERCAT.NaturesGift.Miscdrops.NGTreeDrops;
-import com.EPIICTHUNDERCAT.NaturesGift.Mobs.NGMobDrops;
+import com.EPIICTHUNDERCAT.NaturesGift.drops.NGMobDrops;
+import com.EPIICTHUNDERCAT.NaturesGift.drops.NGTreeDrops;
+import com.EPIICTHUNDERCAT.NaturesGift.util.INGFuelHandler;
+import com.EPIICTHUNDERCAT.NaturesGift.util.NGOreGen;
 
 import net.minecraft.block.Block;
 import net.minecraft.init.Blocks;
@@ -14,13 +16,17 @@ import net.minecraftforge.oredict.ShapedOreRecipe;
 
 public class NGRecipes {
 
-	public static int moDrop;
+	//config but is bugged
+	/*public static int moDrop;
 	public static int neDrop;
 	public static int hbDrop;
 	public static int seDrop;
 	public static int lcDrop;
 	public static int beDrop;
-
+*/
+	
+	public static NGOreGen ngOreGen;
+	
 	public static void register(FMLPreInitializationEvent preEvent) {
 		// X Shaped Recipe// - Nature Stick
 		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(NGItems.NATURE_STICK),
@@ -124,8 +130,9 @@ public class NGRecipes {
 		GameRegistry.addSmelting(new ItemStack(NGItems.MOSS), new ItemStack(NGItems.DRY_MOSS), 25.0f);
 
 		// Shaped Recipe //- Nature's Gift
-		 GameRegistry.addRecipe(new ShapedOreRecipe(new
-		 ItemStack(NGItems.NATURE_WAND), new Object[] { "mcm", "sss", " n ", 'm', "mossMoss", 'c', new ItemStack(NGBlocks.NATURE_WAND_CORE), 's', new ItemStack(Items.STICK), 'n', new ItemStack(NGItems.NATURE_INFESTED_BRANCH)} ));
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(NGItems.NATURE_WAND),
+				new Object[] { "mcm", "sss", " n ", 'm', "mossMoss", 'c', new ItemStack(NGBlocks.NATURE_WAND_CORE), 's',
+						new ItemStack(Items.STICK), 'n', new ItemStack(NGItems.NATURE_INFESTED_BRANCH) }));
 		// Shaped Recipe// - Wand Core
 		GameRegistry.addRecipe(
 				new ShapedOreRecipe(new ItemStack(NGBlocks.NATURE_WAND_CORE), new Object[] { "qsq", "sds", "qsq", 'q',
@@ -281,23 +288,33 @@ public class NGRecipes {
 		OreDictionary.registerOre("strongNatureMaterial", new ItemStack(NGItems.STRONG_NATURE_MATERIAL));
 		OreDictionary.registerOre("natureMaterial", new ItemStack(NGItems.NATURE_MATERIAL));
 		OreDictionary.registerOre("natureInfestedBranch", new ItemStack(NGItems.NATURE_INFESTED_BRANCH));
-
-		NGMobDrops.addMobDrop(new ItemStack(NGItems.BARTZ_ESSENCE), beDrop, 10, 10);
-		NGMobDrops.addMobDrop(new ItemStack(NGItems.LIFE_CORE), lcDrop, 10, 10);
-		NGMobDrops.addMobDrop(new ItemStack(NGItems.SKY_ESSENCE), seDrop, 10, 10);
-		NGTreeDrops.addTreeDrop(new ItemStack(NGItems.HEAVY_BRANCH), hbDrop, 1, 1);
-		NGTreeDrops.addTreeDrop(new ItemStack(NGItems.MOSS), moDrop, 1, 1);
-		NGTreeDrops.addTreeDrop(new ItemStack(NGItems.NATURE_ESSENCE), neDrop, 1, 1);
-
 		/*
-		 * NGMobDrops.addMobDrop(new ItemStack(NGItems.BARTZ_ESSENCE), 3, 1, 1);
-		 * NGMobDrops.addMobDrop(new ItemStack(NGItems.LIFE_CORE), 3, 1, 1);
-		 * NGMobDrops.addMobDrop(new ItemStack(NGItems.SKY_ESSENCE), 1, 1, 1);
-		 * NGTreeDrops.addTreeDrop(new ItemStack(NGItems.HEAVY_BRANCH), 10, 1,
-		 * 1); NGTreeDrops.addTreeDrop(new ItemStack(NGItems.MOSS), 10, 1, 1);
-		 * NGTreeDrops.addTreeDrop(new ItemStack(NGItems.NATURE_ESSENCE), 10, 1,
-		 * 1);
+		 * NGMobDrops.addMobDrop(new ItemStack(NGItems.BARTZ_ESSENCE), beDrop,
+		 * 10, 10); NGMobDrops.addMobDrop(new ItemStack(NGItems.LIFE_CORE),
+		 * lcDrop, 10, 10); NGMobDrops.addMobDrop(new
+		 * ItemStack(NGItems.SKY_ESSENCE), seDrop, 10, 10);
+		 * NGTreeDrops.addTreeDrop(new ItemStack(NGItems.HEAVY_BRANCH), hbDrop,
+		 * 1, 1); NGTreeDrops.addTreeDrop(new ItemStack(NGItems.MOSS), moDrop,
+		 * 1, 1); NGTreeDrops.addTreeDrop(new ItemStack(NGItems.NATURE_ESSENCE),
+		 * neDrop, 1, 1);
 		 */
+	
+		NGMobDrops.addMobDrop(new ItemStack(NGItems.BARTZ_ESSENCE), 3, 1, 1);
+		NGMobDrops.addMobDrop(new ItemStack(NGItems.LIFE_CORE), 3, 1, 1);
+		NGMobDrops.addMobDrop(new ItemStack(NGItems.SKY_ESSENCE), 1, 1, 1);
+		NGTreeDrops.addTreeDrop(new ItemStack(NGItems.HEAVY_BRANCH), 10, 1, 1);
+		NGTreeDrops.addTreeDrop(new ItemStack(NGItems.MOSS), 10, 1, 1);
+		NGTreeDrops.addTreeDrop(new ItemStack(NGItems.NATURE_ESSENCE), 10, 1, 1);
+
+		
+		
+		//Registering FuelHandler
+		GameRegistry.registerFuelHandler(new INGFuelHandler());
+		
+		//World Gen
+		ngOreGen = new NGOreGen();
+		GameRegistry.registerWorldGenerator(ngOreGen, 1);
+		
 	}
 
 }

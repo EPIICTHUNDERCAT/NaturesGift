@@ -1,7 +1,7 @@
 package com.EPIICTHUNDERCAT.NaturesGift.init;
 
-import com.EPIICTHUNDERCAT.NaturesGift.Miscdrops.NGTreeDrops;
-import com.EPIICTHUNDERCAT.NaturesGift.Mobs.NGMobDrops;
+import com.EPIICTHUNDERCAT.NaturesGift.drops.NGMobDrops;
+import com.EPIICTHUNDERCAT.NaturesGift.drops.NGTreeDrops;
 
 import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;

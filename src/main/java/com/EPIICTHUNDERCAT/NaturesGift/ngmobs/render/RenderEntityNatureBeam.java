@@ -1,7 +1,7 @@
-package com.EPIICTHUNDERCAT.NaturesGift.entity.render;
+package com.EPIICTHUNDERCAT.NaturesGift.ngmobs.render;
 
-import com.EPIICTHUNDERCAT.NaturesGift.entity.EntityNatureBeam;
 import com.EPIICTHUNDERCAT.NaturesGift.init.NGItems;
+import com.EPIICTHUNDERCAT.NaturesGift.ngmobs.entities.EntityNatureBeam;
 
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.GlStateManager;

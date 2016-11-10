@@ -1,14 +1,7 @@
 package com.EPIICTHUNDERCAT.NaturesGift.util;
 
-import com.EPIICTHUNDERCAT.NaturesGift.NaturesGift;
-import com.EPIICTHUNDERCAT.NaturesGift.init.NGRecipes;
-import com.EPIICTHUNDERCAT.NaturesGift.proxy.CommonProxy;
-
-import net.minecraftforge.common.config.Configuration;
-import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
-
 public class NGConfig {
-
+/*
 	public static void config(FMLPreInitializationEvent preEvent) {
 		NaturesGift.config = new Configuration(preEvent.getSuggestedConfigurationFile());
 
@@ -38,4 +31,5 @@ public class NGConfig {
 		}
 
 	}
+	*/
 }

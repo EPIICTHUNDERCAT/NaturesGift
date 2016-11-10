@@ -138,6 +138,7 @@ public class NGItems extends Items {
 	
 	public static Item NATURE_WAND = new NGNatureWand("NATURE_WAND");
 	public static Item NATUREBEAM = new NGEntityItem("NATUREBEAM");
+	public static Item AGARIC_SHOT = new NGEntityItem("AGARIC_SHOT");
 	
 
 	private static List<Item> getItems() {

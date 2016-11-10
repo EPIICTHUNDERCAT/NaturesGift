@@ -1,8 +1,18 @@
-package com.EPIICTHUNDERCAT.NaturesGift.entity.render;
+package com.EPIICTHUNDERCAT.NaturesGift.ngmobs.render;
 
-public class RenderEntityNatureSprig{} /*extends RenderLiving<EntityNatureSprig>{
+import com.EPIICTHUNDERCAT.NaturesGift.ngmobs.entities.EntityNatureSprig;
+import com.EPIICTHUNDERCAT.NaturesGift.ngmobs.models.NatureSprigModel;
 
-	private static final ResourceLocation NATURESPRIG_TEXTURES = new ResourceLocation("naturesgift:entity/naturesprig.png");
+import net.minecraft.client.model.ModelBase;
+import net.minecraft.client.renderer.entity.Render;
+import net.minecraft.client.renderer.entity.RenderLiving;
+import net.minecraft.client.renderer.entity.RenderManager;
+import net.minecraft.util.ResourceLocation;
+import net.minecraftforge.fml.client.registry.IRenderFactory;
+
+public class RenderEntityNatureSprig extends RenderLiving<EntityNatureSprig>{
+
+	private static final ResourceLocation NATURESPRIG_TEXTURES = new ResourceLocation("naturesgift:textures/entity/naturesprig.png");
 	
 	
 
@@ -34,4 +44,4 @@ public class RenderEntityNatureSprig{} /*extends RenderLiving<EntityNatureSprig>
 
 
 }
-*/
+

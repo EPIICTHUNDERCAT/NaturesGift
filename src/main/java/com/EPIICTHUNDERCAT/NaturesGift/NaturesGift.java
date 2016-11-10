@@ -18,7 +18,7 @@ public class NaturesGift {
 
 	@SidedProxy(clientSide = Reference.CLIENT_PROXY, serverSide = Reference.SERVER_PROXY)
 	public static CommonProxy proxy;
-	public static Configuration config;
+	//public static Configuration config;
 
 
 	@EventHandler

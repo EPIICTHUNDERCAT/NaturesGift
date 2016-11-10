@@ -3,14 +3,14 @@ package com.EPIICTHUNDERCAT.NaturesGift.proxy;
 
 import com.EPIICTHUNDERCAT.NaturesGift.NaturesGift;
 import com.EPIICTHUNDERCAT.NaturesGift.Misc.NGAchievement;
-import com.EPIICTHUNDERCAT.NaturesGift.Miscdrops.NGTreeDrops;
-import com.EPIICTHUNDERCAT.NaturesGift.Mobs.NGMobDrops;
-import com.EPIICTHUNDERCAT.NaturesGift.entity.EntityNatureBeam;
+import com.EPIICTHUNDERCAT.NaturesGift.drops.NGMobDrops;
+import com.EPIICTHUNDERCAT.NaturesGift.drops.NGTreeDrops;
 import com.EPIICTHUNDERCAT.NaturesGift.init.NGBlocks;
 import com.EPIICTHUNDERCAT.NaturesGift.init.NGItems;
 import com.EPIICTHUNDERCAT.NaturesGift.init.NGRecipes;
+import com.EPIICTHUNDERCAT.NaturesGift.ngmobs.entities.EntityAgaricShot;
+import com.EPIICTHUNDERCAT.NaturesGift.ngmobs.entities.EntityNatureBeam;
 import com.EPIICTHUNDERCAT.NaturesGift.util.EventManager;
-import com.EPIICTHUNDERCAT.NaturesGift.util.NGConfig;
 import com.EPIICTHUNDERCAT.NaturesGift.util.NGEntityRegistry;
 
 import net.minecraft.item.ItemStack;
@@ -23,12 +23,12 @@ import net.minecraftforge.fml.common.registry.EntityRegistry;
 
 public class CommonProxy {
 
-	public static int neDrop;
-	public static int gcDrop;
+	//public static int neDrop;
+	//public static int gcDrop;
 
 	public void preInit(FMLPreInitializationEvent preEvent) {
 		register(preEvent);
-		NGConfig.config(preEvent);
+		//NGConfig.config(preEvent);
 		NGEntityRegistry.init();
 
 	}
@@ -49,8 +49,8 @@ public class CommonProxy {
 		 * if (versionCompare(MinecraftForge.MC_VERSION) >= 0)
 		 * NGRecipes.register(preEvent); else LegacyRecipes.register(preEvent);
 		 */
-		MinecraftForge.addGrassSeed(new ItemStack(NGItems.GRASS_CLIPPINGS), gcDrop);
-		MinecraftForge.addGrassSeed(new ItemStack(NGItems.NATURE_ESSENCE), neDrop);
+		MinecraftForge.addGrassSeed(new ItemStack(NGItems.GRASS_CLIPPINGS)/*, gcDrop*/, 10);
+		MinecraftForge.addGrassSeed(new ItemStack(NGItems.NATURE_ESSENCE)/*, neDrop*/, 10);
 		MinecraftForge.EVENT_BUS.register(new NGMobDrops());
 		MinecraftForge.EVENT_BUS.register(new NaturesGift());
 		MinecraftForge.EVENT_BUS.register(new NGTreeDrops());
@@ -67,6 +67,7 @@ public class CommonProxy {
 		int id = 0;
 
 		EntityRegistry.registerModEntity(EntityNatureBeam.class, "naturebeam", id++, NaturesGift.instance, 64, 2, true);
+		EntityRegistry.registerModEntity(EntityAgaricShot.class, "agaric_shot", id++, NaturesGift.instance, 64, 2, true);
 	}
 
 	/*

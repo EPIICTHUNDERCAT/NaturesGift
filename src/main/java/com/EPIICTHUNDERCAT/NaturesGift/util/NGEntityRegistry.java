@@ -19,7 +19,7 @@ public class NGEntityRegistry {
 
 		// NatureSprig
 		// Every entity in our mod has an ID (local to this mod)
-		int id = 1;
+		int id = 4;
 		EntityRegistry.registerModEntity(EntityNatureSprig.class, "NatureSprig", id++, NaturesGift.instance, 64, 3,
 				true, 0x847294, 0x18be42);
 

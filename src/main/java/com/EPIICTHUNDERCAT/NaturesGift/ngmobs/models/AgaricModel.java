@@ -1,8 +1,13 @@
 package com.EPIICTHUNDERCAT.NaturesGift.ngmobs.models;
 
+import com.EPIICTHUNDERCAT.NaturesGift.ngmobs.entities.EntityAgaric;
+
 import net.minecraft.client.model.ModelBase;
 import net.minecraft.client.model.ModelRenderer;
+import net.minecraft.client.renderer.GlStateManager;
 import net.minecraft.entity.Entity;
+import net.minecraft.util.math.MathHelper;
+import net.minecraft.util.math.Vec3d;
 
 public class AgaricModel extends ModelBase {
 	public ModelRenderer body;
@@ -217,15 +222,34 @@ public class AgaricModel extends ModelBase {
 	public void render(Entity entity, float limbSwing, float limbSwingAmount, float ageInTicks, float netHeadYaw,
 			float headPitch, float scale) {
 
+		GlStateManager.pushMatrix();
+		super.render(entity, limbSwing, limbSwingAmount, ageInTicks, netHeadYaw, headPitch, scale);
+
+		float speed = (float) ((new Vec3d(entity.motionX, 0, entity.motionZ)).lengthVector() * 2.0f);
+
 		this.body.render(scale);
+		//LegRight.rotateAngleX = (float) Math
+		//		.toRadians(speed * 240f * (float) Math.sin(Math.toRadians(ageInTicks % 360) * 24F));
+
+	//	LegLeft.rotateAngleX = -(float) Math
+		//		.toRadians(speed * 240f * (float) Math.sin(Math.toRadians(ageInTicks % 360) * 24F));
+
+		ArmLeft.rotateAngleX = -(float) Math
+				.toRadians(speed * 240f * (float) Math.sin(Math.toRadians(ageInTicks % 360) * 24F));
+
+		ArmRight.rotateAngleX = -(float) Math
+				.toRadians(speed * 240f * (float) Math.sin(Math.toRadians(ageInTicks % 360) * 24F));
+		
+		LegRight.rotateAngleX = MathHelper.cos(limbSwing * 0.6662F) * 1.4F * limbSwingAmount;
+		LegLeft.rotateAngleX = MathHelper.cos(limbSwing * 0.6662F + (float)Math.PI) * 1.4F * limbSwingAmount;
+		
+		GlStateManager.popMatrix();
+
 	}
 
 	public void setRotationAngles(float limbSwing, float limbSwingAmount, float ageInTicks, float netHeadYaw,
 			float headPitch, float scaleFactor, Entity entityIn) {
 		super.setRotationAngles(limbSwing, limbSwingAmount, ageInTicks, netHeadYaw, headPitch, scaleFactor, entityIn);
-		this.ArmLeft.rotateAngleX = 2;
-		this.ArmRight.rotateAngleX = 67;
-		
 
 	}
 

@@ -22,19 +22,14 @@ plugins {
 */
 version = "0.7.6-test-release"
 group= "com.EPIICTHUNDERCAT.NaturesGift" // http://maven.apache.org/guides/mini/guide-naming-conventions.html
-archivesBaseName = "naturesgift-1.10.2"
+archivesBaseName = "naturesgift-1.11"
 
 minecraft {
-    version = "1.10.2-12.18.2.2099"
+   version = "1.11-13.19.0.2126-1.11.x"
     runDir = "run"
     
-    // the mappings can be changed at any time, and must be in the following format.
-    // snapshot_YYYYMMDD   snapshot are built nightly.
-    // stable_#            stables are built at the discretion of the MCP team.
-    // Use non-default mappings at your own risk. they may not allways work.
-    // simply re-run your setup task after changing the mappings to update your workspace.
-    mappings = "snapshot_20160518"
-    // makeObfSourceJar = false // an Srg named sources jar is made by default. uncomment this to disable.
+    mappings = "snapshot_20161111"
+    useDepAts = false
 }
 
 dependencies {

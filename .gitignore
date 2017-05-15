@@ -13,9 +13,7 @@ out
 *.iml
 .idea
 
-# gradle
-build
-.gradle
+
 
 # other
 eclipse
@@ -24,11 +22,6 @@ run
 CREDITS-fml.txt
 forge-1.10.2-12.18.1.2011-changelog.txt
 *.txt
-gradlew.bat
-gradle/wrapper/gradle-wrapper.properties
-gradle-wrapper.jar
 
-
-gradlew
 
 .DS_Store
